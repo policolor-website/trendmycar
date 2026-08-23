@@ -100,13 +100,14 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group min-w-0 shrink">
+        <Link href="/" className="flex items-center gap-3 group min-w-0 shrink relative overflow-hidden rounded-lg">
           <img
             src="/trendmydrive-logo.webp"
             alt={brand.name}
-            className="h-14 sm:h-16 w-auto"
+            className="h-14 sm:h-16 w-auto relative z-10"
             loading="eager"
           />
+          <span className="logo-shine" />
         </Link>
 
         {/* Desktop nav */}

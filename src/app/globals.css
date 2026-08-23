@@ -138,3 +138,34 @@ body {
 .bw-image {
   filter: grayscale(1) contrast(1.05) brightness(0.85);
 }
+
+/* Logo shine effect — diamond light sweep */
+.logo-shine {
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 40px;
+  height: 60%;
+  top: 20%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 30%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.1) 70%,
+    transparent 100%
+  );
+  filter: blur(1px);
+  transform: skewX(-15deg);
+  animation: logo-shine 8s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 20;
+}
+
+@keyframes logo-shine {
+  0% { left: -150%; opacity: 0; }
+  10% { opacity: 1; }
+  75% { left: 180%; opacity: 1; }
+  90% { left: 250%; opacity: 0; }
+  100% { left: 250%; opacity: 0; }
+}
