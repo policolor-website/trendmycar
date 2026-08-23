@@ -131,7 +131,7 @@ export default function DashboardPage() {
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
-    router.push("/");
+    router.push("/login");
   };
 
   const handleSaveProfile = async () => {

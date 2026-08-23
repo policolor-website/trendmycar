@@ -217,7 +217,7 @@ export default function Header() {
               <button
                 onClick={async () => {
                   await supabase.auth.signOut();
-                  router.push("/");
+                  router.push("/login");
                 }}
                 className="flex items-center gap-1.5 text-sm text-white/70 hover:text-white transition-colors"
               >
@@ -326,7 +326,7 @@ export default function Header() {
                   <button
                     onClick={async () => {
                       await supabase.auth.signOut();
-                      router.push("/");
+                      router.push("/login");
                     }}
                     className="flex items-center gap-2 text-ash text-sm ml-auto"
                   >
