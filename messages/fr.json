@@ -42,7 +42,10 @@
     "passengers": "Passagers",
     "vehicle": "Véhicule",
     "getPrice": "Obtenir le prix",
-    "reserveNow": "Réserver maintenant"
+    "reserveNow": "Réserver maintenant",
+    "errorOutsideGermany": "Notre service de chauffeur fonctionne uniquement en Allemagne. Veuillez sélectionner des adresses de prise en charge et de destination en Allemagne.",
+    "errorGeneric": "Échec du calcul du prix. Veuillez réessayer.",
+    "errorMissingFields": "Veuillez saisir le lieu de prise en charge et la destination."
   },
   "Fleet": {
     "badge": "Nos véhicules",

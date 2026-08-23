@@ -35,7 +35,7 @@ export default function BookingPage() {
   const handleGetPrice = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!bookingForm.origin || !bookingForm.destination) {
-      setPriceError("Please enter pickup and destination.");
+      setPriceError(t("errorMissingFields"));
       return;
     }
     setPriceError(null);
@@ -54,12 +54,13 @@ export default function BookingPage() {
       });
       const data = await res.json();
       if (data.error) {
-        setPriceError(data.error);
+        const errorKey = data.error === "outside_germany" ? "errorOutsideGermany" : "errorGeneric";
+        setPriceError(t(errorKey as any));
       } else {
         setPriceResult(data);
       }
     } catch {
-      setPriceError("Failed to calculate price. Please try again.");
+      setPriceError(t("errorGeneric"));
     }
     setPriceLoading(false);
   };

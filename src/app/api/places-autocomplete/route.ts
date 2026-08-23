@@ -15,7 +15,7 @@ export async function GET(req: NextRequest) {
 
   const url = `https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${encodeURIComponent(
     input
-  )}&types=geocode&key=${apiKey}`;
+  )}&types=geocode&components=country:de&key=${apiKey}`;
 
   try {
     const res = await fetch(url);

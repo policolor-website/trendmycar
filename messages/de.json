@@ -42,7 +42,10 @@
     "passengers": "Passagiere",
     "vehicle": "Fahrzeug",
     "getPrice": "Preis anfragen",
-    "reserveNow": "Jetzt reservieren"
+    "reserveNow": "Jetzt reservieren",
+    "errorOutsideGermany": "Unser Fahrerservice ist nur in Deutschland tätig. Bitte wählen Sie Abhol- und Zielorte in Deutschland.",
+    "errorGeneric": "Preisberechnung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "errorMissingFields": "Bitte geben Sie Abholort und Ziel ein."
   },
   "Fleet": {
     "badge": "Unsere Fahrzeuge",

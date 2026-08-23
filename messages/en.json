@@ -42,7 +42,10 @@
     "passengers": "Passengers",
     "vehicle": "Vehicle",
     "getPrice": "Get price",
-    "reserveNow": "Reserve now"
+    "reserveNow": "Reserve now",
+    "errorOutsideGermany": "Our chauffeur service operates only within Germany. Please select pickup and destination addresses in Germany.",
+    "errorGeneric": "Failed to calculate price. Please try again.",
+    "errorMissingFields": "Please enter pickup and destination."
   },
   "Fleet": {
     "badge": "Our vehicles",

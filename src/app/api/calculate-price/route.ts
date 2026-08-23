@@ -61,6 +61,16 @@ export async function POST(req: NextRequest) {
     const distanceKm = leg.distance.value / 1000;
     const durationMin = leg.duration.value / 60;
 
+    // Validate both points are in Germany
+    const startInGermany = /germany|deutschland/i.test(leg.start_address);
+    const endInGermany = /germany|deutschland/i.test(leg.end_address);
+    if (!startInGermany || !endInGermany) {
+      return NextResponse.json(
+        { error: "outside_germany" },
+        { status: 400 }
+      );
+    }
+
     // Calculate price
     let price = tariff.base + distanceKm * tariff.perKm;
 

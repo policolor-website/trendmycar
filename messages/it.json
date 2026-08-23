@@ -42,7 +42,10 @@
     "passengers": "Passeggeri",
     "vehicle": "Veicolo",
     "getPrice": "Ottieni prezzo",
-    "reserveNow": "Prenota ora"
+    "reserveNow": "Prenota ora",
+    "errorOutsideGermany": "Il nostro servizio autista opera solo in Germania. Seleziona indirizzi di ritiro e destinazione in Germania.",
+    "errorGeneric": "Calcolo del prezzo fallito. Riprova.",
+    "errorMissingFields": "Inserisci il luogo di ritiro e la destinazione."
   },
   "Fleet": {
     "badge": "I nostri veicoli",

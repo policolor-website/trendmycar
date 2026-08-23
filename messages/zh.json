@@ -42,7 +42,10 @@
     "passengers": "乘客",
     "vehicle": "车辆",
     "getPrice": "获取报价",
-    "reserveNow": "立即预订"
+    "reserveNow": "立即预订",
+    "errorOutsideGermany": "我们的司机服务仅在德国境内运营。请选择德国境内的上车和目的地地址。",
+    "errorGeneric": "价格计算失败，请重试。",
+    "errorMissingFields": "请输入上车地点和目的地。"
   },
   "Fleet": {
     "badge": "我们的车辆",
