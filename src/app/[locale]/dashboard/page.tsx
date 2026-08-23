@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
+import { motion } from "framer-motion";
 import { User, Mail, Phone, Calendar, Car, MapPin, Clock, FileText, LogOut, CheckCircle2, XCircle, Clock as ClockIcon, Camera, Trash2, Plus, Star, Award, TrendingUp, Route } from "lucide-react";
 import { supabase } from "@/lib/supabase-client";
 
@@ -265,8 +266,14 @@ export default function DashboardPage() {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6" style={{ perspective: "1200px" }}>
           {/* Profile card with avatar */}
+          <motion.div
+            initial={{ opacity: 0, rotateX: 45, rotateY: 15, z: -600, scale: 1.8, filter: "blur(20px)" }}
+            animate={{ opacity: 1, rotateX: 0, rotateY: 0, z: 0, scale: 1, filter: "blur(0px)" }}
+            transition={{ duration: 1.8, delay: 0 * 0.2, ease: [0.16, 1, 0.3, 1] }}
+            style={{ transformStyle: "preserve-3d" }}
+          >
           <div className="glass rounded-2xl p-6">
             <div className="flex items-center justify-between mb-6">
               <h2 className="font-display text-xl font-bold text-white">{t("profile")}</h2>
@@ -381,8 +388,15 @@ export default function DashboardPage() {
               </div>
             )}
           </div>
+          </motion.div>
 
           {/* Stats card */}
+          <motion.div
+            initial={{ opacity: 0, rotateX: 45, rotateY: 15, z: -600, scale: 1.8, filter: "blur(20px)" }}
+            animate={{ opacity: 1, rotateX: 0, rotateY: 0, z: 0, scale: 1, filter: "blur(0px)" }}
+            transition={{ duration: 1.8, delay: 1 * 0.2, ease: [0.16, 1, 0.3, 1] }}
+            style={{ transformStyle: "preserve-3d" }}
+          >
           <div className="glass rounded-2xl p-6">
             <h2 className="font-display text-xl font-bold text-white mb-6">{t("overview")}</h2>
             <div className="space-y-4">
@@ -413,8 +427,15 @@ export default function DashboardPage() {
               </div>
             </div>
           </div>
+          </motion.div>
 
           {/* Quick action + Loyalty */}
+          <motion.div
+            initial={{ opacity: 0, rotateX: 45, rotateY: 15, z: -600, scale: 1.8, filter: "blur(20px)" }}
+            animate={{ opacity: 1, rotateX: 0, rotateY: 0, z: 0, scale: 1, filter: "blur(0px)" }}
+            transition={{ duration: 1.8, delay: 2 * 0.2, ease: [0.16, 1, 0.3, 1] }}
+            style={{ transformStyle: "preserve-3d" }}
+          >
           <div className="flex flex-col gap-6">
             <div className="glass rounded-2xl p-6 flex flex-col justify-between">
               <div>
@@ -445,11 +466,18 @@ export default function DashboardPage() {
               <p className="text-xs text-ash leading-relaxed">{t("loyaltyDesc")}</p>
             </div>
           </div>
+          </motion.div>
         </div>
 
         {/* Preferences + Saved Locations */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6" style={{ perspective: "1200px" }}>
           {/* Preferences */}
+          <motion.div
+            initial={{ opacity: 0, rotateX: 45, rotateY: 15, z: -600, scale: 1.8, filter: "blur(20px)" }}
+            animate={{ opacity: 1, rotateX: 0, rotateY: 0, z: 0, scale: 1, filter: "blur(0px)" }}
+            transition={{ duration: 1.8, delay: 0 * 0.2, ease: [0.16, 1, 0.3, 1] }}
+            style={{ transformStyle: "preserve-3d" }}
+          >
           <div className="glass rounded-2xl p-6">
             <div className="flex items-center justify-between mb-6">
               <h2 className="font-display text-xl font-bold text-white">{t("preferences")}</h2>
@@ -536,8 +564,15 @@ export default function DashboardPage() {
               </div>
             )}
           </div>
+          </motion.div>
 
           {/* Saved Locations */}
+          <motion.div
+            initial={{ opacity: 0, rotateX: 45, rotateY: 15, z: -600, scale: 1.8, filter: "blur(20px)" }}
+            animate={{ opacity: 1, rotateX: 0, rotateY: 0, z: 0, scale: 1, filter: "blur(0px)" }}
+            transition={{ duration: 1.8, delay: 1 * 0.2, ease: [0.16, 1, 0.3, 1] }}
+            style={{ transformStyle: "preserve-3d" }}
+          >
           <div className="glass rounded-2xl p-6">
             <div className="flex items-center justify-between mb-6">
               <h2 className="font-display text-xl font-bold text-white">{t("savedLocations")}</h2>
@@ -619,6 +654,7 @@ export default function DashboardPage() {
               </div>
             )}
           </div>
+          </motion.div>
         </div>
 
         {/* Vehicle History */}
