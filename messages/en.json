@@ -929,5 +929,104 @@
         "text": "Fantastic service. Punctual, safe driving, clean and first-class vehicle. 10/10."
       }
     ]
+  },
+  "FleetPages": {
+    "sClass": {
+      "badge": "First Class Limousine",
+      "title": "Mercedes",
+      "highlight": "S-Class",
+      "description": "The Mercedes S-Class is the embodiment of first-class mobility — where every detail is crafted for those who expect nothing less than perfection. Step into the rear cabin and enter a private sanctuary: executive reclining seats with massage function, extendable leg rests, and a 43.5° recline angle that transforms your journey into pure relaxation. Whisper-quiet thanks to double-glazed windows and active noise cancellation. A Burmester High-End 4D surround sound system with 31 speakers turns music into a full-body experience. Ambient lighting in 64 colors, Nappa leather throughout, and a panoramic roof create an atmosphere of effortless luxury. The Chauffeur Package folds the front passenger seat forward and extends a footrest — giving you the legroom of a private jet. Whether airport transfer, business meeting, or special occasion: the S-Class doesn't just get you there. It makes the journey the destination.",
+      "featuresTitle": "What makes it exceptional",
+      "features": [
+        "Executive rear seats with massage, ventilation, and heating",
+        "Extendable leg rests with 43.5° recline angle",
+        "Burmester High-End 4D surround sound system (31 speakers, 8 exciters)",
+        "Active ambient lighting with 64 colors",
+        "Double-glazed windows with active noise cancellation",
+        "Chauffeur Package with foldable front seat and footrest",
+        "Nappa leather interior with DINAMICA headliner",
+        "THERMOTRONIC 4-zone automatic climate control",
+        "Rear entertainment with two 11.6-inch touchscreens",
+        "MBUX rear tablet for full comfort and infotainment control",
+        "Panoramic roof with electric sun blinds",
+        "Soft-close doors with heated armrests"
+      ],
+      "specsTitle": "Technical specifications",
+      "specs": [
+        {
+          "label": "Vehicle class",
+          "value": "First Class Limousine"
+        },
+        {
+          "label": "Passengers",
+          "value": "3"
+        },
+        {
+          "label": "Luggage",
+          "value": "3 large suitcases"
+        },
+        {
+          "label": "Wheelbase",
+          "value": "3,216 mm (long version)"
+        },
+        {
+          "label": "Length",
+          "value": "5,289 mm"
+        },
+        {
+          "label": "Interior",
+          "value": "Nappa leather, DINAMICA headliner"
+        },
+        {
+          "label": "Sound system",
+          "value": "Burmester High-End 4D (1,750W)"
+        },
+        {
+          "label": "Climate",
+          "value": "THERMOTRONIC 4-zone"
+        },
+        {
+          "label": "Rear seats",
+          "value": "Electric, heated, ventilated, massage"
+        },
+        {
+          "label": "Ambient lighting",
+          "value": "64 colors, active"
+        }
+      ],
+      "ctaTitle": "Ready to experience first-class?",
+      "ctaDescription": "Book the Mercedes S-Class for your next journey and arrive in unparalleled luxury and comfort.",
+      "faqTitle": "Questions & answers",
+      "faq": [
+        {
+          "question": "How many passengers can the S-Class accommodate?",
+          "answer": "The S-Class comfortably seats up to 3 passengers in the rear, making it ideal for executive travel, couples, or solo journeys with luggage."
+        },
+        {
+          "question": "What is the Chauffeur Package?",
+          "answer": "The Chauffeur Package allows the front passenger seat to fold forward and extends a footrest, giving rear passengers the legroom of a private jet. The luxury head restraint can also be folded down for an unobstructed view."
+        },
+        {
+          "question": "Does the S-Class have massage seats?",
+          "answer": "Yes. The active multicontour seats offer 10 massage programs ranging from a relaxing back massage to an activating workout massage, with two-stage intensity and durations of 8 to 18 minutes."
+        },
+        {
+          "question": "What sound system is included?",
+          "answer": "The Burmester High-End 4D surround sound system features 31 high-performance speakers and 8 exciters with 1,750 watts, delivering a full-body listening experience through seat vibrations."
+        },
+        {
+          "question": "Is the S-Class suitable for airport transfers?",
+          "answer": "Absolutely. The S-Class is our premier airport transfer vehicle, offering flight tracking, meet & greet service, and a whisper-quiet cabin to relax or work after a long flight."
+        },
+        {
+          "question": "Can I control the climate and entertainment from the rear?",
+          "answer": "Yes. The MBUX rear tablet gives you full control over climate, seating position, ambient lighting, and entertainment via two 11.6-inch rear touchscreens."
+        },
+        {
+          "question": "How much luggage can the S-Class hold?",
+          "answer": "The trunk accommodates 3 large suitcases, perfect for long-distance travel, airport transfers, or extended business trips."
+        }
+      ]
+    }
   }
 }

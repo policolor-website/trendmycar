@@ -929,5 +929,104 @@
         }
       ]
     }
+  },
+  "FleetPages": {
+    "sClass": {
+      "badge": "Limousine Prima Classe",
+      "title": "Mercedes",
+      "highlight": "S-Class",
+      "description": "La Mercedes S-Class è l'incarnazione della mobilità di prima classe — dove ogni dettaglio è realizzato per chi non si accontenta di nulla meno della perfezione. Entra nell'abitacolo posteriore e accedi a un santuario privato: sedili reclinabili executive con funzione massaggio, poggiapoggi allungabili e un angolo di reclinazione di 43,5° che trasforma il tuo viaggio in puro relax. Silenzioso grazie ai finestrini a doppio vetro e alla cancellazione attiva del rumore. Un sistema audio surround Burmester High-End 4D con 31 altoparlanti trasforma la musica in un'esperienza a tutto corpo. Illuminazione ambientale in 64 colori, pelle Nappa in tutto il veicolo e un tetto panoramico creano un'atmosfera di lusso senza sforzo. Il Chauffeur Package ripiega in avanti il sedile del passeggero anteriore ed estende un poggiapiedi — offrendoti lo spazio per le gambe di un jet privato. Che si tratti di transfer aeroporto, riunione business o occasione speciale: la S-Class non si limita a portarti a destinazione. Rende il viaggio la destinazione.",
+      "featuresTitle": "Cosa la rende eccezionale",
+      "features": [
+        "Sedili posteriori executive con massaggio, ventilazione e riscaldamento",
+        "Poggiapoggi allungabili con angolo di reclinazione di 43,5°",
+        "Sistema audio surround Burmester High-End 4D (31 altoparlanti, 8 eccitatori)",
+        "Illuminazione ambientale attiva con 64 colori",
+        "Finestrini a doppio vetro con cancellazione attiva del rumore",
+        "Chauffeur Package con sedile anteriore ripiegabile e poggiapiedi",
+        "Interno in pelle Nappa con rivestimento DINAMICA",
+        "Climatizzazione automatica THERMOTRONIC a 4 zone",
+        "Intrattenimento posteriore con due touchscreen da 11,6 pollici",
+        "Tablet MBUX posteriore per controllo completo di comfort e infotainment",
+        "Tetto panoramico con tende parasole elettriche",
+        "Porte a chiusura morbida con braccioli riscaldati"
+      ],
+      "specsTitle": "Specifiche tecniche",
+      "specs": [
+        {
+          "label": "Classe veicolo",
+          "value": "First Class Limousine"
+        },
+        {
+          "label": "Passeggeri",
+          "value": "3"
+        },
+        {
+          "label": "Bagagli",
+          "value": "3 grandi valigie"
+        },
+        {
+          "label": "Passo",
+          "value": "3,216 mm (versione lunga)"
+        },
+        {
+          "label": "Lunghezza",
+          "value": "5,289 mm"
+        },
+        {
+          "label": "Interno",
+          "value": "Pelle Nappa, rivestimento DINAMICA"
+        },
+        {
+          "label": "Sistema audio",
+          "value": "Burmester High-End 4D (1,750W)"
+        },
+        {
+          "label": "Climatizzazione",
+          "value": "THERMOTRONIC 4-zone"
+        },
+        {
+          "label": "Sedili posteriori",
+          "value": "Elettrici, riscaldati, ventilati, massaggio"
+        },
+        {
+          "label": "Illuminazione ambientale",
+          "value": "64 colori, attiva"
+        }
+      ],
+      "ctaTitle": "Pronto a vivere la prima classe?",
+      "ctaDescription": "Prenota la Mercedes S-Class per il tuo prossimo viaggio e arriva con lusso e comfort senza pari.",
+      "faqTitle": "Domande & risposte",
+      "faq": [
+        {
+          "question": "Quanti passeggeri può accogliere la S-Class?",
+          "answer": "La S-Class accoglie comodamente fino a 3 passeggeri nella parte posteriore, rendendola ideale per viaggi executive, coppie o viaggi singoli con bagagli."
+        },
+        {
+          "question": "Cos'è il Chauffeur Package?",
+          "answer": "Il Chauffeur Package permette al sedile del passeggero anteriore di ripiegarsi in avanti ed estende un poggiapiedi, offrendo ai passeggeri posteriori lo spazio per le gambe di un jet privato. Il poggiatesta di lusso può anche essere ripiegato per una visuale senza ostacoli."
+        },
+        {
+          "question": "La S-Class ha sedili con massaggio?",
+          "answer": "Sì. I sedili multicontorno attivi offrono 10 programmi di massaggio, dal massaggio rilassante per la schiena al massaggio attivante da allenamento, con intensità a due livelli e durate da 8 a 18 minuti."
+        },
+        {
+          "question": "Quale sistema audio è incluso?",
+          "answer": "Il sistema audio surround Burmester High-End 4D dispone di 31 altoparlanti ad alte prestazioni e 8 eccitatori con 1.750 watt, offrendo un'esperienza d'ascolto a tutto corpo attraverso le vibrazioni dei sedili."
+        },
+        {
+          "question": "La S-Class è adatta per i transfer aeroporto?",
+          "answer": "Assolutamente. La S-Class è il nostro veicolo principale per i transfer aeroporto, con monitoraggio dei voli, servizio meet & greet e un abitacolo silenzioso per rilassarsi o lavorare dopo un lungo volo."
+        },
+        {
+          "question": "Posso controllare il clima e l'intrattenimento dalla parte posteriore?",
+          "answer": "Sì. Il tablet MBUX posteriore ti offre il controllo completo su clima, posizione dei sedili, illuminazione ambientale e intrattenimento tramite due touchscreen posteriori da 11,6 pollici."
+        },
+        {
+          "question": "Quanti bagagli può contenere la S-Class?",
+          "answer": "Il bagagliaio accoglie 3 grandi valigie, perfetto per viaggi a lunga distanza, transfer aeroporto o viaggi business prolungati."
+        }
+      ]
+    }
   }
 }
