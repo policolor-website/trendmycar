@@ -99,14 +99,22 @@ export default function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group min-w-0 shrink relative overflow-hidden rounded-lg">
-          <img
-            src="/trendmydrive-logo.webp"
-            alt={brand.name}
-            className="h-14 sm:h-16 w-auto relative z-10"
-            loading="eager"
-          />
+        {/* Logo — animated letters */}
+        <Link href="/" className="flex flex-col leading-none group min-w-0 shrink relative overflow-hidden rounded-lg py-1">
+          <span className="font-display text-3xl sm:text-4xl font-bold text-white tracking-tight relative z-10 logo-letters" aria-label={brand.name}>
+            {"TrendMyDrive".split("").map((char, i) => (
+              <span
+                key={i}
+                className="logo-letter inline-block"
+                style={{ animationDelay: `${i * 0.15}s` }}
+              >
+                {char}
+              </span>
+            ))}
+          </span>
+          <span className="text-[8px] sm:text-[9px] tracking-[0.25em] uppercase text-white mt-1 relative z-10 logo-tagline" style={{ animationDelay: `${12 * 0.15 + 0.2}s` }}>
+            Premium Chauffeur Service
+          </span>
           <span className="logo-shine" />
         </Link>
 

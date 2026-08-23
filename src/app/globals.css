@@ -18,7 +18,7 @@
   --color-basil: #3D5A3D;
   --color-basil-light: #5B8A5B;
 
-  --font-display: "Playfair Display", serif;
+  --font-display: "Cormorant Garamond", serif;
   --font-body: "Inter", sans-serif;
 
   --animate-float: float 6s ease-in-out infinite;
@@ -157,7 +157,7 @@ body {
   );
   filter: blur(1px);
   transform: skewX(-15deg);
-  animation: logo-shine 8s ease-in-out infinite;
+  animation: logo-shine 5s ease-in-out infinite;
   pointer-events: none;
   z-index: 20;
 }
@@ -168,4 +168,34 @@ body {
   75% { left: 180%; opacity: 1; }
   90% { left: 250%; opacity: 0; }
   100% { left: 250%; opacity: 0; }
+}
+
+/* Logo letters — fade-in + slide-up on load */
+.logo-letters {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+}
+
+.logo-letter {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: logo-letter-in 0.15s ease-out forwards;
+}
+
+@keyframes logo-letter-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Logo tagline — fade in after letters complete */
+.logo-tagline {
+  opacity: 0;
+  animation: logo-tagline-in 0.6s ease-out forwards;
+}
+
+@keyframes logo-tagline-in {
+  to {
+    opacity: 1;
+  }
 }

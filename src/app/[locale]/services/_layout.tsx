@@ -45,7 +45,7 @@ export default function ServicePageLayout({ serviceKey, image }: ServicePageLayo
               <h1 className="font-display text-4xl md:text-6xl font-bold text-cream leading-tight mb-6">
                 {t(`${serviceKey}.title`)} <span className="neon-text">{t(`${serviceKey}.highlight`)}</span>
               </h1>
-              <p className="text-lg text-ash leading-relaxed mb-8">{t(`${serviceKey}.description`)}</p>
+              <p className="text-base text-ash leading-relaxed mb-8">{t(`${serviceKey}.description`)}</p>
               <Link
                 href="/booking"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-white text-ink font-semibold rounded-lg hover:bg-white/90 transition-colors"

@@ -13,16 +13,24 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <img
-              src="/trendmydrive-logo.webp"
-              alt={brand.name}
-              className="h-20 w-auto mb-6"
-              loading="lazy"
-            />
+            <span className="font-display text-3xl sm:text-4xl font-bold text-white tracking-tight logo-letters block mb-2" aria-label={brand.name}>
+              {"TrendMyDrive".split("").map((char, i) => (
+                <span
+                  key={i}
+                  className="logo-letter inline-block"
+                  style={{ animationDelay: `${i * 0.15}s` }}
+                >
+                  {char}
+                </span>
+              ))}
+            </span>
+            <p className="text-[9px] font-medium text-white tracking-[0.25em] uppercase block mb-6">
+              Premium Chauffeur Service
+            </p>
             <p className="text-sm text-ash leading-relaxed mb-6">
               {t("tagline")}
             </p>
-            <p className="text-xs text-stone">{t("availability")}</p>
+            <p className="text-xs text-white">{t("availability")}</p>
           </div>
 
           {/* Fleet */}
