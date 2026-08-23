@@ -62,7 +62,15 @@
     "highlight": "Fuhrpark",
     "description": "Von eleganten Limousinen bis zu geräumigen Bussen — wählen Sie das richtige Fahrzeug für jeden Anlass. Alle Fahrzeuge sind premium ausgestattet und einwandfrei gepflegt.",
     "passengers": "Passagiere",
-    "luggage": "Gepäck"
+    "luggage": "Gepäck",
+    "sClassCategory": "First Class Limousine",
+    "sClassDesc": "Der Gipfel des Chauffeur-Luxus. Geräumige Rückbank, Exekutivsitze und flüsterleise Fahrt für Führungskräfte und VIPs.",
+    "eClassCategory": "Business Class Limousine",
+    "eClassDesc": "Verfeinertes Geschäftsreisen. Elegant, komfortabel und effizient — die ideale Wahl für Flughafentransfers und Geschäftsreisen.",
+    "vClassCategory": "Business Van",
+    "vClassDesc": "Geräumiger Van für Gruppen und Familien. Premium-Interieur mit großzügigem Beinraum und Gepäckplatz für bis zu sieben Passagiere.",
+    "viewDetails": "Details ansehen",
+    "bookNow": "Jetzt buchen"
   },
   "Services": {
     "badge": "Was wir bieten",

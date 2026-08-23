@@ -62,7 +62,15 @@
     "highlight": "车队",
     "description": "从优雅的豪华轿车到宽敞的大巴 — 为任何场合选择合适的车辆。所有车辆均配备高端设施并保持完美维护。",
     "passengers": "乘客",
-    "luggage": "行李"
+    "luggage": "行李",
+    "sClassCategory": "头等豪华轿车",
+    "sClassDesc": "司机豪华服务的巅峰。宽敞的后排座舱、行政座椅，为高管和贵宾提供静谧无声的乘坐体验。",
+    "eClassCategory": "商务豪华轿车",
+    "eClassDesc": "精致的商务出行。优雅、舒适、高效 — 机场接送和商务旅程的理想之选。",
+    "vClassCategory": "商务面包车",
+    "vClassDesc": "适合团队和家庭的宽敞面包车。高端内饰，腿部空间和行李空间充足，最多可容纳七位乘客。",
+    "viewDetails": "查看详情",
+    "bookNow": "立即预订"
   },
   "Services": {
     "badge": "我们提供的服务",

@@ -62,7 +62,15 @@
     "highlight": "fleet",
     "description": "From elegant limousines to spacious coaches — choose the right vehicle for any occasion. All vehicles are premium equipped and impeccably maintained.",
     "passengers": "Passengers",
-    "luggage": "Luggage"
+    "luggage": "Luggage",
+    "sClassCategory": "First Class Limousine",
+    "sClassDesc": "The pinnacle of chauffeur luxury. Spacious rear cabin, executive seating, and whisper-quiet ride for executives and VIPs.",
+    "eClassCategory": "Business Class Limousine",
+    "eClassDesc": "Refined business travel. Elegant, comfortable, and efficient — the ideal choice for airport transfers and corporate journeys.",
+    "vClassCategory": "Business Van",
+    "vClassDesc": "Spacious van for groups and families. Premium interior with ample legroom and luggage space for up to seven passengers.",
+    "viewDetails": "View details",
+    "bookNow": "Book now"
   },
   "Services": {
     "badge": "What we offer",

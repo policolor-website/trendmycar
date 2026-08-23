@@ -62,7 +62,15 @@
     "highlight": "flotte",
     "description": "Des limousines élégantes aux autocars spacieux — choisissez le véhicule adapté à chaque occasion. Tous nos véhicules sont équipés premium et parfaitement entretenus.",
     "passengers": "Passagers",
-    "luggage": "Bagages"
+    "luggage": "Bagages",
+    "sClassCategory": "Limousine Première Classe",
+    "sClassDesc": "L'aboutissement du luxe avec chauffeur. Cabine arrière spacieuse, sièges exécutifs et trajet silencieux pour les dirigeants et les VIP.",
+    "eClassCategory": "Limousine Classe Affaires",
+    "eClassDesc": "Voyage d'affaires raffiné. Élégant, confortable et efficace — le choix idéal pour les transferts aéroport et les trajets d'entreprise.",
+    "vClassCategory": "Van Classe Affaires",
+    "vClassDesc": "Van spacieux pour les groupes et les familles. Intérieur premium avec amplement d'espace pour les jambes et les bagages pour jusqu'à sept passagers.",
+    "viewDetails": "Voir les détails",
+    "bookNow": "Réserver"
   },
   "Services": {
     "badge": "Ce que nous offrons",

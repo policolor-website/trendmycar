@@ -62,7 +62,15 @@
     "highlight": "flotta",
     "description": "Da eleganti limousine a pullman spaziosi — scegli il veicolo giusto per ogni occasione. Tutti i veicoli sono dotati di dotazioni premium e mantenuti in modo impeccabile.",
     "passengers": "Passeggeri",
-    "luggage": "Bagagli"
+    "luggage": "Bagagli",
+    "sClassCategory": "Limousine Prima Classe",
+    "sClassDesc": "Il massimo del lusso con autista. Abitacolo posteriore spazioso, sedili executive e viaggio silenzioso per dirigenti e VIP.",
+    "eClassCategory": "Limousine Classe Business",
+    "eClassDesc": "Viaggi business raffinati. Elegante, confortevole ed efficiente — la scelta ideale per transfer aeroporto e viaggi aziendali.",
+    "vClassCategory": "Van Business",
+    "vClassDesc": "Van spazioso per gruppi e famiglie. Interno premium con ampio spazio per le gambe e bagagli per fino a sette passeggeri.",
+    "viewDetails": "Vedi dettagli",
+    "bookNow": "Prenota ora"
   },
   "Services": {
     "badge": "Cosa offriamo",
