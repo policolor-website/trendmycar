@@ -1027,6 +1027,103 @@
           "answer": "后备箱可容纳3个大行李箱，非常适合长途旅行、机场接送或长期商务出差。"
         }
       ]
+    },
+    "eClass": {
+      "badge": "商务豪华轿车",
+      "title": "Mercedes",
+      "highlight": "E-Class",
+      "description": "梅赛德斯 E-Class 是商务出行的标杆 — 优雅与效率在此完美交融。步入后排座舱，发现一个精致的私密空间：电动可调座椅支持最高36°靠背倾角，舒适头枕配备颈枕。MBUX 超大屏幕横跨仪表台，配备14.4英寸中央显示屏，而64色主动氛围灯随您的音乐律动闪烁。Burmester 4D 环绕音响系统搭配 Dolby Atmos 技术，让您沉浸在丰富而层次分明的音效中。隔音玻璃使座舱保持静谧，全景滑动天窗让自然光洒满车内。四区空调控制、无线充电和电动后排遮阳帘将舒适置于指尖。无论是机场接送、商务会议还是城际旅程：E-Class 毫无妥协地呈现精致奢华。",
+      "featuresTitle": "卓越之处",
+      "features": [
+        "电动可调后排座椅，支持36°靠背倾角",
+        "舒适头枕，配备颈枕",
+        "Burmester 4D 环绕音响系统，搭载 Dolby Atmos（17个扬声器，4个激振器，730W）",
+        "64色主动氛围灯，配备音效可视化功能",
+        "MBUX 超大屏幕，配备14.4英寸中央显示屏",
+        "隔音玻璃，打造静谧座舱",
+        "全景滑动天窗，配备电动遮阳帘",
+        "THERMOTRONIC 四区自动空调",
+        "后排无线充电和 USB-C 接口",
+        "后排车窗和挡风玻璃电动遮阳帘",
+        "前排座椅加热和通风",
+        "DIGITAL LIGHT 大灯，超过100万像素"
+      ],
+      "specsTitle": "技术规格",
+      "specs": [
+        {
+          "label": "车辆级别",
+          "value": "Business Class Limousine"
+        },
+        {
+          "label": "乘客",
+          "value": "3"
+        },
+        {
+          "label": "行李",
+          "value": "3 large suitcases"
+        },
+        {
+          "label": "轴距",
+          "value": "2,961 mm"
+        },
+        {
+          "label": "车身长度",
+          "value": "4,951 mm"
+        },
+        {
+          "label": "内饰",
+          "value": "Nappa leather, open-pore wood trim"
+        },
+        {
+          "label": "音响系统",
+          "value": "Burmester 4D (730W, Dolby Atmos)"
+        },
+        {
+          "label": "空调",
+          "value": "THERMOTRONIC 4-zone"
+        },
+        {
+          "label": "后排座椅",
+          "value": "Electric, 36° recline, comfort headrests"
+        },
+        {
+          "label": "显示屏",
+          "value": "MBUX Superscreen 14.4-inch"
+        }
+      ],
+      "faqTitle": "问答",
+      "faq": [
+        {
+          "question": "E-Class 可以容纳多少名乘客？",
+          "answer": "E-Class 后排可舒适乘坐最多3名乘客，是商务出行、机场接送或行政旅程的完美之选。"
+        },
+        {
+          "question": "E-Class 和 S-Class 有什么区别？",
+          "answer": "E-Class 是我们的商务豪华轿车 — 精致、高效、优雅。S-Class 是我们的头等豪华轿车，配备更多奢华功能，如行政躺椅座椅、Burmester 高端 4D（1,750W）和司机套装。两者均提供高端舒适体验；S-Class 是奢华的极致之选。"
+        },
+        {
+          "question": "E-Class 配备按摩座椅吗？",
+          "answer": "E-Class 前排座椅配备加热和通风功能以及腰部支撑。后排座椅支持电动调节，36°靠背倾角，并配备带颈枕的舒适头枕，带来最大程度的放松。"
+        },
+        {
+          "question": "配备了什么音响系统？",
+          "answer": "Burmester 4D 环绕音响系统配备17个扬声器、4个激振器和730瓦功率，搭载 Dolby Atmos 技术，通过座椅振动带来沉浸式音频体验。"
+        },
+        {
+          "question": "E-Class 适合机场接送吗？",
+          "answer": "当然。E-Class 是我们最受欢迎的机场接送车辆之一，提供航班追踪、迎宾服务、隔音玻璃带来的静谧乘坐体验，以及可容纳3个大行李箱的充足行李空间。"
+        },
+        {
+          "question": "我可以在旅途中工作吗？",
+          "answer": "可以。E-Class 配备 MBUX 超大屏幕、无线充电、USB-C 接口和可选的前排乘客显示屏，可作为一个移动办公室。静谧的座舱和氛围灯为您创造专注工作的完美环境。"
+        },
+        {
+          "question": "E-Class 可以装载多少行李？",
+          "answer": "后备箱可容纳3个大行李箱，非常适合商务出差、机场接送或周末短途旅行。"
+        }
+      ],
+      "ctaTitle": "准备好体验商务舱了吗？",
+      "ctaDescription": "为您的下一次旅程预订梅赛德斯 E-Class，以精致奢华与舒适抵达目的地。"
     }
   }
 }

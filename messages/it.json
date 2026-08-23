@@ -1027,6 +1027,103 @@
           "answer": "Il bagagliaio accoglie 3 grandi valigie, perfetto per viaggi a lunga distanza, transfer aeroporto o viaggi business prolungati."
         }
       ]
+    },
+    "eClass": {
+      "badge": "Limousine Classe Business",
+      "title": "Mercedes",
+      "highlight": "E-Class",
+      "description": "La Mercedes E-Class è il punto di riferimento per i viaggi business — dove eleganza ed efficienza si incontrano in perfetta armonia. Entra nell'abitacolo posteriore e scopri un santuario raffinato: sedili regolabili elettricamente con reclinazione fino a 36° e poggiatesta comfort con cuscini per il collo. Il MBUX Superscreen attraversa il cruscotto con un display centrale da 14,4 pollici, mentre l'illuminazione ambientale attiva in 64 colori pulsa in sincronia con la tua musica. Un sistema audio surround Burmester 4D con Dolby Atmos ti avvolge in un audio ricco e stratificato. I vetri acustici mantengono l'abitacolo silenzioso e il tetto panoramico scorrevole inonda l'interno di luce naturale. Climatizzazione a 4 zone, ricarica wireless e tendine posteriori elettriche mettono il comfort a portata di mano. Che si tratti di un transfer aeroporto, una riunione business o un viaggio da città a città: la E-Class offre lusso raffinato senza compromessi.",
+      "featuresTitle": "Cosa la rende eccezionale",
+      "features": [
+        "Sedili posteriori regolabili elettricamente con reclinazione di 36°",
+        "Poggiatesta comfort con cuscini per il collo",
+        "Sistema audio surround Burmester 4D con Dolby Atmos (17 altoparlanti, 4 eccitatori, 730W)",
+        "Illuminazione ambientale attiva con 64 colori e visualizzazione del suono",
+        "MBUX Superscreen con display centrale da 14,4 pollici",
+        "Vetri acustici per un abitacolo silenzioso",
+        "Tetto panoramico scorrevole con tendina parasole elettrica",
+        "Climatizzazione automatica THERMOTRONIC a 4 zone",
+        "Ricarica wireless e porte USB-C nella parte posteriore",
+        "Tendine elettriche per finestrini posteriori e parabrezza",
+        "Sedili anteriori riscaldati e ventilati",
+        "Fari DIGITAL LIGHT con oltre 1 milione di pixel"
+      ],
+      "specsTitle": "Specifiche tecniche",
+      "specs": [
+        {
+          "label": "Classe veicolo",
+          "value": "Business Class Limousine"
+        },
+        {
+          "label": "Passeggeri",
+          "value": "3"
+        },
+        {
+          "label": "Bagagli",
+          "value": "3 grandi valigie"
+        },
+        {
+          "label": "Passo",
+          "value": "2,961 mm"
+        },
+        {
+          "label": "Lunghezza",
+          "value": "4,951 mm"
+        },
+        {
+          "label": "Interno",
+          "value": "Pelle Nappa, rifiniture in legno poro aperto"
+        },
+        {
+          "label": "Sistema audio",
+          "value": "Burmester 4D (730W, Dolby Atmos)"
+        },
+        {
+          "label": "Climatizzazione",
+          "value": "THERMOTRONIC 4-zone"
+        },
+        {
+          "label": "Sedili posteriori",
+          "value": "Elettrici, reclinazione 36°, poggiatesta comfort"
+        },
+        {
+          "label": "Display",
+          "value": "MBUX Superscreen 14,4 pollici"
+        }
+      ],
+      "faqTitle": "Domande & risposte",
+      "faq": [
+        {
+          "question": "Quanti passeggeri può accogliere la E-Class?",
+          "answer": "La E-Class accoglie comodamente fino a 3 passeggeri nella parte posteriore, rendendola la scelta perfetta per viaggi business, transfer aeroporto o viaggi executive."
+        },
+        {
+          "question": "Qual è la differenza tra E-Class e S-Class?",
+          "answer": "La E-Class è la nostra Limousine Classe Business — raffinata, efficiente ed elegante. La S-Class è la nostra Limousine Prima Classe con caratteristiche di lusso aggiuntive come sedili reclinabili executive, Burmester High-End 4D (1.750W) e il Chauffeur Package. Entrambe offrono comfort premium; la S-Class è il massimo del lusso."
+        },
+        {
+          "question": "La E-Class ha sedili con massaggio?",
+          "answer": "La E-Class offre sedili anteriori riscaldati e ventilati con supporto lombare. I sedili posteriori dispongono di regolazione elettrica con reclinazione di 36° e poggiatesta comfort con cuscini per il collo per il massimo relax."
+        },
+        {
+          "question": "Quale sistema audio è incluso?",
+          "answer": "Il sistema audio surround Burmester 4D dispone di 17 altoparlanti, 4 eccitatori e 730 watt con tecnologia Dolby Atmos, offrendo un'esperienza audio immersiva con vibrazioni dei sedili."
+        },
+        {
+          "question": "La E-Class è adatta per i transfer aeroporto?",
+          "answer": "Assolutamente. La E-Class è uno dei nostri veicoli più popolari per i transfer aeroporto, con monitoraggio dei voli, servizio meet & greet, vetri acustici per un viaggio silenzioso e ampio spazio bagagli per 3 grandi valigie."
+        },
+        {
+          "question": "Posso lavorare durante il viaggio?",
+          "answer": "Sì. La E-Class funge da ufficio mobile con il MBUX Superscreen, ricarica wireless, porte USB-C e un display opzionale per il passeggero anteriore. L'abitacolo silenzioso e l'illuminazione ambientale creano l'ambiente perfetto per lavorare con concentrazione."
+        },
+        {
+          "question": "Quanti bagagli può contenere la E-Class?",
+          "answer": "Il bagagliaio accoglie 3 grandi valigie, ideale per viaggi business, transfer aeroporto o fughe weekend."
+        }
+      ],
+      "ctaTitle": "Pronto a vivere la classe business?",
+      "ctaDescription": "Prenota la Mercedes E-Class per il tuo prossimo viaggio e arriva con lusso e comfort raffinati."
     }
   }
 }

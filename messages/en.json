@@ -1027,6 +1027,103 @@
           "answer": "The trunk accommodates 3 large suitcases, perfect for long-distance travel, airport transfers, or extended business trips."
         }
       ]
+    },
+    "eClass": {
+      "badge": "Business Class Limousine",
+      "title": "Mercedes",
+      "highlight": "E-Class",
+      "description": "The Mercedes E-Class is the benchmark for business travel — where elegance meets efficiency in perfect harmony. Step into the rear cabin and discover a refined sanctuary: electrically adjustable seats with up to 36° recline and comfort headrests with neck pillows. The MBUX Superscreen spans the dashboard with a 14.4-inch central display, while active ambient lighting in 64 colors pulses in sync with your music. A Burmester 4D surround sound system with Dolby Atmos immerses you in rich, layered audio. Acoustic glass keeps the cabin whisper-quiet, and the panoramic sliding sunroof floods the interior with natural light. Four-zone climate control, wireless charging, and electric rear blinds put comfort at your fingertips. Whether it's an airport transfer, a business meeting, or a city-to-city journey: the E-Class delivers refined luxury without compromise.",
+      "featuresTitle": "What makes it exceptional",
+      "features": [
+        "Electrically adjustable rear seats with 36° recline",
+        "Comfort headrests with neck pillows",
+        "Burmester 4D surround sound system with Dolby Atmos (17 speakers, 4 exciters, 730W)",
+        "Active ambient lighting with 64 colors and sound visualisation",
+        "MBUX Superscreen with 14.4-inch central display",
+        "Acoustic glass for whisper-quiet cabin",
+        "Panoramic sliding sunroof with electric sunblind",
+        "THERMOTRONIC 4-zone automatic climate control",
+        "Wireless charging and USB-C ports in rear",
+        "Electric blinds for rear windows and windscreen",
+        "Heated and ventilated front seats",
+        "DIGITAL LIGHT headlights with over 1 million pixels"
+      ],
+      "specsTitle": "Technical specifications",
+      "specs": [
+        {
+          "label": "Vehicle class",
+          "value": "Business Class Limousine"
+        },
+        {
+          "label": "Passengers",
+          "value": "3"
+        },
+        {
+          "label": "Luggage",
+          "value": "3 large suitcases"
+        },
+        {
+          "label": "Wheelbase",
+          "value": "2,961 mm"
+        },
+        {
+          "label": "Length",
+          "value": "4,951 mm"
+        },
+        {
+          "label": "Interior",
+          "value": "Nappa leather, open-pore wood trim"
+        },
+        {
+          "label": "Sound system",
+          "value": "Burmester 4D (730W, Dolby Atmos)"
+        },
+        {
+          "label": "Climate",
+          "value": "THERMOTRONIC 4-zone"
+        },
+        {
+          "label": "Rear seats",
+          "value": "Electric, 36° recline, comfort headrests"
+        },
+        {
+          "label": "Display",
+          "value": "MBUX Superscreen 14.4-inch"
+        }
+      ],
+      "faqTitle": "Questions & answers",
+      "faq": [
+        {
+          "question": "How many passengers can the E-Class accommodate?",
+          "answer": "The E-Class comfortably seats up to 3 passengers in the rear, making it the perfect choice for business travel, airport transfers, or executive journeys."
+        },
+        {
+          "question": "What is the difference between E-Class and S-Class?",
+          "answer": "The E-Class is our Business Class Limousine — refined, efficient, and elegant. The S-Class is our First Class Limousine with additional luxury features like executive reclining seats, Burmester High-End 4D (1,750W), and the Chauffeur Package. Both offer premium comfort; the S-Class is the ultimate in luxury."
+        },
+        {
+          "question": "Does the E-Class have massage seats?",
+          "answer": "The E-Class offers heated and ventilated front seats with lumbar support. The rear seats feature electric adjustment with 36° recline and comfort headrests with neck pillows for maximum relaxation."
+        },
+        {
+          "question": "What sound system is included?",
+          "answer": "The Burmester 4D surround sound system features 17 speakers, 4 exciters, and 730 watts with Dolby Atmos technology, delivering an immersive audio experience with seat vibrations."
+        },
+        {
+          "question": "Is the E-Class suitable for airport transfers?",
+          "answer": "Absolutely. The E-Class is one of our most popular airport transfer vehicles, offering flight tracking, meet & greet service, acoustic glass for a quiet ride, and ample luggage space for 3 large suitcases."
+        },
+        {
+          "question": "Can I work during the journey?",
+          "answer": "Yes. The E-Class functions as a mobile office with the MBUX Superscreen, wireless charging, USB-C ports, and an optional front passenger display. The quiet cabin and ambient lighting create the perfect environment for focused work."
+        },
+        {
+          "question": "How much luggage can the E-Class hold?",
+          "answer": "The trunk accommodates 3 large suitcases, ideal for business trips, airport transfers, or weekend getaways."
+        }
+      ],
+      "ctaTitle": "Ready to experience business class?",
+      "ctaDescription": "Book the Mercedes E-Class for your next journey and arrive in refined luxury and comfort."
     }
   }
 }
