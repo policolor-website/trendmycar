@@ -76,7 +76,7 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-3">
                 <Clock size={16} className="text-white/50 mt-0.5 shrink-0" />
-                <p className="text-sm text-ash">{brand.program}</p>
+                <p className="text-sm text-ash">{t("availability")}</p>
               </div>
             </div>
 

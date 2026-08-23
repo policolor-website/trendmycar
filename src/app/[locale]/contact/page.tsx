@@ -17,6 +17,7 @@ export default function ContactPage() {
   const t = useTranslations("Contact");
   const tNav = useTranslations("Nav");
   const tFleet = useTranslations("Fleet");
+  const tFooter = useTranslations("Footer");
   const [submitted, setSubmitted] = useState(false);
 
   return (
@@ -99,7 +100,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-display text-sm font-bold text-cream mb-1">{t("hoursLabel")}</h3>
-                      <p className="text-sm text-ash">{brand.program}</p>
+                      <p className="text-sm text-ash">{tFooter("availability")}</p>
                     </div>
                   </div>
                 </div>
