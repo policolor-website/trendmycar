@@ -18,7 +18,7 @@ export default function Footer() {
                 <span
                   key={i}
                   className="logo-letter inline-block"
-                  style={{ animationDelay: `${i * 0.15}s` }}
+                  style={{ animationDelay: `${i * 0.2}s` }}
                 >
                   {char}
                 </span>

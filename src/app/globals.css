@@ -157,7 +157,7 @@ body {
   );
   filter: blur(1px);
   transform: skewX(-15deg);
-  animation: logo-shine 5s ease-in-out infinite;
+  animation: logo-shine 5s ease-in-out 2.8s infinite;
   pointer-events: none;
   z-index: 20;
 }
@@ -170,21 +170,21 @@ body {
   100% { left: 250%; opacity: 0; }
 }
 
-/* Logo letters — fade-in + slide-up on load */
+/* Logo letters — blur reveal on load */
 .logo-letters {
   text-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
 }
 
 .logo-letter {
   opacity: 0;
-  transform: translateY(10px);
-  animation: logo-letter-in 0.15s ease-out forwards;
+  filter: blur(8px);
+  animation: logo-letter-in 0.4s ease-out forwards;
 }
 
 @keyframes logo-letter-in {
   to {
     opacity: 1;
-    transform: translateY(0);
+    filter: blur(0);
   }
 }
 

@@ -106,13 +106,13 @@ export default function Header() {
               <span
                 key={i}
                 className="logo-letter inline-block"
-                style={{ animationDelay: `${i * 0.15}s` }}
+                style={{ animationDelay: `${i * 0.2}s` }}
               >
                 {char}
               </span>
             ))}
           </span>
-          <span className="text-[8px] sm:text-[9px] tracking-[0.25em] uppercase text-white mt-1 relative z-10 logo-tagline" style={{ animationDelay: `${12 * 0.15 + 0.2}s` }}>
+          <span className="text-[8px] sm:text-[9px] tracking-[0.25em] uppercase text-white mt-1 relative z-10 logo-tagline" style={{ animationDelay: `2.8s` }}>
             Premium Chauffeur Service
           </span>
           <span className="logo-shine" />
