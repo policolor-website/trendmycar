@@ -153,7 +153,7 @@ export default function CheckoutPage() {
         router.push("/checkout?status=confirmed");
       }
     } catch (err: any) {
-      setError(err.message || "Something went wrong. Please try again.");
+      setError(err.message || t("errorGeneric"));
     } finally {
       setLoading(false);
     }
@@ -345,14 +345,14 @@ export default function CheckoutPage() {
                 {/* Full name — guest + register (not for logged in) */}
                 {!user && (mode === "guest" || mode === "register") && (
                   <div>
-                    <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Full name</label>
+                    <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{t("fullName")}</label>
                     <div className="relative">
                       <User size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30" />
                       <input
                         type="text"
                         value={form.fullName}
                         onChange={(e) => setForm({ ...form, fullName: e.target.value })}
-                        placeholder="John Doe"
+                        placeholder={t("fullNamePlaceholder")}
                         className="w-full bg-ink/50 border border-white/10 rounded-lg pl-10 pr-4 py-3 text-white text-sm placeholder:text-stone focus:border-electric/50 focus:outline-none transition-colors"
                       />
                     </div>
@@ -362,14 +362,14 @@ export default function CheckoutPage() {
                 {/* Email — all modes (not for logged in) */}
                 {!user && (
                   <div>
-                    <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Email</label>
+                    <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{t("emailLabel")}</label>
                     <div className="relative">
                       <Mail size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30" />
                       <input
                         type="email"
                         value={form.email}
                         onChange={(e) => setForm({ ...form, email: e.target.value })}
-                        placeholder="john@example.com"
+                        placeholder={t("emailPlaceholder")}
                         className="w-full bg-ink/50 border border-white/10 rounded-lg pl-10 pr-4 py-3 text-white text-sm placeholder:text-stone focus:border-electric/50 focus:outline-none transition-colors"
                       />
                     </div>
@@ -379,14 +379,14 @@ export default function CheckoutPage() {
                 {/* Phone — guest + register (not for logged in) */}
                 {!user && (mode === "guest" || mode === "register") && (
                   <div>
-                    <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Phone</label>
+                    <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{t("phoneLabel")}</label>
                     <div className="relative">
                       <Phone size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30" />
                       <input
                         type="tel"
                         value={form.phone}
                         onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                        placeholder="+49 170 1234567"
+                        placeholder={t("phonePlaceholder")}
                         className="w-full bg-ink/50 border border-white/10 rounded-lg pl-10 pr-4 py-3 text-white text-sm placeholder:text-stone focus:border-electric/50 focus:outline-none transition-colors"
                       />
                     </div>
@@ -396,7 +396,7 @@ export default function CheckoutPage() {
                 {/* Password — login + register (not for logged in) */}
                 {!user && mode !== "guest" && (
                   <div>
-                    <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Password</label>
+                    <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{t("passwordLabel")}</label>
                     <div className="relative">
                       <Lock size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30" />
                       <input

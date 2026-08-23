@@ -22,7 +22,8 @@
     "serviceEvent": "Transfer Eventi",
     "serviceFair": "Transfer Fiere",
     "servicePrices": "Prezzi & Tariffe",
-    "allServices": "Tutti i servizi"
+    "allServices": "Tutti i servizi",
+    "bookByPhone": "Prenota per telefono"
   },
   "Hero": {
     "badge": "Transfer aeroporto 24 ore - Autisti professionisti",
@@ -45,7 +46,15 @@
     "reserveNow": "Prenota ora",
     "errorOutsideGermany": "Il nostro servizio autista opera solo in Germania. Seleziona indirizzi di ritiro e destinazione in Germania.",
     "errorGeneric": "Calcolo del prezzo fallito. Riprova.",
-    "errorMissingFields": "Inserisci il luogo di ritiro e la destinazione."
+    "errorMissingFields": "Inserisci il luogo di ritiro e la destinazione.",
+    "fixedPrice": "Prezzo fisso",
+    "distance": "Distanza",
+    "duration": "Durata",
+    "rate": "Tariffa",
+    "nightSurcharge": "Sovrapprezzo notturno",
+    "airportFee": "Tariffa aeroportuale",
+    "extraInfoLabel": "Informazioni aggiuntive — dettagli di ritiro",
+    "extraInfoPlaceholder": "Numero del gate, terminal, ingresso dell'edificio, dettagli del punto di incontro..."
   },
   "Fleet": {
     "badge": "I nostri veicoli",
@@ -62,7 +71,7 @@
     "description": "Ci specializziamo in servizio autista di prima classe — focalizzato su comfort, puntualità e professionalità.",
     "learnMore": "Scopri di più",
     "airportTitle": "Transfer Aeroporto",
-    "airportDesc": "Transfer fluidi e puntuali da e per tutti i principali aeroporti europei.",
+    "airportDesc": "Transfer fluidi e puntuali verso e da tutti i principali aeroporti tedeschi.",
     "chauffeurTitle": "Servizio Autista",
     "chauffeurDesc": "Viaggia con comfort ed eleganza nella nostra flotta di veicoli premium con autisti professionisti.",
     "dayToursTitle": "Gite Giornaliere",
@@ -89,7 +98,42 @@
     "highlight": "fiducia",
     "faqBadge": "FAQ",
     "faqTitle": "Domande & risposte",
-    "featuresTitle": "Cosa ottieni"
+    "featuresTitle": "Cosa ottieni",
+    "feature1Title": "Viaggio sicuro",
+    "feature1Desc": "Viaggia con tranquillità — ogni viaggio è pianificato professionalmente, eseguito con cura e completamente assicurato dall'inizio alla fine.",
+    "feature2Title": "Autista professionista",
+    "feature2Desc": "Il tuo autista personale arriva vestito in modo impeccabile con abito scuro, camicia e cravatta. Sempre professionista, sempre puntuale.",
+    "feature3Title": "Monitoraggio volo",
+    "feature3Desc": "Monitoriamo il tuo volo in tempo reale. Arrivo anticipato o ritardo — ci adattiamo automaticamente e siamo lì quando hai bisogno di noi.",
+    "featuresSubtitle": "Il tuo comfort e la tua sicurezza,",
+    "featuresHighlight": "ridefiniti",
+    "featuresDescription": "In TrendMyDrive, ridefiniamo i viaggi aeroportuali in tutta Germania — con un servizio autista di prima classe basato su comfort, affidabilità ed eleganza. Che tu stia arrivando o partendo, garantiamo un viaggio fluido e senza stress dalla tua porta a qualsiasi grande aeroporto tedesco — e ritorno.",
+    "faq": [
+      {
+        "q": "Quali zone coprite?",
+        "a": "Offriamo servizi di autista e transfer aeroporto in tutta Germania, inclusi Francoforte, Monaco, Berlino e altro."
+      },
+      {
+        "q": "Quali tipi di veicoli offrite?",
+        "a": "Mercedes E-Class e S-Class per fino a tre passeggeri, V-Class per fino a sei persone con bagagli."
+      },
+      {
+        "q": "I vostri servizi sono disponibili 24/7?",
+        "a": "Sì, siamo disponibili 24/7. Che si tratti di un transfer aeroporto mattutino o di un ritiro a tarda notte — i nostri autisti sono pronti in qualsiasi momento."
+      },
+      {
+        "q": "Posso prenotare a breve termine?",
+        "a": "Sì, le prenotazioni a breve termine sono possibili a seconda della disponibilità dei veicoli. Per richieste urgenti, è meglio chiamarci direttamente."
+      },
+      {
+        "q": "Offrite il Meet & Greet all'aeroporto?",
+        "a": "Certo. Il tuo autista ti accoglie nel terminal con un cartello con il tuo nome, ti aiuta con i bagagli e ti accompagna al veicolo — per un'esperienza fluida e senza pensieri."
+      },
+      {
+        "q": "Monitorate gli arrivi e i ritardi dei voli?",
+        "a": "Sì. Monitoriamo il tuo volo in tempo reale per garantire ritiri puntuali — anche se il tuo volo arriva prima o dopo il previsto."
+      }
+    ]
   },
   "CTA": {
     "title": "Prenota il tuo autista",
@@ -100,7 +144,8 @@
     "badge": "Percorsi popolari",
     "title": "Percorsi che percorriamo",
     "highlight": "regolarmente",
-    "description": "Da Monaco a tutti i principali aeroporti e città in Germania e nei paesi limitrofi."
+    "description": "Da Monaco a tutti i principali aeroporti e città in Germania e nei paesi limitrofi.",
+    "disclaimer": "I tempi di percorrenza sono approssimativi e possono variare in base al traffico."
   },
   "FinalCTA": {
     "title": "Pronto per il tuo viaggio?",
@@ -125,7 +170,10 @@
     "noAccount": "Non hai un account?",
     "haveAccount": "Hai già un account?",
     "loginFailed": "Accesso fallito",
-    "registerFailed": "Registrazione fallita"
+    "registerFailed": "Registrazione fallita",
+    "emailPlaceholder": "tu@esempio.com",
+    "fullNamePlaceholder": "Mario Rossi",
+    "phonePlaceholder": "+49 170 1234567"
   },
   "Checkout": {
     "title": "Checkout",
@@ -155,7 +203,15 @@
     "fillNamePhone": "Si prega di inserire nome completo e telefono.",
     "securePayment": "Pagamento sicuro con crittografia SSL",
     "freeCancellation": "Cancellazione gratuita fino a 24h prima del ritiro",
-    "support": "Assistenza clienti 24/7"
+    "support": "Assistenza clienti 24/7",
+    "fullName": "Nome completo",
+    "fullNamePlaceholder": "Mario Rossi",
+    "emailLabel": "Email",
+    "emailPlaceholder": "mario@esempio.com",
+    "phoneLabel": "Telefono",
+    "phonePlaceholder": "+49 170 1234567",
+    "passwordLabel": "Password",
+    "errorGeneric": "Qualcosa è andato storto. Riprova."
   },
   "Dashboard": {
     "title": "Dashboard",
@@ -198,7 +254,7 @@
     "badge": "Chi siamo",
     "title": "TrendMyDrive — Servizio autista premium dal 2020",
     "subtitle": "Il tuo comfort e la tua sicurezza sono la nostra priorità",
-    "intro": "In TrendMyDrive, ridefiniamo i viaggi aeroportuali in tutta Monaco, Germania ed Europa — con un servizio autista di prima classe focalizzato su comfort, affidabilità ed eleganza. Che si tratti di arrivi o partenze: la nostra promessa è un viaggio fluido e senza stress dalla tua porta a qualsiasi grande aeroporto europeo — e ritorno.",
+    "intro": "In TrendMyDrive, ridefiniamo i viaggi aeroportuali in tutta Monaco e Germania — con un servizio autista di prima classe focalizzato su comfort, affidabilità ed eleganza. Che si tratti di arrivi o partenze: la nostra promessa è un viaggio fluido e senza stress dalla tua porta a qualsiasi grande aeroporto tedesco — e ritorno.",
     "statsPassengers": "Passeggeri soddisfatti",
     "statsRating": "Valutazione",
     "statsRatingDesc": "I clienti amano l'esperienza di viaggio",
@@ -208,7 +264,7 @@
     "whyTitle": "Perché i clienti rimangono con noi",
     "whyText": "Abbiamo iniziato nel 2020 con solo pochi veicoli e siamo cresciuti grazie alle raccomandazioni, non alla pubblicità. Il motivo è semplice: l'auto è lì quando dovrebbe esserlo. Una volta che provi quell'affidabilità, ci chiami di nuovo la volta successiva.",
     "journeyTitle": "Dove il comfort incontra la classe",
-    "journeyText": "Viaggia con fiducia e comfort. TrendMyDrive offre un servizio autista di prima classe con autisti professionisti, veicoli di lusso e transfer senza soluzione di continuità verso i principali aeroporti e destinazioni in tutta Germania ed Europa — in ogni chilometro del viaggio.",
+    "journeyText": "Viaggia con fiducia e comfort. TrendMyDrive offre un servizio autista di prima classe con autisti professionisti, veicoli di lusso e transfer senza soluzione di continuità verso i principali aeroporti e destinazioni in tutta Germania — in ogni chilometro del viaggio.",
     "learnMore": "Scopri di più",
     "faqBadge": "FAQ",
     "faqTitle": "Domande & risposte",
@@ -274,6 +330,50 @@
     "sent": "Messaggio inviato!",
     "sentDesc": "Il nostro team ti contatterà il prima possibile."
   },
+  "Testimonials": {
+    "badge": "Recensioni",
+    "title": "Cosa dicono i nostri",
+    "highlight": "clienti",
+    "description": "Migliaia di passeggeri soddisfatti si fidano di noi — per transfer aeroporto, viaggi business e occasioni speciali.",
+    "items": [
+      {
+        "initials": "FP",
+        "name": "Fruzsina P.",
+        "location": "Monaco",
+        "text": "Servizio estremamente affidabile! Abbiamo prenotato il viaggio di andata e ritorno — sempre puntuali, super cortesi e disponibili. Monitorano quando il tuo volo atterra e ti vengono a prendere direttamente agli arrivi. Useremo di nuovo il vostro servizio!"
+      },
+      {
+        "initials": "CU",
+        "name": "Clemens U.",
+        "location": "Monaco",
+        "text": "Come consulente viaggio molto in aereo e quindi guido quasi ogni settimana — e sono estremamente soddisfatto! Le auto sono sempre immacolate, per lo più limousine di alta gamma come la Mercedes S-Class."
+      },
+      {
+        "initials": "AC",
+        "name": "Angeline C.",
+        "location": "Monaco",
+        "text": "L'intero processo di prenotazione è stato altamente professionale e fluido. Il team era raggiungibile anche nelle prime ore del mattino e reattivo. Il veicolo era perfetto per i nostri numerosi bagagli."
+      },
+      {
+        "initials": "AM",
+        "name": "Andre M.",
+        "location": "Monaco",
+        "text": "Abbiamo fatto un viaggio di quattro giorni con il nostro autista. Servizio super — disponibile, puntuale, molto cortese e sempre amichevole. Ci ha lasciati direttamente in hotel e ci ha ripresi con affidabilità."
+      },
+      {
+        "initials": "SA",
+        "name": "Sarah A.",
+        "location": "Monaco",
+        "text": "Tutto quello che posso dire è: WOW. Quando verremo a Monaco, sicuramente non useremo nessun altro servizio auto — questo è certo!"
+      },
+      {
+        "initials": "GM",
+        "name": "G. M.",
+        "location": "Monaco",
+        "text": "Servizio fantastico. Puntuale, guida sicura, veicolo pulito e di prima classe. 10/10."
+      }
+    ]
+  },
   "Footer": {
     "tagline": "Servizio autista premium — transfer aeroporto 24/7 e viaggi business in tutta la Germania.",
     "fleet": "Flotta",
@@ -281,7 +381,9 @@
     "company": "Azienda",
     "contact": "Contatti",
     "about": "Chi siamo",
-    "rights": "Tutti i diritti riservati."
+    "rights": "Tutti i diritti riservati.",
+    "availability": "24/7 — Disponibili in tutta la Germania",
+    "credit": "Created & Designed by FORSITE.RO"
   },
   "ServicePages": {
     "bookNow": "Prenota ora",
@@ -295,7 +397,7 @@
       "badge": "Transfer Aeroporto",
       "title": "Aeroporto",
       "highlight": "Transfer",
-      "description": "Inizia il tuo viaggio senza stress. I nostri autisti monitorano il tuo volo in tempo reale, si adattano ai ritardi e ti aspettano all'interno del terminal con un cartello con il tuo nome. Che tu stia atterrando a Monaco, Francoforte, Berlino o in qualsiasi altro grande aeroporto europeo — il tuo autista è già lì prima ancora che tu tocchi terra. Niente code, niente lotte con i bagagli, niente contrattazioni dell'ultimo minuto con i taxi. Solo un veicolo premium che ti aspetta curbside e un autista professionista pronto a portarti a destinazione.",
+      "description": "Inizia il tuo viaggio senza stress. I nostri autisti monitorano il tuo volo in tempo reale, si adattano ai ritardi e ti aspettano dentro il terminal con un cartello con il tuo nome. Che tu stia atterrando a Monaco, Francoforte, Berlino o in qualsiasi altro grande aeroporto tedesco — il tuo autista è già lì prima ancora che tu tocchi terra. Niente code, niente lotte con i bagagli, niente contrattazioni dell'ultimo minuto con i taxi. Solo un veicolo premium che ti aspetta a bordo strada e un autista professionista pronto a portarti a destinazione.",
       "features": [
         "Monitoraggio volo in tempo reale con adeguamento automatico dei ritardi",
         "Meet & greet all'interno del terminal con cartello personalizzato con il tuo nome",

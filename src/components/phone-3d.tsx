@@ -1,11 +1,13 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { brand } from "@/lib/brand";
 
 export default function Phone3D() {
+  const tNav = useTranslations("Nav");
   const mountRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -156,7 +158,7 @@ export default function Phone3D() {
         {/* Speech bubble — centered above phone */}
         <div className="absolute top-[110px] md:top-[160px] left-1/2 -translate-x-1/2 bg-white rounded-2xl px-3 py-2 md:px-5 md:py-3 shadow-2xl z-10 animate-bubble-pop whitespace-nowrap max-w-[170px] md:max-w-none overflow-hidden">
           <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white rotate-45" />
-          <p className="font-display text-xs md:text-sm text-black font-semibold text-center">Book by Phone</p>
+          <p className="font-display text-xs md:text-sm text-black font-semibold text-center">{tNav("bookByPhone")}</p>
           <a href={`tel:${phoneLink}`} className="text-black text-sm md:text-lg font-bold block text-center pointer-events-auto hover:text-gold transition-colors">{phone}</a>
         </div>
       </div>

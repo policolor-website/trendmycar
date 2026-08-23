@@ -22,7 +22,7 @@ export default function Footer() {
             <p className="text-sm text-ash leading-relaxed mb-6">
               {t("tagline")}
             </p>
-            <p className="text-xs text-stone">24/7 — Available across Germany & Europe</p>
+            <p className="text-xs text-stone">{t("availability")}</p>
           </div>
 
           {/* Fleet */}
@@ -86,7 +86,7 @@ export default function Footer() {
               className="text-white hover:text-white/70 transition-colors"
               aria-label="FORSITE.RO — Web Design & Development"
             >
-              Created &amp; Designed by FORSITE.RO
+              {t("credit")}
             </a>
           </p>
           <div className="flex items-center gap-6">

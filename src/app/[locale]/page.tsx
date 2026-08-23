@@ -34,21 +34,9 @@ const howItWorks = [
 ];
 
 const whyUs = [
-  {
-    icon: ShieldCheck,
-    title: "Safe Travel",
-    desc: "Travel with peace of mind — every ride is professionally planned, carefully executed and fully insured from start to finish.",
-  },
-  {
-    icon: UserCheck,
-    title: "Professional Chauffeur",
-    desc: "Your personal chauffeur arrives impeccably dressed in a dark suit with shirt and tie. Always professional, always punctual.",
-  },
-  {
-    icon: Radar,
-    title: "Flight Monitoring",
-    desc: "We track your flight in real time. Early arrival or delay — we adjust automatically and are there when you need us.",
-  },
+  { icon: ShieldCheck, titleKey: "feature1Title", descKey: "feature1Desc" },
+  { icon: UserCheck, titleKey: "feature2Title", descKey: "feature2Desc" },
+  { icon: Radar, titleKey: "feature3Title", descKey: "feature3Desc" },
 ];
 
 const whyUsImages = [
@@ -101,71 +89,9 @@ const routes = [
   { name: "Nuremberg", distance: "170 km", time: "1.75 hr" },
 ];
 
-const testimonials = [
-  {
-    initials: "FP",
-    name: "Fruzsina P.",
-    location: "Munich",
-    text: "Extremely reliable service! We booked round trip — always on time, super polite and helpful. They track when your flight lands and pick you up right at arrivals. We'll use your service again!",
-  },
-  {
-    initials: "CU",
-    name: "Clemens U.",
-    location: "Munich",
-    text: "As a consultant I travel a lot by plane and therefore drive almost every week — and I'm extremely satisfied! The cars are always immaculate, mostly upper-class limousines like the Mercedes S-Class.",
-  },
-  {
-    initials: "AC",
-    name: "Angeline C.",
-    location: "Munich",
-    text: "The entire booking process was highly professional and smooth. The team was reachable even in the early morning hours and responsive. The vehicle was perfect for our extensive luggage.",
-  },
-  {
-    initials: "AM",
-    name: "Andre M.",
-    location: "Munich",
-    text: "We had a four-day trip with our driver. Super service — helpful, punctual, very polite and always friendly. Dropped us directly at the hotel and reliably picked us up again.",
-  },
-  {
-    initials: "SA",
-    name: "Sarah A.",
-    location: "Munich",
-    text: "All I can say is: WOW. When we come to Munich, we will definitely not use any other car service — that much is certain!",
-  },
-  {
-    initials: "GM",
-    name: "G. M.",
-    location: "Munich",
-    text: "Fantastic service. Punctual, safe driving, clean and first-class vehicle. 10/10.",
-  },
-];
+const testimonials = [] as { initials: string; name: string; location: string; text: string }[];
 
-const faqItems = [
-  {
-    q: "What areas do you cover?",
-    a: "We offer chauffeur and airport transfer services throughout Germany and to all major airports in Europe, including Frankfurt, Munich, Berlin, Paris, Amsterdam, Vienna, Zurich and more.",
-  },
-  {
-    q: "What vehicle types do you offer?",
-    a: "Mercedes E-Class and S-Class for up to three passengers, V-Class for up to six people with luggage.",
-  },
-  {
-    q: "Are your services available 24/7?",
-    a: "Yes, we are available 24/7. Whether early morning airport transfer or late night pickup — our chauffeurs are ready anytime.",
-  },
-  {
-    q: "Can I book short-term?",
-    a: "Yes, short-term bookings are possible depending on vehicle availability. For urgent requests, it's best to call us directly.",
-  },
-  {
-    q: "Do you offer Meet & Greet at the airport?",
-    a: "Of course. Your chauffeur welcomes you in the terminal with a name sign, helps with luggage and accompanies you to the vehicle — for a smooth, carefree experience.",
-  },
-  {
-    q: "Do you track flight arrivals and delays?",
-    a: "Yes. We monitor your flight in real-time to ensure punctual pickups — even if your flight arrives earlier or later than scheduled.",
-  },
-];
+const faqItems = [] as { q: string; a: string }[];
 
 // ============================================
 // COMPONENT
@@ -181,6 +107,10 @@ export default function HomePage() {
   const tRoutes = useTranslations("Routes");
   const tFinalCTA = useTranslations("FinalCTA");
   const tNav = useTranslations("Nav");
+  const tTestimonials = useTranslations("Testimonials");
+
+  const testimonialItems = tTestimonials.raw("items") as { initials: string; name: string; location: string; text: string }[];
+  const faqItemsData = tWhyUs.raw("faq") as { q: string; a: string }[];
 
   const [scrollProgress, setScrollProgress] = useState(0);
   const [textVisible, setTextVisible] = useState(false);
@@ -429,37 +359,37 @@ export default function HomePage() {
                 {/* Price details */}
                 <div className="glass rounded-xl p-5 space-y-3">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs text-white/60 uppercase tracking-wide">Fixed price</span>
+                    <span className="text-xs text-white/60 uppercase tracking-wide">{tBooking("fixedPrice")}</span>
                     <span className="font-display text-3xl font-bold text-white">
                       €{priceResult.price.total}
                     </span>
                   </div>
                   <div className="border-t border-white/10 pt-3 space-y-2 text-xs text-ash">
                     <div className="flex justify-between">
-                      <span>Distance</span>
+                      <span>{tBooking("distance")}</span>
                       <span className="text-white">{priceResult.route.distance}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Duration</span>
+                      <span>{tBooking("duration")}</span>
                       <span className="text-white">{priceResult.route.duration}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Vehicle</span>
+                      <span>{tBooking("vehicle")}</span>
                       <span className="text-white">{priceResult.price.vehicle}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Rate</span>
+                      <span>{tBooking("rate")}</span>
                       <span className="text-white">€{priceResult.price.perKm}/km</span>
                     </div>
                     {priceResult.price.breakdown.nightSurcharge && (
                       <div className="flex justify-between">
-                        <span>Night surcharge</span>
+                        <span>{tBooking("nightSurcharge")}</span>
                         <span className="text-white">{priceResult.price.breakdown.nightSurcharge}</span>
                       </div>
                     )}
                     {priceResult.price.breakdown.airportFee && (
                       <div className="flex justify-between">
-                        <span>Airport fee</span>
+                        <span>{tBooking("airportFee")}</span>
                         <span className="text-white">+€{priceResult.price.breakdown.airportFee}</span>
                       </div>
                     )}
@@ -485,12 +415,12 @@ export default function HomePage() {
               {/* Extra info */}
               <div className="mt-4">
                 <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">
-                  Extra info — pickup details
+                  {tBooking("extraInfoLabel")}
                 </label>
                 <textarea
                   value={bookingForm.extraInfo}
                   onChange={(e) => setBookingForm({ ...bookingForm, extraInfo: e.target.value })}
-                  placeholder="Gate number, terminal, building entrance, meeting point details..."
+                  placeholder={tBooking("extraInfoPlaceholder")}
                   rows={2}
                   className="w-full bg-ink/50 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-stone focus:border-electric/50 focus:outline-none transition-colors resize-none"
                 />
@@ -756,7 +686,7 @@ export default function HomePage() {
               <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">{tWhyUs("faqBadge")}</span>
               <h3 className="font-display text-2xl font-bold text-cream mb-8">{tWhyUs("faqTitle")}</h3>
               <div className="space-y-4">
-                {faqItems.map((item, i) => (
+                {faqItemsData.map((item, i) => (
                   <div key={i} className="glass rounded-xl overflow-hidden">
                     <button
                       onClick={() => setOpenFaq(openFaq === i ? null : i)}
@@ -788,10 +718,10 @@ export default function HomePage() {
             >
               <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">{tWhyUs("featuresTitle")}</span>
               <h3 className="font-display text-2xl font-bold text-cream mb-6">
-                Your comfort and safety, <span className="neon-text">redefined</span>
+                {tWhyUs("featuresSubtitle")} <span className="neon-text">{tWhyUs("featuresHighlight")}</span>
               </h3>
               <p className="text-sm text-ash leading-relaxed mb-10">
-                At TrendMyDrive, we're redefining airport travel across Germany and Europe — with a first-class chauffeur service built on comfort, reliability and style. Whether you're arriving or departing, we ensure a smooth, stress-free journey from your doorstep to any major European airport — and back.
+                {tWhyUs("featuresDescription")}
               </p>
 
               <div className="space-y-6">
@@ -801,8 +731,8 @@ export default function HomePage() {
                       <item.icon size={22} className="text-electric" />
                     </div>
                     <div>
-                      <h4 className="font-display text-base font-bold text-cream mb-2">{item.title}</h4>
-                      <p className="text-sm text-ash leading-relaxed">{item.desc}</p>
+                      <h4 className="font-display text-base font-bold text-cream mb-2">{tWhyUs(item.titleKey as any)}</h4>
+                      <p className="text-sm text-ash leading-relaxed">{tWhyUs(item.descKey as any)}</p>
                     </div>
                   </div>
                 ))}
@@ -854,17 +784,17 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">Reviews</span>
+            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">{tTestimonials("badge")}</span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-cream">
-              What our <span className="neon-text">customers say</span>
+              {tTestimonials("title")} <span className="neon-text">{tTestimonials("highlight")}</span>
             </h2>
             <p className="text-lg text-ash mt-4 max-w-2xl mx-auto">
-              Thousands of satisfied passengers trust us — for airport transfers, business trips and special occasions.
+              {tTestimonials("description")}
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((review, i) => (
+            {testimonialItems.map((review, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
@@ -946,7 +876,7 @@ export default function HomePage() {
             ))}
           </div>
           <p className="text-center text-xs text-stone mt-8">
-            Travel times are approximate and may vary depending on traffic.
+            {tRoutes("disclaimer")}
           </p>
         </div>
       </section>

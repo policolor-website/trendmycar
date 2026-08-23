@@ -22,7 +22,8 @@
     "serviceEvent": "Eventtransfer",
     "serviceFair": "Messe-Transfer",
     "servicePrices": "Preise & Tarife",
-    "allServices": "Alle Leistungen"
+    "allServices": "Alle Leistungen",
+    "bookByPhone": "Telefonisch buchen"
   },
   "Hero": {
     "badge": "24-Stunden-Flughafentransfer - Professionelle Fahrer",
@@ -45,7 +46,15 @@
     "reserveNow": "Jetzt reservieren",
     "errorOutsideGermany": "Unser Fahrerservice ist nur in Deutschland tätig. Bitte wählen Sie Abhol- und Zielorte in Deutschland.",
     "errorGeneric": "Preisberechnung fehlgeschlagen. Bitte versuchen Sie es erneut.",
-    "errorMissingFields": "Bitte geben Sie Abholort und Ziel ein."
+    "errorMissingFields": "Bitte geben Sie Abholort und Ziel ein.",
+    "fixedPrice": "Festpreis",
+    "distance": "Entfernung",
+    "duration": "Dauer",
+    "rate": "Tarif",
+    "nightSurcharge": "Nachtzuschlag",
+    "airportFee": "Flughafengebühr",
+    "extraInfoLabel": "Zusätzliche Infos — Abholdetails",
+    "extraInfoPlaceholder": "Tor, Terminal, Gebäudeeingang, Treffpunkt-Details..."
   },
   "Fleet": {
     "badge": "Unsere Fahrzeuge",
@@ -62,7 +71,7 @@
     "description": "Wir sind auf erstklassigen Fahrerservice spezialisiert — mit Fokus auf Komfort, Pünktlichkeit und Professionalität.",
     "learnMore": "Mehr erfahren",
     "airportTitle": "Flughafentransfer",
-    "airportDesc": "Reibungslose, pünktliche Transfers zu und von allen großen europäischen Flughäfen.",
+    "airportDesc": "Reibungslose, pünktliche Transfers zu und von allen großen deutschen Flughäfen.",
     "chauffeurTitle": "Fahrerservice",
     "chauffeurDesc": "Reisen Sie komfortabel und elegant in unserer Flotte an Premium-Fahrzeugen mit professionellen Fahrern.",
     "dayToursTitle": "Tagesausflüge",
@@ -89,7 +98,42 @@
     "highlight": "sorgenfrei",
     "faqBadge": "FAQ",
     "faqTitle": "Fragen & Antworten",
-    "featuresTitle": "Was Sie bekommen"
+    "featuresTitle": "Was Sie bekommen",
+    "feature1Title": "Sichere Reise",
+    "feature1Desc": "Reisen Sie beruhigt — jede Fahrt ist professionell geplant, sorgfältig durchgeführt und von Anfang bis Ende voll versichert.",
+    "feature2Title": "Professioneller Fahrer",
+    "feature2Desc": "Ihr persönlicher Fahrer kommt einwandfrei gekleidet in dunklem Anzug mit Hemd und Krawatte. Immer professionell, immer pünktlich.",
+    "feature3Title": "Flugüberwachung",
+    "feature3Desc": "Wir verfolgen Ihren Flug in Echtzeit. Frühe Ankunft oder Verspätung — wir passen automatisch an und sind da, wenn Sie uns brauchen.",
+    "featuresSubtitle": "Ihr Komfort und Ihre Sicherheit,",
+    "featuresHighlight": "neu definiert",
+    "featuresDescription": "Bei TrendMyDrive definieren wir Flughafenreisen in ganz Deutschland neu — mit einem erstklassigen Fahrerservice, der auf Komfort, Zuverlässigkeit und Stil aufbaut. Ob Ankunft oder Abreise — wir sorgen für eine reibungslose, stressfreie Reise von Ihrer Haustür bis zu jedem großen deutschen Flughafen — und zurück.",
+    "faq": [
+      {
+        "q": "Welches Gebiet decken Sie ab?",
+        "a": "Wir bieten Fahrer- und Flughafentransfer-Services in ganz Deutschland an, einschließlich Frankfurt, München, Berlin und mehr."
+      },
+      {
+        "q": "Welche Fahrzeugtypen bieten Sie an?",
+        "a": "Mercedes E-Class und S-Class für bis zu drei Passagiere, V-Class für bis zu sechs Personen mit Gepäck."
+      },
+      {
+        "q": "Sind Ihre Services rund um die Uhr verfügbar?",
+        "a": "Ja, wir sind 24/7 verfügbar. Ob frühmorgendlicher Flughafentransfer oder spätabendliche Abholung — unsere Fahrer sind jederzeit bereit."
+      },
+      {
+        "q": "Kann ich kurzfristig buchen?",
+        "a": "Ja, kurzfristige Buchungen sind je nach Fahrzeugverfügbarkeit möglich. Für dringende Anfragen ist es am besten, uns direkt anzurufen."
+      },
+      {
+        "q": "Bieten Sie Meet & Greet am Flughafen an?",
+        "a": "Natürlich. Ihr Fahrer empfängt Sie im Terminal mit einem Namensschild, hilft beim Gepäck und begleitet Sie zum Fahrzeug — für ein reibungsloses, sorgloses Erlebnis."
+      },
+      {
+        "q": "Verfolgen Sie Flugankünfte und Verspätungen?",
+        "a": "Ja. Wir überwachen Ihren Flug in Echtzeit, um pünktliche Abholungen zu gewährleisten — auch wenn Ihr Flug früher oder später als geplant ankommt."
+      }
+    ]
   },
   "CTA": {
     "title": "Buchen Sie Ihren Fahrer",
@@ -100,7 +144,8 @@
     "badge": "Beliebte Routen",
     "title": "Routen, die wir",
     "highlight": "regelmäßig fahren",
-    "description": "Von München zu allen großen Flughäfen und Städten in Deutschland und den Nachbarländern."
+    "description": "Von München zu allen großen Flughäfen und Städten in Deutschland und den Nachbarländern.",
+    "disclaimer": "Reisezeiten sind ungefähr und können je nach Verkehr variieren."
   },
   "FinalCTA": {
     "title": "Bereit für Ihre Reise?",
@@ -125,7 +170,10 @@
     "noAccount": "Noch kein Konto?",
     "haveAccount": "Bereits ein Konto?",
     "loginFailed": "Anmeldung fehlgeschlagen",
-    "registerFailed": "Registrierung fehlgeschlagen"
+    "registerFailed": "Registrierung fehlgeschlagen",
+    "emailPlaceholder": "sie@beispiel.de",
+    "fullNamePlaceholder": "Max Mustermann",
+    "phonePlaceholder": "+49 170 1234567"
   },
   "Checkout": {
     "title": "Checkout",
@@ -155,7 +203,15 @@
     "fillNamePhone": "Bitte geben Sie Ihren vollständigen Namen und Ihre Telefonnummer ein.",
     "securePayment": "Sichere Zahlung mit SSL-Verschlüsselung",
     "freeCancellation": "Kostenlose Stornierung bis zu 24 Std. vor Abholung",
-    "support": "24/7 Kundensupport"
+    "support": "24/7 Kundensupport",
+    "fullName": "Vollständiger Name",
+    "fullNamePlaceholder": "Max Mustermann",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "max@beispiel.de",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "+49 170 1234567",
+    "passwordLabel": "Passwort",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
   },
   "Dashboard": {
     "title": "Dashboard",
@@ -198,7 +254,7 @@
     "badge": "Über uns",
     "title": "TrendMyDrive — Premium-Fahrerservice seit 2020",
     "subtitle": "Ihr Komfort und Ihre Sicherheit haben bei uns oberste Priorität",
-    "intro": "Bei TrendMyDrive definieren wir Flughafenreisen in München, Deutschland und Europa neu — mit erstklassigem Fahrerservice, der auf Komfort, Zuverlässigkeit und Stil ausgerichtet ist. Ob Ankunft oder Abreise: Unser Versprechen ist eine reibungslose, stressfreie Fahrt von Ihrer Haustür bis zu jedem großen europäischen Flughafen — und zurück.",
+    "intro": "Bei TrendMyDrive definieren wir Flughafenreisen in München und Deutschland neu — mit erstklassigem Fahrerservice, der auf Komfort, Zuverlässigkeit und Stil ausgerichtet ist. Ob Ankunft oder Abreise: Unser Versprechen ist eine reibungslose, stressfreie Fahrt von Ihrer Haustür bis zu jedem großen deutschen Flughafen — und zurück.",
     "statsPassengers": "Zufriedene Passagiere",
     "statsRating": "Bewertung",
     "statsRatingDesc": "Kunden lieben das Reiseerlebnis",
@@ -208,7 +264,7 @@
     "whyTitle": "Warum Kunden bei uns bleiben",
     "whyText": "Wir starteten 2020 mit nur wenigen Fahrzeugen und sind durch Empfehlungen gewachsen, nicht durch Werbung. Der Grund ist einfach: Das Auto ist da, wenn es da sein soll. Wer diese Zuverlässigkeit einmal erlebt hat, ruft uns beim nächsten Mal wieder an.",
     "journeyTitle": "Wo Komfort auf Klasse trifft",
-    "journeyText": "Reisen Sie mit Zuversicht und Komfort. TrendMyDrive bietet erstklassigen Fahrerservice mit professionellen Fahrern, Luxusfahrzeugen und nahtlosen Transfers zu großen Flughäfen und Zielen in ganz Deutschland und Europa — auf jedem Kilometer der Reise.",
+    "journeyText": "Reisen Sie mit Zuversicht und Komfort. TrendMyDrive bietet erstklassigen Fahrerservice mit professionellen Fahrern, Luxusfahrzeugen und nahtlosen Transfers zu großen Flughäfen und Zielen in ganz Deutschland — auf jedem Kilometer der Reise.",
     "learnMore": "Mehr erfahren",
     "faqBadge": "FAQ",
     "faqTitle": "Fragen & Antworten",
@@ -274,6 +330,50 @@
     "sent": "Nachricht gesendet!",
     "sentDesc": "Unser Team wird sich so schnell wie möglich bei Ihnen melden."
   },
+  "Testimonials": {
+    "badge": "Bewertungen",
+    "title": "Was unsere Kunden",
+    "highlight": "sagen",
+    "description": "Tausende zufriedene Passagiere vertrauen uns — für Flughafentransfers, Geschäftsreisen und besondere Anlässe.",
+    "items": [
+      {
+        "initials": "FP",
+        "name": "Fruzsina P.",
+        "location": "München",
+        "text": "Äußerst zuverlässiger Service! Wir buchten Hin- und Rückfahrt — immer pünktlich, super höflich und hilfsbereit. Sie verfolgen, wann Ihr Flug landet, und holen Sie direkt am Ausgang ab. Wir werden Ihren Service wieder nutzen!"
+      },
+      {
+        "initials": "CU",
+        "name": "Clemens U.",
+        "location": "München",
+        "text": "Als Berater reise ich viel mit dem Flugzeug und fahre daher fast jede Woche — und ich bin äußerst zufrieden! Die Autos sind immer makellos, meist Oberklasse-Limousinen wie die Mercedes S-Klasse."
+      },
+      {
+        "initials": "AC",
+        "name": "Angeline C.",
+        "location": "München",
+        "text": "Der gesamte Buchungsprozess war hochprofessionell und reibungslos. Das Team war auch in den frühen Morgenstunden erreichbar und reagiert schnell. Das Fahrzeug war perfekt für unser umfangreiches Gepäck."
+      },
+      {
+        "initials": "AM",
+        "name": "Andre M.",
+        "location": "München",
+        "text": "Wir hatten eine viertägige Reise mit unserem Fahrer. Super Service — hilfsbereit, pünktlich, sehr höflich und immer freundlich. Hat uns direkt am Hotel abgesetzt und zuverlässig wieder abgeholt."
+      },
+      {
+        "initials": "SA",
+        "name": "Sarah A.",
+        "location": "München",
+        "text": "Alles, was ich sagen kann, ist: WOW. Wenn wir nach München kommen, werden wir definitiv keinen anderen Auto-Service nutzen — so viel ist sicher!"
+      },
+      {
+        "initials": "GM",
+        "name": "G. M.",
+        "location": "München",
+        "text": "Fantastischer Service. Pünktlich, sicheres Fahren, sauberes und erstklassiges Fahrzeug. 10/10."
+      }
+    ]
+  },
   "Footer": {
     "tagline": "Premium-Fahrerservice — 24/7 Flughafentransfers und Geschäftsfahrten in ganz Deutschland.",
     "fleet": "Fuhrpark",
@@ -281,7 +381,9 @@
     "company": "Unternehmen",
     "contact": "Kontakt",
     "about": "Über uns",
-    "rights": "Alle Rechte vorbehalten."
+    "rights": "Alle Rechte vorbehalten.",
+    "availability": "24/7 — Verfügbar in ganz Deutschland",
+    "credit": "Created & Designed by FORSITE.RO"
   },
   "ServicePages": {
     "bookNow": "Jetzt buchen",
@@ -295,7 +397,7 @@
       "badge": "Flughafentransfer",
       "title": "Flughafen",
       "highlight": "Transfer",
-      "description": "Starten Sie stressfrei in Ihre Reise. Unsere Fahrer verfolgen Ihren Flug in Echtzeit, passen sich bei Verspätungen an und warten mit einem Namensschild im Terminal auf Sie. Egal, ob Sie in München, Frankfurt, Berlin oder an einem anderen großen europäischen Flughafen landen — Ihr Fahrer ist bereits da, bevor Sie überhaupt aufsetzen. Keine Schlangen, kein Gepäckstress, kein letztes Taxihandeln. Nur ein Premium-Fahrzeug, das am Straßenrand wartet, und ein professioneller Fahrer, der Sie sofort an Ihr Ziel bringt.",
+      "description": "Starten Sie stressfrei. Unsere Fahrer verfolgen Ihren Flug in Echtzeit, passen sich bei Verspätungen an und warten mit Namensschild im Terminal auf Sie. Ob Sie in München, Frankfurt, Berlin oder an einem anderen großen deutschen Flughafen landen — Ihr Fahrer ist schon da, bevor Sie überhaupt die Erde berühren. Keine Warteschlangen, kein Gepäckstress, kein letztes Minuten-Taxi-Feilschen. Nur ein Premium-Fahrzeug am Straßenrand und ein professioneller Fahrer, der Sie an Ihr Ziel bringt.",
       "features": [
         "Echtzeit-Flugverfolgung mit automatischer Anpassung bei Verspätungen",
         "Meet & greet im Terminal mit persönlichem Namensschild",

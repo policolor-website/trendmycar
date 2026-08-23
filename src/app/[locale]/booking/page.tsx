@@ -178,37 +178,37 @@ export default function BookingPage() {
                   {/* Price details */}
                   <div className="glass rounded-xl p-5">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs text-white/60 uppercase tracking-wide">Fixed price</span>
+                      <span className="text-xs text-white/60 uppercase tracking-wide">{t("fixedPrice")}</span>
                       <span className="font-display text-3xl font-bold text-white">
                         €{priceResult.price.total}
                       </span>
                     </div>
                     <div className="border-t border-white/10 pt-3 mt-3 space-y-2 text-xs text-ash">
                       <div className="flex justify-between">
-                        <span>Distance</span>
+                        <span>{t("distance")}</span>
                         <span className="text-white">{priceResult.route.distance}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span>Duration</span>
+                        <span>{t("duration")}</span>
                         <span className="text-white">{priceResult.route.duration}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span>Vehicle</span>
+                        <span>{t("vehicle")}</span>
                         <span className="text-white">{priceResult.price.vehicle}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span>Rate</span>
+                        <span>{t("rate")}</span>
                         <span className="text-white">€{priceResult.price.perKm}/km</span>
                       </div>
                       {priceResult.price.breakdown.nightSurcharge && (
                         <div className="flex justify-between">
-                          <span>Night surcharge</span>
+                          <span>{t("nightSurcharge")}</span>
                           <span className="text-white">{priceResult.price.breakdown.nightSurcharge}</span>
                         </div>
                       )}
                       {priceResult.price.breakdown.airportFee && (
                         <div className="flex justify-between">
-                          <span>Airport fee</span>
+                          <span>{t("airportFee")}</span>
                           <span className="text-white">+€{priceResult.price.breakdown.airportFee}</span>
                         </div>
                       )}
@@ -233,12 +233,12 @@ export default function BookingPage() {
                 {/* Extra info + Reserve */}
                 <div className="mt-4">
                   <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">
-                    Extra info — pickup details
+                    {t("extraInfoLabel")}
                   </label>
                   <textarea
                     value={bookingForm.extraInfo}
                     onChange={(e) => setBookingForm({ ...bookingForm, extraInfo: e.target.value })}
-                    placeholder="Gate number, terminal, building entrance, meeting point details..."
+                    placeholder={t("extraInfoPlaceholder")}
                     rows={2}
                     className="w-full bg-ink/50 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-stone focus:border-electric/50 focus:outline-none transition-colors resize-none"
                   />

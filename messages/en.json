@@ -22,7 +22,8 @@
     "serviceEvent": "Event Transfer",
     "serviceFair": "Trade Fair Transfer",
     "servicePrices": "Prices & Tariffs",
-    "allServices": "All services"
+    "allServices": "All services",
+    "bookByPhone": "Book by Phone"
   },
   "Hero": {
     "badge": "24-hour airport transfer - Professional chauffeurs",
@@ -45,7 +46,15 @@
     "reserveNow": "Reserve now",
     "errorOutsideGermany": "Our chauffeur service operates only within Germany. Please select pickup and destination addresses in Germany.",
     "errorGeneric": "Failed to calculate price. Please try again.",
-    "errorMissingFields": "Please enter pickup and destination."
+    "errorMissingFields": "Please enter pickup and destination.",
+    "fixedPrice": "Fixed price",
+    "distance": "Distance",
+    "duration": "Duration",
+    "rate": "Rate",
+    "nightSurcharge": "Night surcharge",
+    "airportFee": "Airport fee",
+    "extraInfoLabel": "Extra info — pickup details",
+    "extraInfoPlaceholder": "Gate number, terminal, building entrance, meeting point details..."
   },
   "Fleet": {
     "badge": "Our vehicles",
@@ -62,7 +71,7 @@
     "description": "We specialize in first-class chauffeur service — focused on comfort, punctuality and professionalism.",
     "learnMore": "Learn more",
     "airportTitle": "Airport Transfer",
-    "airportDesc": "Smooth, punctual transfers to and from all major European airports.",
+    "airportDesc": "Smooth, punctual transfers to and from all major German airports.",
     "chauffeurTitle": "Chauffeur Service",
     "chauffeurDesc": "Travel in comfort and elegance in our fleet of premium vehicles with professional chauffeurs.",
     "dayToursTitle": "Day Tours",
@@ -89,7 +98,42 @@
     "highlight": "confidence",
     "faqBadge": "FAQ",
     "faqTitle": "Questions & answers",
-    "featuresTitle": "What you get"
+    "featuresTitle": "What you get",
+    "feature1Title": "Safe Travel",
+    "feature1Desc": "Travel with peace of mind — every ride is professionally planned, carefully executed and fully insured from start to finish.",
+    "feature2Title": "Professional Chauffeur",
+    "feature2Desc": "Your personal chauffeur arrives impeccably dressed in a dark suit with shirt and tie. Always professional, always punctual.",
+    "feature3Title": "Flight Monitoring",
+    "feature3Desc": "We track your flight in real time. Early arrival or delay — we adjust automatically and are there when you need us.",
+    "featuresSubtitle": "Your comfort and safety,",
+    "featuresHighlight": "redefined",
+    "featuresDescription": "At TrendMyDrive, we're redefining airport travel across Germany — with a first-class chauffeur service built on comfort, reliability and style. Whether you're arriving or departing, we ensure a smooth, stress-free journey from your doorstep to any major German airport — and back.",
+    "faq": [
+      {
+        "q": "What areas do you cover?",
+        "a": "We offer chauffeur and airport transfer services throughout Germany, including Frankfurt, Munich, Berlin and more."
+      },
+      {
+        "q": "What vehicle types do you offer?",
+        "a": "Mercedes E-Class and S-Class for up to three passengers, V-Class for up to six people with luggage."
+      },
+      {
+        "q": "Are your services available 24/7?",
+        "a": "Yes, we are available 24/7. Whether early morning airport transfer or late night pickup — our chauffeurs are ready anytime."
+      },
+      {
+        "q": "Can I book short-term?",
+        "a": "Yes, short-term bookings are possible depending on vehicle availability. For urgent requests, it's best to call us directly."
+      },
+      {
+        "q": "Do you offer Meet & Greet at the airport?",
+        "a": "Of course. Your chauffeur welcomes you in the terminal with a name sign, helps with luggage and accompanies you to the vehicle — for a smooth, carefree experience."
+      },
+      {
+        "q": "Do you track flight arrivals and delays?",
+        "a": "Yes. We monitor your flight in real-time to ensure punctual pickups — even if your flight arrives earlier or later than scheduled."
+      }
+    ]
   },
   "CTA": {
     "title": "Book your chauffeur",
@@ -100,7 +144,8 @@
     "badge": "Popular routes",
     "title": "Routes we drive",
     "highlight": "regularly",
-    "description": "From Munich to all major airports and cities in Germany and neighboring countries."
+    "description": "From Munich to all major airports and cities in Germany and neighboring countries.",
+    "disclaimer": "Travel times are approximate and may vary depending on traffic."
   },
   "FinalCTA": {
     "title": "Ready for your journey?",
@@ -125,7 +170,10 @@
     "noAccount": "Don't have an account?",
     "haveAccount": "Already have an account?",
     "loginFailed": "Login failed",
-    "registerFailed": "Registration failed"
+    "registerFailed": "Registration failed",
+    "emailPlaceholder": "you@example.com",
+    "fullNamePlaceholder": "John Doe",
+    "phonePlaceholder": "+49 170 1234567"
   },
   "Checkout": {
     "title": "Checkout",
@@ -155,7 +203,15 @@
     "fillNamePhone": "Please enter your full name and phone.",
     "securePayment": "Secure payment with SSL encryption",
     "freeCancellation": "Free cancellation up to 24h before pickup",
-    "support": "24/7 customer support"
+    "support": "24/7 customer support",
+    "fullName": "Full name",
+    "fullNamePlaceholder": "John Doe",
+    "emailLabel": "Email",
+    "emailPlaceholder": "john@example.com",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "+49 170 1234567",
+    "passwordLabel": "Password",
+    "errorGeneric": "Something went wrong. Please try again."
   },
   "Dashboard": {
     "title": "Dashboard",
@@ -198,7 +254,7 @@
     "badge": "About us",
     "title": "TrendMyDrive — Premium chauffeur service since 2020",
     "subtitle": "Your comfort and safety are our top priority",
-    "intro": "At TrendMyDrive, we redefine airport travel across Munich, Germany, and Europe — with first-class chauffeur service focused on comfort, reliability, and style. Whether arrival or departure: our promise is a smooth, stress-free ride from your doorstep to any major European airport — and back.",
+    "intro": "At TrendMyDrive, we redefine airport travel across Munich and Germany — with first-class chauffeur service focused on comfort, reliability, and style. Whether arrival or departure: our promise is a smooth, stress-free ride from your doorstep to any major German airport — and back.",
     "statsPassengers": "Happy passengers",
     "statsRating": "Rating",
     "statsRatingDesc": "Customer love the travel experience",
@@ -208,7 +264,7 @@
     "whyTitle": "Why customers stay with us",
     "whyText": "We started in 2020 with just a few vehicles and have grown through recommendations, not advertising. The reason is simple: the car is there when it's supposed to be. Once you experience that reliability, you call us again next time.",
     "journeyTitle": "Where comfort meets class",
-    "journeyText": "Travel with confidence and comfort. TrendMyDrive offers first-class chauffeur service with professional drivers, luxury vehicles, and seamless transfers to major airports and destinations across Germany and Europe — on every kilometer of the journey.",
+    "journeyText": "Travel with confidence and comfort. TrendMyDrive offers first-class chauffeur service with professional drivers, luxury vehicles, and seamless transfers to major airports and destinations across Germany — on every kilometer of the journey.",
     "learnMore": "Learn more",
     "faqBadge": "FAQ",
     "faqTitle": "Questions & answers",
@@ -281,7 +337,9 @@
     "company": "Company",
     "contact": "Contact",
     "about": "About us",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "availability": "24/7 — Available across Germany",
+    "credit": "Created & Designed by FORSITE.RO"
   },
   "ServicePages": {
     "bookNow": "Book now",
@@ -295,7 +353,7 @@
       "badge": "Airport Transfer",
       "title": "Airport",
       "highlight": "Transfer",
-      "description": "Start your journey stress-free. Our chauffeurs track your flight in real time, adjust for delays, and wait for you inside the terminal with a name sign. Whether you're landing at Munich, Frankfurt, Berlin, or any major European airport — your chauffeur is already there before you even touch down. No queues, no luggage struggles, no last-minute taxi haggling. Just a premium vehicle waiting curbside and a professional driver ready to whisk you to your destination.",
+      "description": "Start your journey stress-free. Our chauffeurs track your flight in real time, adjust for delays, and wait for you inside the terminal with a name sign. Whether you're landing at Munich, Frankfurt, Berlin, or any major German airport — your chauffeur is already there before you even touch down. No queues, no luggage struggles, no last-minute taxi haggling. Just a premium vehicle waiting curbside and a professional driver ready to whisk you to your destination.",
       "features": [
         "Real-time flight tracking with automatic delay adjustments",
         "Meet & greet inside the terminal with personalized name sign",
@@ -305,12 +363,30 @@
         "Door-to-door service with luggage assistance included"
       ],
       "includes": [
-        { "label": "Flight tracking", "value": "Included" },
-        { "label": "Waiting time", "value": "60 min free" },
-        { "label": "Meet & greet", "value": "Included" },
-        { "label": "Cancellation", "value": "Free 24h" },
-        { "label": "Bottled water", "value": "Included" },
-        { "label": "WiFi", "value": "Free" }
+        {
+          "label": "Flight tracking",
+          "value": "Included"
+        },
+        {
+          "label": "Waiting time",
+          "value": "60 min free"
+        },
+        {
+          "label": "Meet & greet",
+          "value": "Included"
+        },
+        {
+          "label": "Cancellation",
+          "value": "Free 24h"
+        },
+        {
+          "label": "Bottled water",
+          "value": "Included"
+        },
+        {
+          "label": "WiFi",
+          "value": "Free"
+        }
       ],
       "faq": [
         {
@@ -353,12 +429,30 @@
         "Confidentiality guaranteed — ideal for executives and high-profile clients"
       ],
       "includes": [
-        { "label": "Chauffeur", "value": "Professional" },
-        { "label": "Attire", "value": "Suit & tie" },
-        { "label": "Stops", "value": "Multiple" },
-        { "label": "Booking", "value": "Hourly/Daily" },
-        { "label": "Languages", "value": "On request" },
-        { "label": "Water", "value": "Included" }
+        {
+          "label": "Chauffeur",
+          "value": "Professional"
+        },
+        {
+          "label": "Attire",
+          "value": "Suit & tie"
+        },
+        {
+          "label": "Stops",
+          "value": "Multiple"
+        },
+        {
+          "label": "Booking",
+          "value": "Hourly/Daily"
+        },
+        {
+          "label": "Languages",
+          "value": "On request"
+        },
+        {
+          "label": "Water",
+          "value": "Included"
+        }
       ],
       "faq": [
         {
@@ -401,12 +495,30 @@
         "Diplomatic airport clearance and VIP fast-track assistance"
       ],
       "includes": [
-        { "label": "Security", "value": "Cleared" },
-        { "label": "Protocol", "value": "Trained" },
-        { "label": "Armored", "value": "On request" },
-        { "label": "Availability", "value": "24/7" },
-        { "label": "Discretion", "value": "Guaranteed" },
-        { "label": "Multi-stop", "value": "Included" }
+        {
+          "label": "Security",
+          "value": "Cleared"
+        },
+        {
+          "label": "Protocol",
+          "value": "Trained"
+        },
+        {
+          "label": "Armored",
+          "value": "On request"
+        },
+        {
+          "label": "Availability",
+          "value": "24/7"
+        },
+        {
+          "label": "Discretion",
+          "value": "Guaranteed"
+        },
+        {
+          "label": "Multi-stop",
+          "value": "Included"
+        }
       ],
       "faq": [
         {
@@ -449,12 +561,30 @@
         "Name signs, boarding assistance, and group welcome service"
       ],
       "includes": [
-        { "label": "Capacity", "value": "7-50+ seats" },
-        { "label": "Luggage", "value": "Trailers available" },
-        { "label": "Coordinator", "value": "Dedicated" },
-        { "label": "Multi-vehicle", "value": "Coordinated" },
-        { "label": "Driver", "value": "Professional" },
-        { "label": "Water", "value": "Included" }
+        {
+          "label": "Capacity",
+          "value": "7-50+ seats"
+        },
+        {
+          "label": "Luggage",
+          "value": "Trailers available"
+        },
+        {
+          "label": "Coordinator",
+          "value": "Dedicated"
+        },
+        {
+          "label": "Multi-vehicle",
+          "value": "Coordinated"
+        },
+        {
+          "label": "Driver",
+          "value": "Professional"
+        },
+        {
+          "label": "Water",
+          "value": "Included"
+        }
       ],
       "faq": [
         {
@@ -497,12 +627,30 @@
         "Multi-language guide service available on request"
       ],
       "includes": [
-        { "label": "Itinerary", "value": "Custom" },
-        { "label": "Stops", "value": "Unlimited" },
-        { "label": "Duration", "value": "Full day" },
-        { "label": "Local guide", "value": "Knowledge" },
-        { "label": "Flexibility", "value": "On the go" },
-        { "label": "Water", "value": "Included" }
+        {
+          "label": "Itinerary",
+          "value": "Custom"
+        },
+        {
+          "label": "Stops",
+          "value": "Unlimited"
+        },
+        {
+          "label": "Duration",
+          "value": "Full day"
+        },
+        {
+          "label": "Local guide",
+          "value": "Knowledge"
+        },
+        {
+          "label": "Flexibility",
+          "value": "On the go"
+        },
+        {
+          "label": "Water",
+          "value": "Included"
+        }
       ],
       "faq": [
         {
@@ -545,12 +693,30 @@
         "Post-event departure coordination — everyone gets home safely"
       ],
       "includes": [
-        { "label": "Coordination", "value": "Multi-guest" },
-        { "label": "Decoration", "value": "On request" },
-        { "label": "Manager", "value": "Dedicated" },
-        { "label": "Timing", "value": "Flexible" },
-        { "label": "Vehicles", "value": "Elegant" },
-        { "label": "Water", "value": "Included" }
+        {
+          "label": "Coordination",
+          "value": "Multi-guest"
+        },
+        {
+          "label": "Decoration",
+          "value": "On request"
+        },
+        {
+          "label": "Manager",
+          "value": "Dedicated"
+        },
+        {
+          "label": "Timing",
+          "value": "Flexible"
+        },
+        {
+          "label": "Vehicles",
+          "value": "Elegant"
+        },
+        {
+          "label": "Water",
+          "value": "Included"
+        }
       ],
       "faq": [
         {
@@ -593,12 +759,30 @@
         "Coordinated group transport for delegations and teams"
       ],
       "includes": [
-        { "label": "Venues", "value": "All major" },
-        { "label": "Scheduling", "value": "Flexible" },
-        { "label": "Return", "value": "Pre-booked" },
-        { "label": "Materials", "value": "Transported" },
-        { "label": "Driver", "value": "Professional" },
-        { "label": "Water", "value": "Included" }
+        {
+          "label": "Venues",
+          "value": "All major"
+        },
+        {
+          "label": "Scheduling",
+          "value": "Flexible"
+        },
+        {
+          "label": "Return",
+          "value": "Pre-booked"
+        },
+        {
+          "label": "Materials",
+          "value": "Transported"
+        },
+        {
+          "label": "Driver",
+          "value": "Professional"
+        },
+        {
+          "label": "Water",
+          "value": "Included"
+        }
       ],
       "faq": [
         {
@@ -641,12 +825,30 @@
         "Free cancellation up to 24 hours before pickup — no questions asked"
       ],
       "includes": [
-        { "label": "E-Class", "value": "€3.0/km" },
-        { "label": "S-Class", "value": "€4.5/km" },
-        { "label": "V-Class", "value": "€3.5/km" },
-        { "label": "Base fare", "value": "€10-15" },
-        { "label": "Night", "value": "+25%" },
-        { "label": "Airport", "value": "+€8" }
+        {
+          "label": "E-Class",
+          "value": "€3.0/km"
+        },
+        {
+          "label": "S-Class",
+          "value": "€4.5/km"
+        },
+        {
+          "label": "V-Class",
+          "value": "€3.5/km"
+        },
+        {
+          "label": "Base fare",
+          "value": "€10-15"
+        },
+        {
+          "label": "Night",
+          "value": "+25%"
+        },
+        {
+          "label": "Airport",
+          "value": "+€8"
+        }
       ],
       "faq": [
         {
@@ -675,5 +877,49 @@
         }
       ]
     }
+  },
+  "Testimonials": {
+    "badge": "Reviews",
+    "title": "What our customers",
+    "highlight": "say",
+    "description": "Thousands of satisfied passengers trust us — for airport transfers, business trips and special occasions.",
+    "items": [
+      {
+        "initials": "FP",
+        "name": "Fruzsina P.",
+        "location": "Munich",
+        "text": "Extremely reliable service! We booked round trip — always on time, super polite and helpful. They track when your flight lands and pick you up right at arrivals. We'll use your service again!"
+      },
+      {
+        "initials": "CU",
+        "name": "Clemens U.",
+        "location": "Munich",
+        "text": "As a consultant I travel a lot by plane and therefore drive almost every week — and I'm extremely satisfied! The cars are always immaculate, mostly upper-class limousines like the Mercedes S-Class."
+      },
+      {
+        "initials": "AC",
+        "name": "Angeline C.",
+        "location": "Munich",
+        "text": "The entire booking process was highly professional and smooth. The team was reachable even in the early morning hours and responsive. The vehicle was perfect for our extensive luggage."
+      },
+      {
+        "initials": "AM",
+        "name": "Andre M.",
+        "location": "Munich",
+        "text": "We had a four-day trip with our driver. Super service — helpful, punctual, very polite and always friendly. Dropped us directly at the hotel and reliably picked us up again."
+      },
+      {
+        "initials": "SA",
+        "name": "Sarah A.",
+        "location": "Munich",
+        "text": "All I can say is: WOW. When we come to Munich, we will definitely not use any other car service — that much is certain!"
+      },
+      {
+        "initials": "GM",
+        "name": "G. M.",
+        "location": "Munich",
+        "text": "Fantastic service. Punctual, safe driving, clean and first-class vehicle. 10/10."
+      }
+    ]
   }
 }

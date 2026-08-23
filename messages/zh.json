@@ -22,7 +22,8 @@
     "serviceEvent": "活动接送",
     "serviceFair": "展会接送",
     "servicePrices": "价格与费率",
-    "allServices": "全部服务"
+    "allServices": "全部服务",
+    "bookByPhone": "电话预订"
   },
   "Hero": {
     "badge": "24小时机场接送 — 专业司机",
@@ -45,7 +46,15 @@
     "reserveNow": "立即预订",
     "errorOutsideGermany": "我们的司机服务仅在德国境内运营。请选择德国境内的上车和目的地地址。",
     "errorGeneric": "价格计算失败，请重试。",
-    "errorMissingFields": "请输入上车地点和目的地。"
+    "errorMissingFields": "请输入上车地点和目的地。",
+    "fixedPrice": "固定价格",
+    "distance": "距离",
+    "duration": "时长",
+    "rate": "费率",
+    "nightSurcharge": "夜间附加费",
+    "airportFee": "机场费用",
+    "extraInfoLabel": "附加信息 — 接载详情",
+    "extraInfoPlaceholder": "登机口号码、航站楼、建筑入口、会合点详情..."
   },
   "Fleet": {
     "badge": "我们的车辆",
@@ -62,7 +71,7 @@
     "description": "我们专注于一流的司机服务 — 注重舒适、准时和专业。",
     "learnMore": "了解更多",
     "airportTitle": "机场接送",
-    "airportDesc": "往返所有欧洲主要机场的顺畅、准时接送。",
+    "airportDesc": "往返德国所有主要机场的顺畅、准时接送。",
     "chauffeurTitle": "司机服务",
     "chauffeurDesc": "在我们的高端车辆车队中享受舒适优雅的出行，配备专业司机。",
     "dayToursTitle": "一日游",
@@ -89,7 +98,42 @@
     "highlight": "出行",
     "faqBadge": "常见问题",
     "faqTitle": "问答",
-    "featuresTitle": "您将获得"
+    "featuresTitle": "您将获得",
+    "feature1Title": "安全出行",
+    "feature1Desc": "安心出行 — 每次行程都经过专业规划、精心执行，并全程投保。",
+    "feature2Title": "专业司机",
+    "feature2Desc": "您的私人司机身着深色西装、衬衫和领带准时到达。始终专业，始终准时。",
+    "feature3Title": "航班监控",
+    "feature3Desc": "我们实时跟踪您的航班。提前到达或延误 — 我们自动调整，在您需要时准时到位。",
+    "featuresSubtitle": "您的舒适与安全，",
+    "featuresHighlight": "重新定义",
+    "featuresDescription": "在 TrendMyDrive，我们正在重新定义德国各地的机场出行 — 以建立在舒适、可靠和格调之上的一流司机服务。无论您是抵达还是出发，我们都确保从您家门口到任何德国主要机场的顺畅、无忧旅程 — 以及返程。",
+    "faq": [
+      {
+        "q": "你们覆盖哪些地区？",
+        "a": "我们在德国全境提供司机和机场接送服务，包括法兰克福、慕尼黑、柏林等地。"
+      },
+      {
+        "q": "你们提供哪些车型？",
+        "a": "Mercedes E-Class 和 S-Class 最多可容纳三位乘客，V-Class 最多可容纳六人及行李。"
+      },
+      {
+        "q": "你们的服务是全天候的吗？",
+        "a": "是的，我们全天候可用。无论是清晨的机场接送还是深夜的接载 — 我们的司机随时待命。"
+      },
+      {
+        "q": "我可以临时预订吗？",
+        "a": "可以，临时预订视车辆可用性而定。对于紧急需求，最好直接致电我们。"
+      },
+      {
+        "q": "你们在机场提供迎宾服务吗？",
+        "a": "当然。您的司机在航站楼内举名牌迎接您，协助搬运行李并陪同您前往车辆 — 确保顺畅、无忧的体验。"
+      },
+      {
+        "q": "你们跟踪航班到达和延误吗？",
+        "a": "是的。我们实时监控您的航班，确保准时接载 — 即使您的航班提前或延后到达。"
+      }
+    ]
   },
   "CTA": {
     "title": "预订您的司机",
@@ -100,7 +144,8 @@
     "badge": "热门路线",
     "title": "我们经常行驶的",
     "highlight": "路线",
-    "description": "从慕尼黑到德国及邻国的所有主要机场和城市。"
+    "description": "从慕尼黑到德国及邻国的所有主要机场和城市。",
+    "disclaimer": "行程时间为近似值，可能因交通状况而异。"
   },
   "FinalCTA": {
     "title": "准备好出发了吗？",
@@ -125,7 +170,10 @@
     "noAccount": "还没有账户？",
     "haveAccount": "已有账户？",
     "loginFailed": "登录失败",
-    "registerFailed": "注册失败"
+    "registerFailed": "注册失败",
+    "emailPlaceholder": "you@example.com",
+    "fullNamePlaceholder": "张三",
+    "phonePlaceholder": "+49 170 1234567"
   },
   "Checkout": {
     "title": "结账",
@@ -155,7 +203,15 @@
     "fillNamePhone": "请输入您的全名和电话。",
     "securePayment": "SSL加密安全支付",
     "freeCancellation": "上车前24小时免费取消",
-    "support": "全天候客户支持"
+    "support": "全天候客户支持",
+    "fullName": "全名",
+    "fullNamePlaceholder": "张三",
+    "emailLabel": "邮箱",
+    "emailPlaceholder": "john@example.com",
+    "phoneLabel": "电话",
+    "phonePlaceholder": "+49 170 1234567",
+    "passwordLabel": "密码",
+    "errorGeneric": "出现问题，请重试。"
   },
   "Dashboard": {
     "title": "控制台",
@@ -198,7 +254,7 @@
     "badge": "关于我们",
     "title": "TrendMyDrive — 自2020年起的尊享司机服务",
     "subtitle": "您的舒适与安全是我们的首要任务",
-    "intro": "在 TrendMyDrive，我们重新定义了慕尼黑、德国及欧洲各地的机场出行体验 — 提供以舒适、可靠和格调为核心的一流司机服务。无论抵达还是出发：我们的承诺是从您家门口到任何欧洲主要机场的顺畅、无忧旅程 — 以及返程。",
+    "intro": "在 TrendMyDrive，我们重新定义了慕尼黑和德国各地的机场出行体验 — 提供以舒适、可靠和格调为核心的一流司机服务。无论抵达还是出发：我们的承诺是从您家门口到任何德国主要机场的顺畅、无忧旅程 — 以及返程。",
     "statsPassengers": "满意乘客",
     "statsRating": "评分",
     "statsRatingDesc": "客户热爱这段出行体验",
@@ -208,7 +264,7 @@
     "whyTitle": "客户为何选择留下",
     "whyText": "我们于2020年以少量车辆起步，通过口碑推荐而非广告宣传不断壮大。原因很简单：车辆准时到位。一旦您体验了这种可靠性，下次您还会联系我们。",
     "journeyTitle": "舒适与格调的交汇之处",
-    "journeyText": "自信舒适地出行。TrendMyDrive 提供一流司机服务，配备专业司机、豪华车辆，以及前往德国和欧洲各地主要机场与目的地的无缝接送 — 陪伴您旅程的每一公里。",
+    "journeyText": "自信舒适地出行。TrendMyDrive 提供一流司机服务，配备专业司机、豪华车辆，以及前往德国各地主要机场与目的地的无缝接送 — 陪伴您旅程的每一公里。",
     "learnMore": "了解更多",
     "faqBadge": "常见问题",
     "faqTitle": "问答",
@@ -274,6 +330,50 @@
     "sent": "留言已发送！",
     "sentDesc": "我们的团队会尽快与您联系。"
   },
+  "Testimonials": {
+    "badge": "评价",
+    "title": "我们的客户",
+    "highlight": "怎么说",
+    "description": "数千名满意乘客信赖我们 — 无论是机场接送、商务出行还是特殊场合。",
+    "items": [
+      {
+        "initials": "FP",
+        "name": "Fruzsina P.",
+        "location": "慕尼黑",
+        "text": "极其可靠的服务！我们预订了往返 — 始终准时，非常有礼貌且乐于助人。他们会跟踪您的航班降落时间，并在到达处接您。我们还会再次使用您的服务！"
+      },
+      {
+        "initials": "CU",
+        "name": "Clemens U.",
+        "location": "慕尼黑",
+        "text": "作为顾问，我经常乘飞机出差，因此几乎每周都要用车 — 我非常满意！车辆始终一尘不染，大多是像梅赛德斯 S-Class 这样的高级豪华轿车。"
+      },
+      {
+        "initials": "AC",
+        "name": "Angeline C.",
+        "location": "慕尼黑",
+        "text": "整个预订过程非常专业且顺畅。即使在清晨时分团队也能联系上，响应迅速。车辆完美适合我们的大量行李。"
+      },
+      {
+        "initials": "AM",
+        "name": "Andre M.",
+        "location": "慕尼黑",
+        "text": "我们与司机进行了为期四天的行程。服务一流 — 乐于助人、准时、非常有礼貌且始终友好。直接送我们到酒店，并可靠地再次接我们。"
+      },
+      {
+        "initials": "SA",
+        "name": "Sarah A.",
+        "location": "慕尼黑",
+        "text": "我只能说：哇。当我们来慕尼黑时，绝对不会使用其他任何租车服务 — 这是肯定的！"
+      },
+      {
+        "initials": "GM",
+        "name": "G. M.",
+        "location": "慕尼黑",
+        "text": "出色的服务。准时、安全驾驶、干净且一流的车辆。10/10。"
+      }
+    ]
+  },
   "Footer": {
     "tagline": "高端司机服务 — 全天候机场接送及德国全境商务出行。",
     "fleet": "车队",
@@ -281,7 +381,9 @@
     "company": "公司",
     "contact": "联系我们",
     "about": "关于我们",
-    "rights": "保留所有权利。"
+    "rights": "保留所有权利。",
+    "availability": "全天候 — 德国全境可用",
+    "credit": "Created & Designed by FORSITE.RO"
   },
   "ServicePages": {
     "bookNow": "立即预订",
@@ -295,7 +397,7 @@
       "badge": "机场接送",
       "title": "机场",
       "highlight": "接送",
-      "description": "让您的旅程从无忧开始。我们的司机实时跟踪您的航班，根据延误自动调整，并在航站楼内举名牌等候您。无论您降落在慕尼黑、法兰克福、柏林，还是任何欧洲主要机场 — 您的司机在您落地之前就已经到位。无需排队，无需为行李发愁，无需临时与出租车讨价还价。一辆高端车辆已在路边等候，一位专业司机随时准备将您送往目的地。",
+      "description": "轻松开启您的旅程。我们的司机实时跟踪您的航班，根据延误进行调整，并在航站楼内举名牌等候。无论您降落在慕尼黑、法兰克福、柏林还是任何其他德国主要机场 — 您的司机在您落地之前就已到达。无需排队，无需为行李烦恼，无需最后一刻与出租车讨价还价。只有一辆高档车辆在路边等候，一位专业司机准备送您到目的地。",
       "features": [
         "实时航班跟踪，自动调整延误",
         "航站楼内迎宾服务，提供个性化名牌",

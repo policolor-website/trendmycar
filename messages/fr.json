@@ -22,7 +22,8 @@
     "serviceEvent": "Transfert Événementiel",
     "serviceFair": "Transfert Salon Professionnel",
     "servicePrices": "Prix & Tarifs",
-    "allServices": "Tous les services"
+    "allServices": "Tous les services",
+    "bookByPhone": "Réserver par téléphone"
   },
   "Hero": {
     "badge": "Transfert aéroport 24h/24 - Chauffeurs professionnels",
@@ -45,7 +46,15 @@
     "reserveNow": "Réserver maintenant",
     "errorOutsideGermany": "Notre service de chauffeur fonctionne uniquement en Allemagne. Veuillez sélectionner des adresses de prise en charge et de destination en Allemagne.",
     "errorGeneric": "Échec du calcul du prix. Veuillez réessayer.",
-    "errorMissingFields": "Veuillez saisir le lieu de prise en charge et la destination."
+    "errorMissingFields": "Veuillez saisir le lieu de prise en charge et la destination.",
+    "fixedPrice": "Prix fixe",
+    "distance": "Distance",
+    "duration": "Durée",
+    "rate": "Tarif",
+    "nightSurcharge": "Supplément de nuit",
+    "airportFee": "Frais d'aéroport",
+    "extraInfoLabel": "Informations supplémentaires — détails de prise en charge",
+    "extraInfoPlaceholder": "Numéro de porte, terminal, entrée du bâtiment, détails du point de rencontre..."
   },
   "Fleet": {
     "badge": "Nos véhicules",
@@ -62,7 +71,7 @@
     "description": "Nous sommes spécialisés dans le service de chauffeur haut de gamme — axé sur le confort, la ponctualité et le professionnalisme.",
     "learnMore": "En savoir plus",
     "airportTitle": "Transfert Aéroport",
-    "airportDesc": "Transferts fluides et ponctuels vers et depuis tous les grands aéroports européens.",
+    "airportDesc": "Transferts fluides et ponctuels vers et depuis tous les grands aéroports allemands.",
     "chauffeurTitle": "Service de Chauffeur",
     "chauffeurDesc": "Voyagez avec confort et élégance dans notre flotte de véhicules premium avec des chauffeurs professionnels.",
     "dayToursTitle": "Excursions à la Journée",
@@ -89,7 +98,42 @@
     "highlight": "confiance",
     "faqBadge": "FAQ",
     "faqTitle": "Questions & réponses",
-    "featuresTitle": "Ce que vous obtenez"
+    "featuresTitle": "Ce que vous obtenez",
+    "feature1Title": "Voyage en toute sécurité",
+    "feature1Desc": "Voyagez l'esprit tranquille — chaque trajet est professionnellement planifié, soigneusement exécuté et entièrement assuré du début à la fin.",
+    "feature2Title": "Chauffeur professionnel",
+    "feature2Desc": "Votre chauffeur personnel arrive impeccablement habillé en costume sombre avec chemise et cravate. Toujours professionnel, toujours ponctuel.",
+    "feature3Title": "Suivi des vols",
+    "feature3Desc": "Nous suivons votre vol en temps réel. Arrivée anticipée ou retard — nous nous ajustons automatiquement et sommes là quand vous avez besoin de nous.",
+    "featuresSubtitle": "Votre confort et votre sécurité,",
+    "featuresHighlight": "redéfinis",
+    "featuresDescription": "Chez TrendMyDrive, nous redéfinissons le voyage aéroportuaire à travers l'Allemagne — avec un service de chauffeur haut de gamme basé sur le confort, la fiabilité et l'élégance. Que vous arriviez ou partiez, nous garantissons un trajet fluide et sans stress de votre porte à tout grand aéroport allemand — et inversement.",
+    "faq": [
+      {
+        "q": "Quelles zones couvrez-vous ?",
+        "a": "Nous proposons des services de chauffeur et de transfert aéroport dans toute l'Allemagne, y compris Francfort, Munich, Berlin et plus encore."
+      },
+      {
+        "q": "Quels types de véhicules proposez-vous ?",
+        "a": "Mercedes E-Class et S-Class pour jusqu'à trois passagers, V-Class pour jusqu'à six personnes avec bagages."
+      },
+      {
+        "q": "Vos services sont-ils disponibles 24h/24 ?",
+        "a": "Oui, nous sommes disponibles 24h/24. Que ce soit un transfert aéroport tôt le matin ou une prise en charge tardive — nos chauffeurs sont prêts à tout moment."
+      },
+      {
+        "q": "Puis-je réserver à court terme ?",
+        "a": "Oui, les réservations à court terme sont possibles selon la disponibilité des véhicules. Pour les demandes urgentes, il est préférable de nous appeler directement."
+      },
+      {
+        "q": "Proposez-vous le service Meet & Greet à l'aéroport ?",
+        "a": "Bien sûr. Votre chauffeur vous accueille dans le terminal avec une pancarte nominative, vous aide avec les bagages et vous accompagne jusqu'au véhicule — pour une expérience fluide et sans souci."
+      },
+      {
+        "q": "Suivez-vous les arrivées et retards de vols ?",
+        "a": "Oui. Nous surveillons votre vol en temps réel pour garantir des prises en charge ponctuelles — même si votre vol arrive en avance ou en retard par rapport à l'horaire prévu."
+      }
+    ]
   },
   "CTA": {
     "title": "Réservez votre chauffeur",
@@ -100,7 +144,8 @@
     "badge": "Itinéraires populaires",
     "title": "Itinéraires que nous parcourons",
     "highlight": "régulièrement",
-    "description": "De Munich vers tous les grands aéroports et villes d'Allemagne et des pays voisins."
+    "description": "De Munich vers tous les grands aéroports et villes d'Allemagne et des pays voisins.",
+    "disclaimer": "Les temps de trajet sont approximatifs et peuvent varier selon le trafic."
   },
   "FinalCTA": {
     "title": "Prêt pour votre voyage ?",
@@ -125,7 +170,10 @@
     "noAccount": "Vous n'avez pas de compte ?",
     "haveAccount": "Vous avez déjà un compte ?",
     "loginFailed": "Échec de la connexion",
-    "registerFailed": "Échec de l'inscription"
+    "registerFailed": "Échec de l'inscription",
+    "emailPlaceholder": "vous@exemple.com",
+    "fullNamePlaceholder": "Jean Dupont",
+    "phonePlaceholder": "+49 170 1234567"
   },
   "Checkout": {
     "title": "Paiement",
@@ -155,7 +203,15 @@
     "fillNamePhone": "Veuillez saisir votre nom complet et votre téléphone.",
     "securePayment": "Paiement sécurisé avec chiffrement SSL",
     "freeCancellation": "Annulation gratuite jusqu'à 24h avant la prise en charge",
-    "support": "Support client 24h/24, 7j/7"
+    "support": "Support client 24h/24, 7j/7",
+    "fullName": "Nom complet",
+    "fullNamePlaceholder": "Jean Dupont",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "jean@exemple.com",
+    "phoneLabel": "Téléphone",
+    "phonePlaceholder": "+49 170 1234567",
+    "passwordLabel": "Mot de passe",
+    "errorGeneric": "Une erreur s'est produite. Veuillez réessayer."
   },
   "Dashboard": {
     "title": "Tableau de bord",
@@ -198,7 +254,7 @@
     "badge": "À propos de nous",
     "title": "TrendMyDrive — Service de chauffeur premium depuis 2020",
     "subtitle": "Votre confort et votre sécurité sont notre priorité absolue",
-    "intro": "Chez TrendMyDrive, nous redéfinissons le voyage aéroportuaire à travers Munich, l'Allemagne et l'Europe — avec un service de chauffeur haut de gamme axé sur le confort, la fiabilité et l'élégance. Que ce soit pour une arrivée ou un départ : notre promesse est un trajet fluide et sans stress de votre porte d'entrée à tout grand aéroport européen — et inversement.",
+    "intro": "Chez TrendMyDrive, nous redéfinissons le voyage aéroportuaire à travers Munich et l'Allemagne — avec un service de chauffeur haut de gamme axé sur le confort, la fiabilité et l'élégance. Que ce soit pour une arrivée ou un départ : notre promesse est un trajet fluide et sans stress de votre porte d'entrée à tout grand aéroport allemand — et inversement.",
     "statsPassengers": "Passagers satisfaits",
     "statsRating": "Note",
     "statsRatingDesc": "Les clients adorent l'expérience de voyage",
@@ -208,7 +264,7 @@
     "whyTitle": "Pourquoi les clients restent avec nous",
     "whyText": "Nous avons commencé en 2020 avec seulement quelques véhicules et avons grandi grâce aux recommandations, non à la publicité. La raison est simple : la voiture est là quand elle doit l'être. Une fois que vous avez expérimenté cette fiabilité, vous nous rappelez la prochaine fois.",
     "journeyTitle": "Là où le confort rencontre l'élégance",
-    "journeyText": "Voyagez en toute confiance et confort. TrendMyDrive propose un service de chauffeur haut de gamme avec des chauffeurs professionnels, des véhicules de luxe et des transferts fluides vers les principaux aéroports et destinations à travers l'Allemagne et l'Europe — à chaque kilomètre du trajet.",
+    "journeyText": "Voyagez en toute confiance et confort. TrendMyDrive propose un service de chauffeur haut de gamme avec des chauffeurs professionnels, des véhicules de luxe et des transferts fluides vers les principaux aéroports et destinations à travers l'Allemagne — à chaque kilomètre du trajet.",
     "learnMore": "En savoir plus",
     "faqBadge": "FAQ",
     "faqTitle": "Questions & réponses",
@@ -274,6 +330,50 @@
     "sent": "Message envoyé !",
     "sentDesc": "Notre équipe vous contactera dans les plus brefs délais."
   },
+  "Testimonials": {
+    "badge": "Avis",
+    "title": "Ce que disent",
+    "highlight": "nos clients",
+    "description": "Des milliers de passagers satisfaits nous font confiance — pour des transferts aéroport, des trajets d'affaires et des occasions spéciales.",
+    "items": [
+      {
+        "initials": "FP",
+        "name": "Fruzsina P.",
+        "location": "Munich",
+        "text": "Service extrêmement fiable ! Nous avons réservé un aller-retour — toujours à l'heure, super polis et serviables. Ils suivent l'atterrissage de votre vol et vous récupèrent directement aux arrivées. Nous utiliserons à nouveau votre service !"
+      },
+      {
+        "initials": "CU",
+        "name": "Clemens U.",
+        "location": "Munich",
+        "text": "En tant que consultant, je voyage beaucoup en avion et je conduis donc presque chaque semaine — et je suis extrêmement satisfait ! Les voitures sont toujours impeccables, principalement des limousines haut de gamme comme la Mercedes S-Class."
+      },
+      {
+        "initials": "AC",
+        "name": "Angeline C.",
+        "location": "Munich",
+        "text": "Tout le processus de réservation était très professionnel et fluide. L'équipe était joignable même très tôt le matin et réactive. Le véhicule était parfait pour nos bagages volumineux."
+      },
+      {
+        "initials": "AM",
+        "name": "Andre M.",
+        "location": "Munich",
+        "text": "Nous avons fait un trajet de quatre jours avec notre chauffeur. Super service — serviable, ponctuel, très poli et toujours aimable. Ils nous ont déposés directement à l'hôtel et nous ont repris de manière fiable."
+      },
+      {
+        "initials": "SA",
+        "name": "Sarah A.",
+        "location": "Munich",
+        "text": "Tout ce que je peux dire c'est : WOW. Quand nous viendrons à Munich, nous n'utiliserons définitivement aucun autre service de voiture — c'est certain !"
+      },
+      {
+        "initials": "GM",
+        "name": "G. M.",
+        "location": "Munich",
+        "text": "Service fantastique. Ponctuel, conduite sûre, véhicule propre et haut de gamme. 10/10."
+      }
+    ]
+  },
   "Footer": {
     "tagline": "Service de chauffeur premium — transferts aéroport 24h/24 et trajets d'affaires dans toute l'Allemagne.",
     "fleet": "Flotte",
@@ -281,7 +381,9 @@
     "company": "Entreprise",
     "contact": "Contact",
     "about": "À propos",
-    "rights": "Tous droits réservés."
+    "rights": "Tous droits réservés.",
+    "availability": "24h/24 — Disponible dans toute l'Allemagne",
+    "credit": "Created & Designed by FORSITE.RO"
   },
   "ServicePages": {
     "bookNow": "Réserver",
@@ -295,7 +397,7 @@
       "badge": "Transfert Aéroport",
       "title": "Aéroport",
       "highlight": "Transfert",
-      "description": "Commencez votre voyage sans stress. Nos chauffeurs suivent votre vol en temps réel, s'adaptent aux retards et vous attendent à l'intérieur du terminal avec une pancarte à votre nom. Que vous atterrissiez à Munich, Francfort, Berlin ou tout autre grand aéroport européen — votre chauffeur est déjà là avant même que vous ne touchiez le sol. Pas de file d'attente, pas de lutte avec les bagages, pas de négociation de dernière minute avec les taxis. Juste un véhicule premium qui vous attend au bord du trottoir et un chauffeur professionnel prêt à vous emmener à destination.",
+      "description": "Départez sereinement. Nos chauffeurs suivent votre vol en temps réel, s'adaptent aux retards et vous attendent à l'intérieur du terminal avec une pancarte nominative. Que vous atterrissiez à Munich, Francfort, Berlin ou tout autre grand aéroport allemand — votre chauffeur est déjà là avant même que vous touchiez le sol. Pas de files d'attente, pas de galères avec les bagages, pas de négociations de dernière minute avec les taxis. Juste un véhicule premium qui vous attend au bord du trottoir et un chauffeur professionnel prêt à vous emmener à destination.",
       "features": [
         "Suivi de vol en temps réel avec ajustements automatiques des retards",
         "Accueil à l'intérieur du terminal avec pancarte personnalisée à votre nom",
