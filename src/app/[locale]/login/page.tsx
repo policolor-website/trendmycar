@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { motion } from "framer-motion";
 import { ArrowRight, Mail, Lock } from "lucide-react";
 import { supabase } from "@/lib/supabase-client";
 import { brand } from "@/lib/brand";
@@ -39,9 +40,14 @@ export default function LoginPage() {
   };
 
   return (
-    <main className="min-h-screen bg-ink flex items-center justify-center px-6 pt-32 pb-16">
+    <main className="min-h-screen bg-ink flex items-center justify-center px-6 pt-32 pb-16" style={{ perspective: "1200px" }}>
       <div className="w-full max-w-md">
-        <div className="text-center mb-10">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-10"
+        >
           <Link href="/" className="inline-block">
             <span className="font-display text-3xl font-bold text-white">{brand.name}</span>
           </Link>
@@ -49,9 +55,15 @@ export default function LoginPage() {
             {t("loginTitle").split(" ").slice(0, -1).join(" ")} <span className="neon-text">{t("loginTitle").split(" ").slice(-1)[0]}</span>
           </h1>
           <p className="text-sm text-ash">{t("loginSubtitle")}</p>
-        </div>
+        </motion.div>
 
-        <div className="glass rounded-2xl p-8 shadow-2xl">
+        <motion.div
+          initial={{ opacity: 0, rotateX: 45, rotateY: 15, z: -600, scale: 1.8, filter: "blur(20px)" }}
+          animate={{ opacity: 1, rotateX: 0, rotateY: 0, z: 0, scale: 1, filter: "blur(0px)" }}
+          transition={{ duration: 1.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          style={{ transformStyle: "preserve-3d" }}
+          className="glass rounded-2xl p-8 shadow-2xl"
+        >
           <form onSubmit={handleLogin} className="space-y-5">
             <div>
               <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{t("email")}</label>
@@ -107,7 +119,7 @@ export default function LoginPage() {
               </Link>
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </main>
   );
