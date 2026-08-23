@@ -51,24 +51,28 @@ const services = [
     titleKey: "airportTitle" as const,
     descKey: "airportDesc" as const,
     image: "/fleet/chauffeur-driven-passenger-1.webp",
+    href: "/services/airport-transfer",
   },
   {
     icon: Car,
     titleKey: "chauffeurTitle" as const,
     descKey: "chauffeurDesc" as const,
     image: "/fleet/off-limousine.webp",
+    href: "/services/chauffeur",
   },
   {
     icon: Calendar,
     titleKey: "dayToursTitle" as const,
     descKey: "dayToursDesc" as const,
     image: "/fleet/gal-1.webp",
+    href: "/services/day-tours",
   },
   {
     icon: Users,
     titleKey: "groupTitle" as const,
     descKey: "groupDesc" as const,
     image: "/fleet/bento-wide.webp",
+    href: "/services/group-transfer",
   },
 ];
 
@@ -543,7 +547,7 @@ export default function HomePage() {
                 style={{ transformStyle: "preserve-3d" }}
               >
                 <Link
-                  href="/services"
+                  href={srv.href}
                   className="group block glass rounded-2xl overflow-hidden hover:border-electric/30 transition-all duration-500 h-full"
                 >
                   <div className="relative h-56 overflow-hidden">

@@ -391,7 +391,9 @@
     "about": "À propos",
     "rights": "Tous droits réservés.",
     "availability": "24h/24 — Disponible dans toute l'Allemagne",
-    "credit": "Created & Designed by FORSITE.RO"
+    "credit": "Created & Designed by FORSITE.RO",
+    "appTitle": "Téléchargez l'application TrendMyDrive",
+    "appSubtitle": "Réservez votre trajet en quelques secondes — disponible sur iOS et Android"
   },
   "ServicePages": {
     "bookNow": "Réserver",

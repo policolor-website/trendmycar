@@ -347,6 +347,19 @@ export default function Header() {
                 </>
               )}
             </div>
+
+            {/* App download */}
+            <a
+              href="#"
+              className="block mt-6 pt-4 border-t border-white/5 hover:opacity-80 transition-opacity"
+              aria-label="Download TrendMyDrive App"
+            >
+              <img
+                src="/trendmydrive-app.webp"
+                alt="Download on the App Store and Get it on Google Play"
+                className="w-full"
+              />
+            </a>
           </nav>
         </div>
       )}

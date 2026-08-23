@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Smartphone } from "lucide-react";
 import { brand } from "@/lib/brand";
 
 export default function Footer() {
@@ -78,6 +78,30 @@ export default function Footer() {
                 <Clock size={16} className="text-white/50 mt-0.5 shrink-0" />
                 <p className="text-sm text-ash">{brand.program}</p>
               </div>
+            </div>
+
+            {/* App Download Card */}
+            <div className="glass rounded-2xl p-5 mt-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
+                  <Smartphone size={20} className="text-white" />
+                </div>
+                <div>
+                  <h4 className="font-display text-sm text-white font-bold leading-tight">{t("appTitle")}</h4>
+                  <p className="text-xs text-ash">{t("appSubtitle")}</p>
+                </div>
+              </div>
+              <a
+                href="#"
+                className="hover:opacity-80 transition-opacity block"
+                aria-label="Download TrendMyDrive App"
+              >
+                <img
+                  src="/trendmydrive-app.webp"
+                  alt="Download on the App Store and Get it on Google Play"
+                  className="w-full"
+                />
+              </a>
             </div>
           </div>
         </div>
