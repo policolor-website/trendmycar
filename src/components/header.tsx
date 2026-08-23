@@ -101,18 +101,12 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group min-w-0 shrink">
-          <div className="flex flex-col leading-none min-w-0">
-            <span className="font-display text-xl sm:text-2xl font-bold text-white tracking-tight truncate">
-              {brand.name}
-            </span>
-            <span
-              className={`text-[9px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.3em] uppercase mt-0.5 transition-colors duration-300 ${
-                scrolled ? "text-ash" : "text-white/70"
-              } truncate`}
-            >
-              {brand.tagline}
-            </span>
-          </div>
+          <img
+            src="/trendmydrive-logo.webp"
+            alt={brand.name}
+            className="h-14 sm:h-16 w-auto"
+            loading="eager"
+          />
         </Link>
 
         {/* Desktop nav */}

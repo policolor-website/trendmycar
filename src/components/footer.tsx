@@ -13,10 +13,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <div className="flex flex-col leading-none mb-6">
-              <span className="font-display text-3xl font-bold text-white">{brand.name}</span>
-              <span className="text-[10px] tracking-[0.3em] uppercase text-ash mt-1">{brand.tagline}</span>
-            </div>
+            <img
+              src="/trendmydrive-logo.webp"
+              alt={brand.name}
+              className="h-20 w-auto mb-6"
+              loading="lazy"
+            />
             <p className="text-sm text-ash leading-relaxed mb-6">
               {t("tagline")}
             </p>
