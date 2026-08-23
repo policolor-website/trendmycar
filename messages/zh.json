@@ -1124,6 +1124,103 @@
       ],
       "ctaTitle": "准备好体验商务舱了吗？",
       "ctaDescription": "为您的下一次旅程预订梅赛德斯 E-Class，以精致奢华与舒适抵达目的地。"
+    },
+    "vClass": {
+      "badge": "商务面包车",
+      "title": "Mercedes",
+      "highlight": "V-Class",
+      "description": "梅赛德斯 V-Class 是团队出行的终极解决方案 — 宽敞空间与高端舒适完美结合。最多可容纳7名乘客，并有放置7个大行李箱的空间，是家庭、商务团队或婚礼派对的理想之选。步入车内，发现一个精致的座舱：Nappa 真皮内饰、电动加热和冷却前排座椅，以及配备双12.3英寸宽屏显示屏的全新仪表台。64色氛围灯营造出温馨而个性化的氛围，而搭载语音控制的 MBUX 信息娱乐系统让每个人保持互联。三扇滑动门 — 包括标准的左侧门 — 使上下车轻松自如。无论是六口之家的机场接送、前往展会的企业团队，还是盛装出席的婚礼派对：V-Class 为车上的每一个人提供一流舒适体验。",
+      "featuresTitle": "卓越之处",
+      "features": [
+        "最多7名乘客座位，腿部空间充裕",
+        "可容纳7个大行李箱的行李空间",
+        "全车 Nappa 真皮内饰",
+        "电动加热和冷却前排座椅，配备记忆功能",
+        "双12.3英寸宽屏 MBUX 显示屏",
+        "64色氛围灯",
+        "三扇滑动门，轻松上下车",
+        "TEMPMATIC 后排空调",
+        "加热真皮方向盘，配备电容触控",
+        "无线智能手机充电",
+        "主动距离辅助 DISTRONIC 和主动车道保持辅助",
+        "夜间行驶用的后排可调暗照明"
+      ],
+      "specsTitle": "技术规格",
+      "specs": [
+        {
+          "label": "车辆级别",
+          "value": "Business Van"
+        },
+        {
+          "label": "乘客",
+          "value": "7"
+        },
+        {
+          "label": "行李",
+          "value": "7 large suitcases"
+        },
+        {
+          "label": "车身长度",
+          "value": "5,140 mm (long version)"
+        },
+        {
+          "label": "轴距",
+          "value": "3,200 mm"
+        },
+        {
+          "label": "内饰",
+          "value": "Nappa leather, ambient lighting"
+        },
+        {
+          "label": "显示屏",
+          "value": "Dual 12.3-inch MBUX widescreen"
+        },
+        {
+          "label": "空调",
+          "value": "TEMPMATIC rear + front"
+        },
+        {
+          "label": "车门",
+          "value": "3 sliding doors"
+        },
+        {
+          "label": "安全",
+          "value": "DISTRONIC, Lane Keeping Assist"
+        }
+      ],
+      "faqTitle": "问答",
+      "faq": [
+        {
+          "question": "V-Class 可以容纳多少名乘客？",
+          "answer": "V-Class 可舒适乘坐最多7名乘客，非常适合家庭、商务团队、婚礼派对或团队机场接送。"
+        },
+        {
+          "question": "V-Class 可以装载多少行李？",
+          "answer": "V-Class 最多可容纳7个大行李箱，非常适合长途家庭度假、团队商务旅行或长期停留。"
+        },
+        {
+          "question": "V-Class 适合机场接送吗？",
+          "answer": "当然。V-Class 是我们团队机场接送的首选车辆，提供航班追踪、迎宾服务、三扇滑动门便于装载，以及充足的乘客和行李空间。"
+        },
+        {
+          "question": "V-Class 和 S-Class 有什么区别？",
+          "answer": "V-Class 是我们的商务面包车 — 专为最多7名乘客的团队和家庭设计。S-Class 是我们的头等豪华轿车，适合追求极致奢华体验的最多3名乘客。V-Class 注重空间和团队舒适；S-Class 注重个人奢华。"
+        },
+        {
+          "question": "V-Class 配备真皮座椅吗？",
+          "answer": "是的。V-Class 全车配备 Nappa 真皮内饰，前排座椅配备电动加热和冷却功能以及记忆功能，带来最大程度的舒适。"
+        },
+        {
+          "question": "我可以调整座椅布局吗？",
+          "answer": "可以。V-Class 提供6、7或8名乘客的灵活座椅配置，包括豪华独立座椅或休闲长椅选项，可根据您的团队需求进行调整。"
+        },
+        {
+          "question": "V-Class 适合商务团队吗？",
+          "answer": "是的。V-Class 配备 MBUX 信息娱乐系统、氛围灯、无线充电和静谧舒适的座舱，可作为一个移动会议室。非常适合前往展会、会议或活动的企业团队。"
+        }
+      ],
+      "ctaTitle": "准备好一起出行了吗？",
+      "ctaDescription": "为您的下一次团队旅程预订梅赛德斯 V-Class，以高端舒适与格调抵达目的地。"
     }
   }
 }

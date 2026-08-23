@@ -1124,6 +1124,103 @@
       ],
       "ctaTitle": "Ready to experience business class?",
       "ctaDescription": "Book the Mercedes E-Class for your next journey and arrive in refined luxury and comfort."
+    },
+    "vClass": {
+      "badge": "Business Van",
+      "title": "Mercedes",
+      "highlight": "V-Class",
+      "description": "The Mercedes V-Class is the ultimate group travel solution — where spaciousness meets premium comfort. With seating for up to 7 passengers and room for 7 large suitcases, it's the perfect choice for families, business teams, or wedding parties. Step inside and discover a refined cabin: Nappa leather upholstery, power-heated and cooled front seats, and a redesigned dashboard with dual 12.3-inch widescreen displays. Ambient lighting in 64 colors creates a warm, individualized atmosphere, while the MBUX infotainment system with voice control keeps everyone connected. Three sliding doors — including a standard left-side door — make boarding effortless. Whether it's an airport transfer for a family of six, a corporate team heading to a trade fair, or a wedding party arriving in style: the V-Class delivers first-class comfort for everyone on board.",
+      "featuresTitle": "What makes it exceptional",
+      "features": [
+        "Seating for up to 7 passengers with ample legroom",
+        "Luggage space for 7 large suitcases",
+        "Nappa leather upholstery throughout",
+        "Power-heated and cooled front seats with memory",
+        "Dual 12.3-inch widescreen MBUX displays",
+        "Ambient lighting with 64 colors",
+        "Three sliding doors for effortless boarding",
+        "TEMPMATIC rear air conditioning",
+        "Heated leather steering wheel with capacitive controls",
+        "Wireless smartphone charging",
+        "Active Distance Assist DISTRONIC and Active Lane Keeping Assist",
+        "Dimmed rear cabin lighting for night journeys"
+      ],
+      "specsTitle": "Technical specifications",
+      "specs": [
+        {
+          "label": "Vehicle class",
+          "value": "Business Van"
+        },
+        {
+          "label": "Passengers",
+          "value": "7"
+        },
+        {
+          "label": "Luggage",
+          "value": "7 large suitcases"
+        },
+        {
+          "label": "Length",
+          "value": "5,140 mm (long version)"
+        },
+        {
+          "label": "Wheelbase",
+          "value": "3,200 mm"
+        },
+        {
+          "label": "Interior",
+          "value": "Nappa leather, ambient lighting"
+        },
+        {
+          "label": "Display",
+          "value": "Dual 12.3-inch MBUX widescreen"
+        },
+        {
+          "label": "Climate",
+          "value": "TEMPMATIC rear + front"
+        },
+        {
+          "label": "Doors",
+          "value": "3 sliding doors"
+        },
+        {
+          "label": "Safety",
+          "value": "DISTRONIC, Lane Keeping Assist"
+        }
+      ],
+      "faqTitle": "Questions & answers",
+      "faq": [
+        {
+          "question": "How many passengers can the V-Class accommodate?",
+          "answer": "The V-Class comfortably seats up to 7 passengers, making it ideal for families, business teams, wedding parties, or group airport transfers."
+        },
+        {
+          "question": "How much luggage can the V-Class hold?",
+          "answer": "The V-Class has space for up to 7 large suitcases, perfect for long family holidays, group business trips, or extended stays."
+        },
+        {
+          "question": "Is the V-Class suitable for airport transfers?",
+          "answer": "Absolutely. The V-Class is our go-to vehicle for group airport transfers, offering flight tracking, meet & greet service, three sliding doors for easy loading, and ample space for both passengers and luggage."
+        },
+        {
+          "question": "What's the difference between V-Class and S-Class?",
+          "answer": "The V-Class is our Business Van — designed for groups and families with up to 7 passengers. The S-Class is our First Class Limousine for up to 3 passengers seeking the ultimate luxury experience. The V-Class prioritizes space and group comfort; the S-Class prioritizes individual luxury."
+        },
+        {
+          "question": "Does the V-Class have leather seats?",
+          "answer": "Yes. The V-Class features Nappa leather upholstery throughout, with power-heated and cooled front seats with memory function for maximum comfort."
+        },
+        {
+          "question": "Can I configure the seating arrangement?",
+          "answer": "Yes. The V-Class offers flexible seating configurations for 6, 7, or 8 passengers, including options for luxury individual seats or a lounger bench, depending on your group's needs."
+        },
+        {
+          "question": "Is the V-Class good for business teams?",
+          "answer": "Yes. The V-Class functions as a mobile meeting room with the MBUX infotainment system, ambient lighting, wireless charging, and a quiet, comfortable cabin. It's perfect for corporate teams heading to trade fairs, meetings, or events."
+        }
+      ],
+      "ctaTitle": "Ready to travel together?",
+      "ctaDescription": "Book the Mercedes V-Class for your next group journey and arrive in premium comfort and style."
     }
   }
 }

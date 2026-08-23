@@ -1124,6 +1124,103 @@
       ],
       "ctaTitle": "Prêt à vivre l'expérience classe affaires ?",
       "ctaDescription": "Réservez la Mercedes E-Class pour votre prochain voyage et arrivez dans un luxe raffiné et un confort exceptionnel."
+    },
+    "vClass": {
+      "badge": "Van Classe Affaires",
+      "title": "Mercedes",
+      "highlight": "V-Class",
+      "description": "La Mercedes V-Class est la solution ultime pour les voyages en groupe — où l'espace rencontre le confort premium. Avec des places pour jusqu'à 7 passagers et de la place pour 7 grandes valises, c'est le choix parfait pour les familles, les équipes d'entreprise ou les mariages. Montez à bord et découvrez une cabine raffinée : sellerie en cuir Nappa, sièges avant électriques chauffants et ventilés, et un tableau de bord repensé avec double écran large de 12,3 pouces. L'éclairage d'ambiance en 64 couleurs crée une atmosphère chaleureuse et personnalisée, tandis que le système d'infodivertissement MBUX avec commande vocale garde tout le monde connecté. Trois portes coulissantes — dont une porte standard côté gauche — rendent l'embarquement sans effort. Que ce soit pour un transfert aéroport pour une famille de six, une équipe d'entreprise se rendant à un salon professionnel, ou un cortège de mariage arrivant avec élégance : la V-Class offre un confort première classe pour tous à bord.",
+      "featuresTitle": "Ce qui la rend exceptionnelle",
+      "features": [
+        "Places assises pour jusqu'à 7 passagers avec ample espace pour les jambes",
+        "Espace de bagages pour 7 grandes valises",
+        "Sellerie en cuir Nappa partout",
+        "Sièges avant électriques chauffants et ventilés avec mémoire",
+        "Double écran large MBUX de 12,3 pouces",
+        "Éclairage d'ambiance avec 64 couleurs",
+        "Trois portes coulissantes pour un embarquement sans effort",
+        "Climatisation arrière TEMPMATIC",
+        "Volant en cuir chauffant avec commandes capacitives",
+        "Recharge sans fil du smartphone",
+        "Active Distance Assist DISTRONIC et Active Lane Keeping Assist",
+        "Éclairage arrière atténué pour les trajets nocturnes"
+      ],
+      "specsTitle": "Spécifications techniques",
+      "specs": [
+        {
+          "label": "Catégorie de véhicule",
+          "value": "Business Van"
+        },
+        {
+          "label": "Passagers",
+          "value": "7"
+        },
+        {
+          "label": "Bagages",
+          "value": "7 grandes valises"
+        },
+        {
+          "label": "Longueur",
+          "value": "5,140 mm (version longue)"
+        },
+        {
+          "label": "Empattement",
+          "value": "3,200 mm"
+        },
+        {
+          "label": "Intérieur",
+          "value": "Cuir Nappa, éclairage d'ambiance"
+        },
+        {
+          "label": "Écran",
+          "value": "Double écran large MBUX 12,3 pouces"
+        },
+        {
+          "label": "Climatisation",
+          "value": "TEMPMATIC arrière + avant"
+        },
+        {
+          "label": "Portes",
+          "value": "3 portes coulissantes"
+        },
+        {
+          "label": "Sécurité",
+          "value": "DISTRONIC, Lane Keeping Assist"
+        }
+      ],
+      "faqTitle": "Questions & réponses",
+      "faq": [
+        {
+          "question": "Combien de passagers la V-Class peut-elle accueillir ?",
+          "answer": "La V-Class accueille confortablement jusqu'à 7 passagers, ce qui la rend idéale pour les familles, les équipes d'entreprise, les mariages ou les transferts aéroport en groupe."
+        },
+        {
+          "question": "Combien de bagages la V-Class peut-elle contenir ?",
+          "answer": "La V-Class a de l'espace pour jusqu'à 7 grandes valises, parfait pour les longues vacances en famille, les voyages d'affaires en groupe ou les séjours prolongés."
+        },
+        {
+          "question": "La V-Class est-elle adaptée aux transferts aéroport ?",
+          "answer": "Absolument. La V-Class est notre véhicule de prédilection pour les transferts aéroport en groupe, offrant le suivi des vols, le service Meet & Greet, trois portes coulissantes pour un chargement facile et un espace suffisant pour les passagers et les bagages."
+        },
+        {
+          "question": "Quelle est la différence entre la V-Class et la S-Class ?",
+          "answer": "La V-Class est notre Van Classe Affaires — conçu pour les groupes et les familles avec jusqu'à 7 passagers. La S-Class est notre Limousine Première Classe pour jusqu'à 3 passagers recherchant l'expérience de luxe ultime. La V-Class privilégie l'espace et le confort de groupe ; la S-Class privilégie le luxe individuel."
+        },
+        {
+          "question": "La V-Class dispose-t-elle de sièges en cuir ?",
+          "answer": "Oui. La V-Class est dotée d'une sellerie en cuir Nappa partout, avec des sièges avant électriques chauffants et ventilés à fonction mémoire pour un confort maximal."
+        },
+        {
+          "question": "Puis-je configurer l'agencement des sièges ?",
+          "answer": "Oui. La V-Class offre des configurations de sièges flexibles pour 6, 7 ou 8 passagers, avec des options pour des sièges individuels de luxe ou une banquette lounge, selon les besoins de votre groupe."
+        },
+        {
+          "question": "La V-Class est-elle adaptée aux équipes d'entreprise ?",
+          "answer": "Oui. La V-Class fait office de salle de réunion mobile avec le système d'infodivertissement MBUX, l'éclairage d'ambiance, la recharge sans fil et une cabine silencieuse et confortable. C'est parfait pour les équipes d'entreprise se rendant à des salons professionnels, des réunions ou des événements."
+        }
+      ],
+      "ctaTitle": "Prêt à voyager ensemble ?",
+      "ctaDescription": "Réservez la Mercedes V-Class pour votre prochain voyage en groupe et arrivez dans un confort premium et avec élégance."
     }
   }
 }

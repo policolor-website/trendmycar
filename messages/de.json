@@ -1124,6 +1124,103 @@
       ],
       "ctaTitle": "Bereit, Business Class zu erleben?",
       "ctaDescription": "Buchen Sie die Mercedes E-Klasse für Ihre nächste Reise und kommen Sie in veredeltem Luxus und Komfort an."
+    },
+    "vClass": {
+      "badge": "Business Van",
+      "title": "Mercedes",
+      "highlight": "V-Class",
+      "description": "Die Mercedes V-Klasse ist die ultimative Lösung für Gruppenreisen — wo Großzügigkeit auf Premium-Komfort trifft. Mit Sitzplätzen für bis zu 7 Passagiere und Platz für 7 große Koffer ist sie die perfekte Wahl für Familien, Geschäftsteams oder Hochzeitsgesellschaften. Treten Sie ein und entdecken Sie eine veredelte Kabine: Nappa-Leder-Polsterung, elektrisch beheizte und gekühlte Vordersitze und ein neu gestaltetes Armaturenbrett mit zwei 12,3-Zoll-Breitbild-Displays. Ambientebeleuchtung in 64 Farben schafft eine warme, individuelle Atmosphäre, während das MBUX-Infotainmentsystem mit Sprachsteuerung alle verbunden hält. Drei Schiebetüren — darunter eine serienmäßige Links-Schiebetür — machen das Einsteigen mühelos. Ob Flughafentransfer für eine sechsköpfige Familie, ein Unternehmensteam auf dem Weg zur Messe oder eine Hochzeitsgesellschaft, die stilvoll ankommt: Die V-Klasse bietet First-Class-Komfort für alle an Bord.",
+      "featuresTitle": "Was sie außergewöhnlich macht",
+      "features": [
+        "Sitzplätze für bis zu 7 Passagiere mit großzügiger Beinfreiheit",
+        "Gepäckraum für 7 große Koffer",
+        "Nappa-Leder-Polsterung im gesamten Innenraum",
+        "Elektrisch beheizte und gekühlte Vordersitze mit Memory-Funktion",
+        "Doppelte 12,3-Zoll-Breitbild-MBUX-Displays",
+        "Ambientebeleuchtung mit 64 Farben",
+        "Drei Schiebetüren für müheloses Einsteigen",
+        "TEMPMATIC-Heckklimaanlage",
+        "Beheiztes Lederlenkrad mit kapazitiven Bedienelementen",
+        "Kabelloses Smartphone-Laden",
+        "Active Distance Assist DISTRONIC und Active Lane Keeping Assist",
+        "Gedimmte Fondbeleuchtung für Nachtfahrten"
+      ],
+      "specsTitle": "Technische Daten",
+      "specs": [
+        {
+          "label": "Fahrzeugklasse",
+          "value": "Business Van"
+        },
+        {
+          "label": "Passagiere",
+          "value": "7"
+        },
+        {
+          "label": "Gepäck",
+          "value": "7 große Koffer"
+        },
+        {
+          "label": "Länge",
+          "value": "5,140 mm (Langversion)"
+        },
+        {
+          "label": "Radstand",
+          "value": "3,200 mm"
+        },
+        {
+          "label": "Innenraum",
+          "value": "Nappa-Leder, Ambientebeleuchtung"
+        },
+        {
+          "label": "Display",
+          "value": "Doppelte 12,3-Zoll-MBUX-Breitbild"
+        },
+        {
+          "label": "Klimatisierung",
+          "value": "TEMPMATIC hinten + vorne"
+        },
+        {
+          "label": "Türen",
+          "value": "3 Schiebetüren"
+        },
+        {
+          "label": "Sicherheit",
+          "value": "DISTRONIC, Spurhalte-Assistent"
+        }
+      ],
+      "faqTitle": "Fragen & Antworten",
+      "faq": [
+        {
+          "question": "Wie viele Passagiere bietet die V-Klasse Platz?",
+          "answer": "Die V-Klasse bietet bequem Platz für bis zu 7 Passagiere und eignet sich ideal für Familien, Geschäftsteams, Hochzeitsgesellschaften oder Gruppen-Flughafentransfers."
+        },
+        {
+          "question": "Wie viel Gepäck fasst die V-Klasse?",
+          "answer": "Die V-Klasse bietet Platz für bis zu 7 große Koffer — perfekt für lange Familienurlaube, Gruppen-Geschäftsreisen oder längere Aufenthalte."
+        },
+        {
+          "question": "Ist die V-Klasse für Flughafentransfers geeignet?",
+          "answer": "Absolut. Die V-Klasse ist unser Standard-Fahrzeug für Gruppen-Flughafentransfers mit Flugüberwachung, Meet-&-Greet-Service, drei Schiebetüren für einfaches Beladen und großzügigem Platz für Passagiere und Gepäck."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen V-Klasse und S-Klasse?",
+          "answer": "Die V-Klasse ist unser Business Van — konzipiert für Gruppen und Familien mit bis zu 7 Passagieren. Die S-Klasse ist unsere First Class Limousine für bis zu 3 Passagiere, die das ultimative Luxuserlebnis suchen. Die V-Klasse priorisiert Platz und Gruppenkomfort; die S-Klasse priorisiert individuellen Luxus."
+        },
+        {
+          "question": "Verfügt die V-Klasse über Ledersitze?",
+          "answer": "Ja. Die V-Klasse verfügt durchgehend über Nappa-Leder-Polsterung mit elektrisch beheizten und gekühlten Vordersitzen mit Memory-Funktion für maximalen Komfort."
+        },
+        {
+          "question": "Kann ich die Sitzanordnung konfigurieren?",
+          "answer": "Ja. Die V-Klasse bietet flexible Sitzkonfigurationen für 6, 7 oder 8 Passagiere, einschließlich Optionen für luxuriöse Einzelsitze oder eine Lounger-Bank, je nach den Bedürfnissen Ihrer Gruppe."
+        },
+        {
+          "question": "Ist die V-Klasse gut für Geschäftsteams geeignet?",
+          "answer": "Ja. Die V-Klasse fungiert als mobiler Konferenzraum mit dem MBUX-Infotainmentsystem, Ambientebeleuchtung, kabellosem Laden und einer ruhigen, komfortablen Kabine. Sie ist perfekt für Unternehmensteams auf dem Weg zu Messen, Meetings oder Events."
+        }
+      ],
+      "ctaTitle": "Bereit, gemeinsam zu reisen?",
+      "ctaDescription": "Buchen Sie die Mercedes V-Klasse für Ihre nächste Gruppenreise und kommen Sie in Premium-Komfort und Stil an."
     }
   }
 }
