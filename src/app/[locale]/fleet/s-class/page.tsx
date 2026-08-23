@@ -41,7 +41,7 @@ export default function SClassPage() {
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
             >
               <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">
                 {t("sClass.badge")}
@@ -90,14 +90,14 @@ export default function SClassPage() {
       {/* Gallery */}
       <section className="px-6 mb-16">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4" style={{ perspective: "1200px" }}>
             {galleryImages.map((img, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, rotateX: 45, rotateY: 15, z: -600, scale: 1.8, filter: "blur(20px)" }}
+                whileInView={{ opacity: 1, rotateX: 0, rotateY: 0, z: 0, scale: 1, filter: "blur(0px)" }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
+                transition={{ duration: 1.8, delay: i * 0.2, ease: [0.16, 1, 0.3, 1] }}
                 className="relative overflow-hidden rounded-xl group aspect-square"
               >
                 <img
@@ -116,15 +116,15 @@ export default function SClassPage() {
       <section className="px-6 mb-16">
         <div className="max-w-5xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, rotateX: 45, rotateY: 15, z: -600, scale: 1.8, filter: "blur(20px)" }}
+            whileInView={{ opacity: 1, rotateX: 0, rotateY: 0, z: 0, scale: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <h2 className="font-display text-3xl md:text-4xl font-bold text-cream mb-8">
               {t("sClass.featuresTitle")}
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4" style={{ perspective: "1200px" }}>
               {features.map((feature, i) => (
                 <div key={i} className="flex items-start gap-3 glass rounded-xl p-5">
                   <Check size={20} className="text-white/70 shrink-0 mt-0.5" />
@@ -140,10 +140,10 @@ export default function SClassPage() {
       <section className="px-6 mb-16">
         <div className="max-w-3xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, rotateX: 45, rotateY: 15, z: -600, scale: 1.8, filter: "blur(20px)" }}
+            whileInView={{ opacity: 1, rotateX: 0, rotateY: 0, z: 0, scale: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <h2 className="font-display text-3xl md:text-4xl font-bold text-cream mb-8">
               {t("sClass.specsTitle")}
@@ -164,15 +164,15 @@ export default function SClassPage() {
       <section className="px-6 mb-16">
         <div className="max-w-3xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, rotateX: 45, rotateY: 15, z: -600, scale: 1.8, filter: "blur(20px)" }}
+            whileInView={{ opacity: 1, rotateX: 0, rotateY: 0, z: 0, scale: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <h2 className="font-display text-3xl md:text-4xl font-bold text-cream mb-8">
               {t("sClass.faqTitle")}
             </h2>
-            <div className="space-y-3">
+            <div className="space-y-3" style={{ perspective: "1200px" }}>
               {faqs.map((faq, i) => (
                 <div key={i} className="glass rounded-xl overflow-hidden">
                   <button
@@ -208,10 +208,10 @@ export default function SClassPage() {
       {/* CTA */}
       <section className="px-6">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, rotateX: 45, rotateY: 15, z: -600, scale: 1.8, filter: "blur(20px)" }}
+          whileInView={{ opacity: 1, rotateX: 0, rotateY: 0, z: 0, scale: 1, filter: "blur(0px)" }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-3xl mx-auto text-center glass rounded-2xl p-12"
         >
           <h2 className="font-display text-3xl md:text-4xl font-bold text-cream mb-4">
