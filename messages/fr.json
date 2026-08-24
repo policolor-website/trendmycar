@@ -91,7 +91,15 @@
     "dayToursTitle": "Excursions à la Journée",
     "dayToursDesc": "Départ tôt le matin ou arrivée tardive — nous sommes sur la route pour vous 24h/24.",
     "groupTitle": "Transfert de Groupe",
-    "groupDesc": "Du minibus à l'autocar — transport fiable avec chauffeur pour des groupes de toute taille."
+    "groupDesc": "Du minibus à l'autocar — transport fiable avec chauffeur pour des groupes de toute taille.",
+    "diplomaticTitle": "Chauffeur Diplomatique",
+    "diplomaticDesc": "Transport discret et sécurisé pour diplomates, ambassadeurs et délégations VIP.",
+    "eventTitle": "Transfer Événementiel",
+    "eventDesc": "Transport de groupe ponctuel pour mariages, galas, conférences et événements privés.",
+    "fairTitle": "Transfer Salon",
+    "fairDesc": "Service de navette fiable vers et depuis tous les principaux salons et expositions allemands.",
+    "pricesTitle": "Prix & Tarifs",
+    "pricesDesc": "Prix fixes transparents au kilomètre — aucun coût caché, aucune surprise."
   },
   "EasyBooking": {
     "badge": "Réservation facile",

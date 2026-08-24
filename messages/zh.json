@@ -91,7 +91,15 @@
     "dayToursTitle": "一日游",
     "dayToursDesc": "清晨出发或深夜抵达 — 我们全天候为您在路上服务。",
     "groupTitle": "团队接送",
-    "groupDesc": "从迷你巴士到大巴 — 为任何规模的团队提供可靠的带司机接送服务。"
+    "groupDesc": "从迷你巴士到大巴 — 为任何规模的团队提供可靠的带司机接送服务。",
+    "diplomaticTitle": "外交司机",
+    "diplomaticDesc": "为外交官、大使和VIP代表团提供谨慎、安全的运输服务。",
+    "eventTitle": "活动接送",
+    "eventDesc": "为婚礼、晚会、会议和私人活动提供准时的团体交通服务。",
+    "fairTitle": "展会接送",
+    "fairDesc": "往返德国所有主要展会和展览的可靠班车服务。",
+    "pricesTitle": "价格与费率",
+    "pricesDesc": "每公里透明固定价格 — 无隐藏费用，无意外。"
   },
   "EasyBooking": {
     "badge": "轻松预订",

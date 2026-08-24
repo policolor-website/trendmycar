@@ -91,7 +91,15 @@
     "dayToursTitle": "Tagesausflüge",
     "dayToursDesc": "Frühe Abfahrt oder späte Ankunft — wir sind rund um die Uhr für Sie unterwegs.",
     "groupTitle": "Gruppentransfer",
-    "groupDesc": "Vom Kleinbus bis zum Reisebus — zuverlässiger Transport mit Fahrer für Gruppen jeder Größe."
+    "groupDesc": "Vom Kleinbus bis zum Reisebus — zuverlässiger Transport mit Fahrer für Gruppen jeder Größe.",
+    "diplomaticTitle": "Diplomatenfahrer",
+    "diplomaticDesc": "Diskreter, sicherer Transport für Diplomaten, Botschafter und VIP-Delegationen.",
+    "eventTitle": "Eventtransfer",
+    "eventDesc": "Pünktlicher Gruppentransport für Hochzeiten, Galas, Konferenzen und private Events.",
+    "fairTitle": "Messe-Transfer",
+    "fairDesc": "Zuverlässiger Shuttleservice zu und von allen großen deutschen Messen und Ausstellungen.",
+    "pricesTitle": "Preise & Tarife",
+    "pricesDesc": "Transparente Festpreise pro Kilometer — keine versteckten Kosten, keine Überraschungen."
   },
   "EasyBooking": {
     "badge": "Einfache Buchung",

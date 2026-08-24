@@ -17,6 +17,11 @@ import {
   Clock,
   Star,
   ChevronDown,
+  Briefcase,
+  PartyPopper,
+  Building2,
+  Tag,
+  Smartphone,
 } from "lucide-react";
 import BuildingHero3D from "@/components/building-hero-3d";
 import PlacesInput from "@/components/places-input";
@@ -50,29 +55,57 @@ const services = [
     icon: Plane,
     titleKey: "airportTitle" as const,
     descKey: "airportDesc" as const,
-    image: "/fleet/chauffeur-driven-passenger-1.webp",
+    image: "/services/airport-transfer.webp",
     href: "/services/airport-transfer",
   },
   {
     icon: Car,
     titleKey: "chauffeurTitle" as const,
     descKey: "chauffeurDesc" as const,
-    image: "/fleet/off-limousine.webp",
+    image: "/services/chauffeur-service.webp",
     href: "/services/chauffeur",
   },
   {
-    icon: Calendar,
-    titleKey: "dayToursTitle" as const,
-    descKey: "dayToursDesc" as const,
-    image: "/fleet/gal-1.webp",
-    href: "/services/day-tours",
+    icon: ShieldCheck,
+    titleKey: "diplomaticTitle" as const,
+    descKey: "diplomaticDesc" as const,
+    image: "/fleet/veh-s-klasse.webp",
+    href: "/services/diplomatic",
   },
   {
     icon: Users,
     titleKey: "groupTitle" as const,
     descKey: "groupDesc" as const,
-    image: "/fleet/bento-wide.webp",
+    image: "/services/group-transfer.webp",
     href: "/services/group-transfer",
+  },
+  {
+    icon: Calendar,
+    titleKey: "dayToursTitle" as const,
+    descKey: "dayToursDesc" as const,
+    image: "/services/day-tours.webp",
+    href: "/services/day-tours",
+  },
+  {
+    icon: PartyPopper,
+    titleKey: "eventTitle" as const,
+    descKey: "eventDesc" as const,
+    image: "/fleet/gal-3.webp",
+    href: "/services/event-transfer",
+  },
+  {
+    icon: Building2,
+    titleKey: "fairTitle" as const,
+    descKey: "fairDesc" as const,
+    image: "/fleet/gal-4.webp",
+    href: "/services/fair-transfer",
+  },
+  {
+    icon: Tag,
+    titleKey: "pricesTitle" as const,
+    descKey: "pricesDesc" as const,
+    image: "/fleet/bento-b.webp",
+    href: "/services/prices",
   },
 ];
 
@@ -112,6 +145,7 @@ export default function HomePage() {
   const tFinalCTA = useTranslations("FinalCTA");
   const tNav = useTranslations("Nav");
   const tTestimonials = useTranslations("Testimonials");
+  const tFooter = useTranslations("Footer");
 
   const testimonialItems = tTestimonials.raw("items") as { initials: string; name: string; location: string; text: string }[];
   const faqItemsData = tWhyUs.raw("faq") as { q: string; a: string }[];
@@ -538,9 +572,78 @@ export default function HomePage() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6" style={{ perspective: "1200px" }}>
-            {services.map((srv, i) => (
+            {services.slice(0, 4).map((srv, i) => (
               <motion.div
                 key={i}
+                initial={{ opacity: 0, rotateX: 45, rotateY: 15, z: -600, scale: 1.8, filter: "blur(20px)" }}
+                whileInView={{ opacity: 1, rotateX: 0, rotateY: 0, z: 0, scale: 1, filter: "blur(0px)" }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 1.8, delay: i * 0.2, ease: [0.16, 1, 0.3, 1] }}
+                style={{ transformStyle: "preserve-3d" }}
+              >
+                <Link
+                  href={srv.href}
+                  className="group block glass rounded-2xl overflow-hidden hover:border-electric/30 transition-all duration-500 h-full"
+                >
+                  <div className="relative h-56 overflow-hidden">
+                    <img
+                      src={srv.image}
+                      alt={tServices(srv.titleKey)}
+                      className="w-full h-full object-cover bw-image group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+                    <div className="absolute bottom-4 left-4 flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-electric/20 backdrop-blur-sm flex items-center justify-center">
+                        <srv.icon size={20} className="text-electric" />
+                      </div>
+                      <h3 className="font-display text-lg font-bold text-cream">{tServices(srv.titleKey)}</h3>
+                    </div>
+                  </div>
+                  <div className="p-5">
+                    <p className="text-sm text-ash leading-relaxed mb-4">{tServices(srv.descKey)}</p>
+                    <span className="text-white text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                      {tServices("learnMore")} <ArrowRight size={14} />
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* App Download CTA — full width */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="glass rounded-2xl p-8 my-6 flex flex-col md:flex-row items-center justify-between gap-6"
+          >
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 rounded-xl bg-electric/20 flex items-center justify-center shrink-0">
+                <Smartphone size={28} className="text-electric" />
+              </div>
+              <div>
+                <h3 className="font-display text-xl font-bold text-cream mb-1 whitespace-nowrap">{tFooter("appTitle")}</h3>
+                <p className="text-sm text-ash">{tFooter("appSubtitle")}</p>
+              </div>
+            </div>
+            <a
+              href="#"
+              className="hover:opacity-80 transition-opacity shrink-0"
+              aria-label="Download TrendMyDrive App"
+            >
+              <img
+                src="/trendmydrive-app.webp"
+                alt="Download on the App Store and Get it on Google Play"
+                className="w-full md:w-auto max-w-xs"
+              />
+            </a>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6" style={{ perspective: "1200px" }}>
+            {services.slice(4).map((srv, i) => (
+              <motion.div
+                key={i + 4}
                 initial={{ opacity: 0, rotateX: 45, rotateY: 15, z: -600, scale: 1.8, filter: "blur(20px)" }}
                 whileInView={{ opacity: 1, rotateX: 0, rotateY: 0, z: 0, scale: 1, filter: "blur(0px)" }}
                 viewport={{ once: true, margin: "-100px" }}

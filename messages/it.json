@@ -91,7 +91,15 @@
     "dayToursTitle": "Gite Giornaliere",
     "dayToursDesc": "Partenza mattutina o arrivo tardivo — siamo in strada per te a qualsiasi ora.",
     "groupTitle": "Transfer di Gruppo",
-    "groupDesc": "Dal minibus al pullman — trasporto affidabile con autista per gruppi di qualsiasi dimensione."
+    "groupDesc": "Dal minibus al pullman — trasporto affidabile con autista per gruppi di qualsiasi dimensione.",
+    "diplomaticTitle": "Autista Diplomatico",
+    "diplomaticDesc": "Trasporto discreto e sicuro per diplomatici, ambasciatori e delegazioni VIP.",
+    "eventTitle": "Transfer Eventi",
+    "eventDesc": "Trasporto di gruppo puntuale per matrimoni, gala, conferenze ed eventi privati.",
+    "fairTitle": "Transfer Fiera",
+    "fairDesc": "Servizio navetta affidabile verso e da tutte le principali fiere ed esposizioni tedesche.",
+    "pricesTitle": "Prezzi & Tariffe",
+    "pricesDesc": "Prezzi fissi trasparenti al chilometro — nessun costo nascosto, nessuna sorpresa."
   },
   "EasyBooking": {
     "badge": "Prenotazione facile",

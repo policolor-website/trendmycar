@@ -91,7 +91,15 @@
     "dayToursTitle": "Day Tours",
     "dayToursDesc": "Early morning departure or late arrival — we're on the road for you around the clock.",
     "groupTitle": "Group Transfer",
-    "groupDesc": "From minibus to coach — reliable transport with driver for groups of any size."
+    "groupDesc": "From minibus to coach — reliable transport with driver for groups of any size.",
+    "diplomaticTitle": "Diplomatic Chauffeur",
+    "diplomaticDesc": "Discreet, secure transport for diplomats, ambassadors and VIP delegations.",
+    "eventTitle": "Event Transfer",
+    "eventDesc": "Punctual group transport for weddings, galas, conferences and private events.",
+    "fairTitle": "Trade Fair Transfer",
+    "fairDesc": "Reliable shuttle service to and from all major German trade fairs and exhibitions.",
+    "pricesTitle": "Prices & Tariffs",
+    "pricesDesc": "Transparent fixed pricing per kilometer — no hidden costs, no surprises."
   },
   "EasyBooking": {
     "badge": "Easy booking",
