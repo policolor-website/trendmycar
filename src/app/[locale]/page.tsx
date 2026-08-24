@@ -298,7 +298,7 @@ export default function HomePage() {
                   placeholder={tBooking("pickupPlaceholder")}
                 />
               </div>
-              <div className="md:col-span-3">
+              <div className="md:col-span-2">
                 <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{tBooking("destination")}</label>
                 <PlacesInput
                   value={bookingForm.destination}
@@ -312,7 +312,7 @@ export default function HomePage() {
                   type="date"
                   value={bookingForm.date}
                   onChange={(e) => setBookingForm({ ...bookingForm, date: e.target.value })}
-                  className="w-full bg-ink/50 border border-white/10 rounded-lg px-3 py-3 text-white text-sm focus:border-electric/50 focus:outline-none transition-colors"
+                  className="w-full bg-ink/50 border border-white/10 rounded-lg px-3 py-3 text-white text-sm focus:border-electric/50 focus:outline-none transition-colors [color-scheme:dark]"
                 />
               </div>
               <div className="md:col-span-1">
@@ -321,7 +321,7 @@ export default function HomePage() {
                   type="time"
                   value={bookingForm.time}
                   onChange={(e) => setBookingForm({ ...bookingForm, time: e.target.value })}
-                  className="w-full bg-ink/50 border border-white/10 rounded-lg px-2 py-3 text-white text-sm focus:border-electric/50 focus:outline-none transition-colors"
+                  className="w-full bg-ink/50 border border-white/10 rounded-lg px-2 py-3 text-white text-sm focus:border-electric/50 focus:outline-none transition-colors [color-scheme:dark]"
                 />
               </div>
               <div className="md:col-span-2">
@@ -329,23 +329,24 @@ export default function HomePage() {
                 <select
                   value={bookingForm.vehicle}
                   onChange={(e) => setBookingForm({ ...bookingForm, vehicle: e.target.value })}
-                  className="w-full bg-ink/50 border border-white/10 rounded-lg px-3 py-3 text-white text-sm focus:border-electric/50 focus:outline-none transition-colors"
+                  className="w-full bg-ink/50 border border-white/10 rounded-lg px-3 py-3 text-white text-sm focus:border-electric/50 focus:outline-none transition-colors [color-scheme:dark]"
                 >
                   <option>E-Class</option>
                   <option>S-Class</option>
                   <option>V-Class</option>
                 </select>
               </div>
-              <div className="md:col-span-1">
+              <div className="md:col-span-2">
+                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block invisible">{tBooking("getPrice")}</label>
                 <button
                   type="submit"
                   disabled={priceLoading}
-                  className="w-full bg-ink text-white font-semibold rounded-lg py-3 border border-white/20 hover:bg-ink/80 hover:border-white/40 transition-colors duration-300 flex items-center justify-center gap-1 disabled:opacity-50"
+                  className="w-full bg-white text-ink font-semibold rounded-lg py-3 hover:bg-white/90 transition-colors duration-300 flex items-center justify-center gap-2 disabled:opacity-50 text-sm"
                 >
                   {priceLoading ? (
-                    <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                    <span className="w-4 h-4 border-2 border-ink/30 border-t-ink rounded-full animate-spin" />
                   ) : (
-                    <>{tBooking("getPrice")} <ArrowRight size={14} /></>
+                    <>{tBooking("getPrice")} <ArrowRight size={16} /></>
                   )}
                 </button>
               </div>

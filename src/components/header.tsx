@@ -309,6 +309,14 @@ export default function Header() {
               ))}
             </div>
 
+            {/* Book now - mobile */}
+            <Link
+              href="/booking"
+              className="flex items-center justify-center gap-2 mt-4 px-6 py-3 bg-white text-ink font-semibold rounded-lg text-sm"
+            >
+              <Phone size={16} /> {t("bookNow")}
+            </Link>
+
             <a
               href={`tel:${brand.phone}`}
               className="flex items-center gap-2 text-white text-sm mt-4 pt-4"
