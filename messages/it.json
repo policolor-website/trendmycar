@@ -54,7 +54,13 @@
     "nightSurcharge": "Sovrapprezzo notturno",
     "airportFee": "Tariffa aeroportuale",
     "extraInfoLabel": "Informazioni aggiuntive — dettagli di ritiro",
-    "extraInfoPlaceholder": "Numero del gate, terminal, ingresso dell'edificio, dettagli del punto di incontro..."
+    "extraInfoPlaceholder": "Numero del gate, terminal, ingresso dell'edificio, dettagli del punto di incontro...",
+    "verifying": "Verifica del pagamento in corso...",
+    "successTitle": "Pagamento riuscito",
+    "successDesc": "La tua prenotazione è stata confermata. Riceverai un'email di conferma a breve. Visualizza i dettagli della prenotazione nella tua dashboard.",
+    "cancelTitle": "Pagamento annullato",
+    "cancelDesc": "Il tuo pagamento è stato annullato e non è stata effettuata alcuna addebito. Puoi riprovare o contattarci se hai bisogno di aiuto.",
+    "tryAgain": "Riprova"
   },
   "Fleet": {
     "badge": "I nostri veicoli",

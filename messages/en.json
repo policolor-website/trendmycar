@@ -54,7 +54,13 @@
     "nightSurcharge": "Night surcharge",
     "airportFee": "Airport fee",
     "extraInfoLabel": "Extra info — pickup details",
-    "extraInfoPlaceholder": "Gate number, terminal, building entrance, meeting point details..."
+    "extraInfoPlaceholder": "Gate number, terminal, building entrance, meeting point details...",
+    "verifying": "Verifying your payment...",
+    "successTitle": "Payment Successful",
+    "successDesc": "Your booking has been confirmed. You will receive a confirmation email shortly. View your booking details in your dashboard.",
+    "cancelTitle": "Payment Cancelled",
+    "cancelDesc": "Your payment was cancelled and no charge was made. You can try again or contact us if you need help.",
+    "tryAgain": "Try again"
   },
   "Fleet": {
     "badge": "Our vehicles",

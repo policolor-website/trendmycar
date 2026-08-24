@@ -54,7 +54,13 @@
     "nightSurcharge": "Nachtzuschlag",
     "airportFee": "Flughafengebühr",
     "extraInfoLabel": "Zusätzliche Infos — Abholdetails",
-    "extraInfoPlaceholder": "Tor, Terminal, Gebäudeeingang, Treffpunkt-Details..."
+    "extraInfoPlaceholder": "Tor, Terminal, Gebäudeeingang, Treffpunkt-Details...",
+    "verifying": "Ihre Zahlung wird überprüft...",
+    "successTitle": "Zahlung erfolgreich",
+    "successDesc": "Ihre Buchung wurde bestätigt. Sie erhalten in Kürze eine Bestätigungs-E-Mail. Buchungsdetails finden Sie in Ihrem Dashboard.",
+    "cancelTitle": "Zahlung abgebrochen",
+    "cancelDesc": "Ihre Zahlung wurde abgebrochen und es wurde keine Gebühr erhoben. Sie können es erneut versuchen oder uns kontaktieren, wenn Sie Hilfe benötigen.",
+    "tryAgain": "Erneut versuchen"
   },
   "Fleet": {
     "badge": "Unsere Fahrzeuge",

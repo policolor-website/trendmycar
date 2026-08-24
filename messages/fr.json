@@ -54,7 +54,13 @@
     "nightSurcharge": "Supplément de nuit",
     "airportFee": "Frais d'aéroport",
     "extraInfoLabel": "Informations supplémentaires — détails de prise en charge",
-    "extraInfoPlaceholder": "Numéro de porte, terminal, entrée du bâtiment, détails du point de rencontre..."
+    "extraInfoPlaceholder": "Numéro de porte, terminal, entrée du bâtiment, détails du point de rencontre...",
+    "verifying": "Vérification de votre paiement...",
+    "successTitle": "Paiement réussi",
+    "successDesc": "Votre réservation a été confirmée. Vous recevrez un e-mail de confirmation sous peu. Consultez les détails de votre réservation dans votre tableau de bord.",
+    "cancelTitle": "Paiement annulé",
+    "cancelDesc": "Votre paiement a été annulé et aucun frais n'a été facturé. Vous pouvez réessayer ou nous contacter si vous avez besoin d'aide.",
+    "tryAgain": "Réessayer"
   },
   "Fleet": {
     "badge": "Nos véhicules",

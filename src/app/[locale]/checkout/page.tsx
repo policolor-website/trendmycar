@@ -119,7 +119,7 @@ export default function CheckoutPage() {
       const price = booking.priceResult?.price;
       const route = booking.priceResult?.route;
 
-      const { error: bookingError } = await supabase.from("bookings").insert({
+      const { data: bookingData, error: bookingError } = await supabase.from("bookings").insert({
         user_id: userId,
         guest_name: user ? null : (mode === "guest" ? form.fullName : null),
         guest_email: user ? user.email : form.email,
@@ -136,21 +136,42 @@ export default function CheckoutPage() {
         price: price?.total || null,
         currency: "EUR",
         status: "pending",
-      });
+      }).select().single();
 
       if (bookingError) {
         console.error("[checkout] Booking insert error:", bookingError);
+        throw new Error("Failed to create booking");
       }
 
       // Clear localStorage
       localStorage.removeItem("trendmydrive_booking");
 
-      // TODO: Stripe checkout — redirect to /api/checkout
-      // For now, redirect to dashboard if logged in, or confirmation page
-      if (userId) {
-        router.push("/dashboard");
+      // Create Stripe checkout session
+      const response = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          bookingId: bookingData.id,
+          amount: price?.total || 0,
+          currency: "eur",
+          origin: booking.origin,
+          destination: booking.destination,
+          email: user ? user.email : form.email,
+          locale: "en",
+        }),
+      });
+
+      const stripeData = await response.json();
+
+      if (stripeData.url) {
+        window.location.href = stripeData.url;
       } else {
-        router.push("/checkout?status=confirmed");
+        // Fallback to dashboard if Stripe fails
+        if (userId) {
+          router.push("/dashboard");
+        } else {
+          router.push("/");
+        }
       }
     } catch (err: any) {
       setError(err.message || t("errorGeneric"));

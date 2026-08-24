@@ -54,7 +54,13 @@
     "nightSurcharge": "夜间附加费",
     "airportFee": "机场费用",
     "extraInfoLabel": "附加信息 — 接载详情",
-    "extraInfoPlaceholder": "登机口号码、航站楼、建筑入口、会合点详情..."
+    "extraInfoPlaceholder": "登机口号码、航站楼、建筑入口、会合点详情...",
+    "verifying": "正在验证您的付款...",
+    "successTitle": "支付成功",
+    "successDesc": "您的预订已确认。您将很快收到确认邮件。在仪表板中查看您的预订详情。",
+    "cancelTitle": "支付已取消",
+    "cancelDesc": "您的支付已取消，未收取任何费用。您可以重试或联系我们获取帮助。",
+    "tryAgain": "再试一次"
   },
   "Fleet": {
     "badge": "我们的车辆",
