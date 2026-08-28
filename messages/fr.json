@@ -60,7 +60,14 @@
     "successDesc": "Votre réservation a été confirmée. Vous recevrez un e-mail de confirmation sous peu. Consultez les détails de votre réservation dans votre tableau de bord.",
     "cancelTitle": "Paiement annulé",
     "cancelDesc": "Votre paiement a été annulé et aucun frais n'a été facturé. Vous pouvez réessayer ou nous contacter si vous avez besoin d'aide.",
-    "tryAgain": "Réessayer"
+    "tryAgain": "Réessayer",
+    "rideTypeLocal": "Course locale",
+    "rideTypeExternal": "Longue distance",
+    "billableHours": "Heures facturées",
+    "pickupDisabledPlaceholder": "Sélectionnez d'abord la destination",
+    "pickupRadiusLong": "dans un rayon de {km}km de Munich",
+    "pickupRadiusShort": "dans un rayon de {km}km de Munich",
+    "errorPickupOutsideRadius": "La prise en charge est en dehors de la zone autorisée. Veuillez sélectionner une prise en charge dans le rayon indiqué ci-dessus."
   },
   "Fleet": {
     "badge": "Nos véhicules",
@@ -233,7 +240,9 @@
     "phoneLabel": "Téléphone",
     "phonePlaceholder": "+49 170 1234567",
     "passwordLabel": "Mot de passe",
-    "errorGeneric": "Une erreur s'est produite. Veuillez réessayer."
+    "errorGeneric": "Une erreur s'est produite. Veuillez réessayer.",
+    "rideTypeLocal": "Course locale",
+    "rideTypeExternal": "Longue distance"
   },
   "Dashboard": {
     "title": "Tableau de bord",
@@ -912,31 +921,44 @@
       "badge": "Prix & Tarifs",
       "title": "Prix &",
       "highlight": "Tarifs",
-      "description": "Tarification transparente et fixe — pas de compteur, pas de surprises. Nous facturons au kilomètre avec un tarif de base clair, et chaque devis inclut toutes les taxes, péages et frais. Ce que vous voyez à la réservation est exactement ce que vous payez. Pas de tarification dynamique aux heures de pointe, pas de frais de destination cachés, pas de surprises du type « l'itinéraire était plus long ». Que vous ayez besoin d'une berline Business Class pour un trajet aéroport ou d'une limousine First Class pour une mission d'une journée complète, vous connaîtrez le prix avant de réserver.",
+      "description": "Prix fixes et transparents — pas de compteur, pas de surprises. Les courses locales (même ville) sont facturées à l'heure avec 1 heure minimum. Les longues distances (entre villes) sont facturées au kilomètre. Chaque devis inclut toutes les taxes, péages et frais. Ce que vous voyez à la réservation est exactement ce que vous payez. Pas de tarification dynamique, pas de frais cachés, pas de surprises.",
       "features": [
-        "Prix fixe au kilomètre — garanti à la réservation, ne change jamais",
-        "Pas de tarification dynamique — même tarif aux heures de pointe, à minuit ou en période de fêtes",
-        "Tarification tout inclus — taxes, péages et frais inclus dans chaque devis",
-        "Supplément de nuit (22h00-06h00) : +25% — clairement indiqué, jamais caché",
-        "Frais de prise en charge aéroport : +€8 (couvre l'accès au terminal et le stationnement)",
-        "Annulation gratuite jusqu'à 24 heures avant la prise en charge — sans questions"
+        "Courses locales (même ville): tarif horaire avec 1 heure minimum",
+        "Longue distance (entre villes): prix fixe au kilomètre",
+        "Pas de tarification dynamique — même tarif aux heures de pointe, à minuit ou pendant les fêtes",
+        "Prix tout compris — taxes, péages et frais inclus dans chaque devis",
+        "Supplément de nuit (22:00-06:00): +25% — clairement indiqué, jamais caché",
+        "Frais de prise en charge aéroport: +8€ (couvre l'accès au terminal et le stationnement)",
+        "Annulation gratuite jusqu'à 24 heures avant la prise en charge — sans question"
       ],
       "includes": [
         {
-          "label": "E-Class",
-          "value": "€3.0/km"
+          "label": "Classe E (local)",
+          "value": "120€/heure"
         },
         {
-          "label": "S-Class",
-          "value": "€4.5/km"
+          "label": "Classe V (local)",
+          "value": "135€/heure"
         },
         {
-          "label": "V-Class",
-          "value": "€3.5/km"
+          "label": "Classe S (local)",
+          "value": "145€/heure"
         },
         {
-          "label": "Tarif de base",
-          "value": "€10-15"
+          "label": "Classe E (longue distance)",
+          "value": "2,3€/km"
+        },
+        {
+          "label": "Classe V (longue distance)",
+          "value": "2,6€/km"
+        },
+        {
+          "label": "Classe S (longue distance)",
+          "value": "2,5€/km"
+        },
+        {
+          "label": "Minimum (local)",
+          "value": "1 heure"
         },
         {
           "label": "Nuit",
@@ -944,33 +966,37 @@
         },
         {
           "label": "Aéroport",
-          "value": "+€8"
+          "value": "+8€"
         }
       ],
       "faq": [
         {
-          "question": "Comment le prix est-il calculé ?",
-          "answer": "Le prix est basé sur un tarif au kilomètre pour votre catégorie de véhicule, plus un tarif de base. Le système calcule l'itinéraire optimal et vous donne un prix fixe à la réservation. Ce prix est garanti — il ne changera pas même si le trafic ajoute du temps au trajet."
+          "question": "Comment le prix est-il calculé?",
+          "answer": "Le prix dépend du fait que votre course soit locale ou de longue distance. Pour les courses locales (même ville), nous facturons un tarif horaire avec 1 heure minimum. Pour les longues distances (entre villes), nous facturons au kilomètre. Le système détecte automatiquement le type de course en fonction de votre prise en charge et de votre destination. Le prix que vous voyez à la réservation est garanti — il ne changera pas même si le trafic ajoute du temps au trajet."
         },
         {
-          "question": "Y a-t-il des frais cachés ?",
-          "answer": "Aucun. Toutes les taxes, péages et frais sont inclus dans le prix indiqué. Les seuls ajouts sont clairement indiqués : un supplément de nuit de +25% (22h00-06h00) et un frais de prise en charge aéroport de +€8. Tout est affiché de manière transparente avant que vous ne confirmiez votre réservation."
+          "question": "Qu'est-ce qui compte comme une course 'locale'?",
+          "answer": "Une course locale est tout trajet où la prise en charge et la destination sont dans la même ville. Par exemple, l'aéroport de Munich vers une adresse à Munich est une course locale. Celles-ci sont facturées à un tarif horaire avec 1 heure minimum."
         },
         {
-          "question": "Facturez-vous plus aux heures de pointe ?",
-          "answer": "Non. Nous n'utilisons pas de tarification dynamique. Le tarif au kilomètre est le même aux heures de pointe, les jours fériés et lors des grands événements. Vous ne paierez jamais plus parce que la demande est élevée."
+          "question": "Y a-t-il des frais cachés?",
+          "answer": "Aucun. Toutes les taxes, péages et frais sont inclus dans le prix indiqué. Les seuls ajouts sont clairement indiqués : un supplément de nuit de +25% (22h00-06h00) et des frais de prise en charge aéroport de +8€. Tout est montré de manière transparente avant que vous ne confirmiez votre réservation."
         },
         {
-          "question": "Quelle est la politique d'annulation ?",
-          "answer": "Annulation gratuite jusqu'à 24 heures avant votre heure de prise en charge programmée. Les annulations dans les 24 heures sont facturées à 50% du prix de la réservation. Les absences sont facturées à 100%. Les remboursements sont traités sous 5-7 jours ouvrés."
+          "question": "Facturez-vous plus aux heures de pointe?",
+          "answer": "Non. Nous n'utilisons pas de tarification dynamique. Le tarif horaire et le tarif au kilomètre sont les mêmes aux heures de pointe, les jours fériés et lors des grands événements. Vous ne paierez jamais plus parce que la demande est élevée."
         },
         {
-          "question": "Comment puis-je payer ?",
-          "answer": "Vous pouvez payer par carte de crédit, virement bancaire SEPA ou facture d'entreprise (pour les comptes d'entreprise avec un arrangement de crédit). Le paiement est traité après la fin du trajet. Pour les clients d'entreprise, nous proposons une facturation mensuelle."
+          "question": "Quelle est la politique d'annulation?",
+          "answer": "Annulation gratuite jusqu'à 24 heures avant l'heure de prise en charge prévue. Les annulations dans les 24 heures sont facturées à 50% du prix de réservation. Les absences sont facturées à 100%. Les remboursements sont traités dans les 5-7 jours ouvrables."
         },
         {
-          "question": "Puis-je obtenir un devis personnalisé pour un trajet complexe ?",
-          "answer": "Absolument. Pour les trajets multi-arrêts, les réservations à la journée complète ou les exigences spéciales, contactez-nous directement et nous fournirons un devis personnalisé détaillé. Notre équipe répond sous 1 heure pendant les heures ouvrables et sous 4 heures en dehors des heures ouvrables."
+          "question": "Comment puis-je payer?",
+          "answer": "Vous pouvez payer par carte de crédit, virement bancaire SEPA ou facture d'entreprise (pour les comptes d'entreprise avec un arrangement de crédit). Le paiement est traité après la fin de la course. Pour les clients d'entreprise, nous proposons une facturation mensuelle."
+        },
+        {
+          "question": "Puis-je obtenir un devis personnalisé pour un voyage complexe?",
+          "answer": "Absolument. Pour les trajets à plusieurs arrêts, les réservations d'une journée entière ou les exigences particulières, contactez-nous directement et nous vous fournirons un devis détaillé adapté à vos besoins."
         }
       ]
     }

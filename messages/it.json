@@ -60,7 +60,14 @@
     "successDesc": "La tua prenotazione è stata confermata. Riceverai un'email di conferma a breve. Visualizza i dettagli della prenotazione nella tua dashboard.",
     "cancelTitle": "Pagamento annullato",
     "cancelDesc": "Il tuo pagamento è stato annullato e non è stata effettuata alcuna addebito. Puoi riprovare o contattarci se hai bisogno di aiuto.",
-    "tryAgain": "Riprova"
+    "tryAgain": "Riprova",
+    "rideTypeLocal": "Corsa locale",
+    "rideTypeExternal": "Lunga distanza",
+    "billableHours": "Ore fatturabili",
+    "pickupDisabledPlaceholder": "Seleziona prima la destinazione",
+    "pickupRadiusLong": "entro {km}km da Monaco",
+    "pickupRadiusShort": "entro {km}km da Monaco",
+    "errorPickupOutsideRadius": "Il ritiro è fuori dall'area consentita. Seleziona un ritiro entro il raggio mostrato sopra."
   },
   "Fleet": {
     "badge": "I nostri veicoli",
@@ -233,7 +240,9 @@
     "phoneLabel": "Telefono",
     "phonePlaceholder": "+49 170 1234567",
     "passwordLabel": "Password",
-    "errorGeneric": "Qualcosa è andato storto. Riprova."
+    "errorGeneric": "Qualcosa è andato storto. Riprova.",
+    "rideTypeLocal": "Corsa locale",
+    "rideTypeExternal": "Lunga distanza"
   },
   "Dashboard": {
     "title": "Dashboard",
@@ -912,31 +921,44 @@
       "badge": "Prezzi & Tariffe",
       "title": "Prezzi &",
       "highlight": "Tariffe",
-      "description": "Prezzi fissi e trasparenti — niente tassametro, niente sorprese. Addebitiamo per chilometro con una chiara tariffa base e ogni preventivo include tutte le tasse, i pedaggi e le commissioni. Quello che vedi al momento della prenotazione è esattamente quello che paghi. Nessun prezzo dinamico durante le ore di punta, nessun costo nascosto sulla destinazione, nessuna sorpresa del tipo \"il percorso era più lungo\". Che tu abbia bisogno di una berlina Business Class per un transfer aeroporto o di una limousine First Class per un incarico di un'intera giornata, conoscerai il prezzo prima di prenotare.",
+      "description": "Prezzi fissi e trasparenti — niente tassametro, niente sorprese. Le corse locali (stessa città) vengono fatturate all'ora con un minimo di 1 ora. Le lunghe distanze (tra città) vengono fatturate al chilometro. Ogni preventivo include tutte le tasse, i pedaggi e le commissioni. Quello che vedi al momento della prenotazione è esattamente quello che paghi. Niente prezzi dinamici, niente costi nascosti, niente sorprese.",
       "features": [
-        "Prezzo fisso per chilometro — garantito al momento della prenotazione, non cambia mai",
-        "Nessun prezzo dinamico — stessa tariffa all'ora di punta, a mezzanotte o durante le feste",
-        "Prezzi tutto incluso — tasse, pedaggi e commissioni inclusi in ogni preventivo",
-        "Soprattassa notturna (22:00-06:00): +25% — chiaramente indicata, mai nascosta",
-        "Tariffa di ritiro in aeroporto: +€8 (copre accesso al terminal e parcheggio)",
+        "Corse locali (stessa città): tariffa oraria con minimo 1 ora",
+        "Lunga distanza (tra città): prezzo fisso al chilometro",
+        "Niente prezzi dinamici — stessa tariffa alle ore di punta, a mezzanotte o durante le feste",
+        "Prezzo tutto incluso — tasse, pedaggi e commissioni inclusi in ogni preventivo",
+        "Soprattassa notturna (22:00-06:00): +25% — chiaramente indicato, mai nascosto",
+        "Tariffa di ritiro in aeroporto: +8€ (copre accesso al terminal e parcheggio)",
         "Cancellazione gratuita fino a 24 ore prima del ritiro — senza domande"
       ],
       "includes": [
         {
-          "label": "E-Class",
-          "value": "€3.0/km"
+          "label": "Classe E (locale)",
+          "value": "120€/ora"
         },
         {
-          "label": "S-Class",
-          "value": "€4.5/km"
+          "label": "Classe V (locale)",
+          "value": "135€/ora"
         },
         {
-          "label": "V-Class",
-          "value": "€3.5/km"
+          "label": "Classe S (locale)",
+          "value": "145€/ora"
         },
         {
-          "label": "Tariffa base",
-          "value": "€10-15"
+          "label": "Classe E (lunga distanza)",
+          "value": "2,3€/km"
+        },
+        {
+          "label": "Classe V (lunga distanza)",
+          "value": "2,6€/km"
+        },
+        {
+          "label": "Classe S (lunga distanza)",
+          "value": "2,5€/km"
+        },
+        {
+          "label": "Minimo (locale)",
+          "value": "1 ora"
         },
         {
           "label": "Notte",
@@ -944,33 +966,37 @@
         },
         {
           "label": "Aeroporto",
-          "value": "+€8"
+          "value": "+8€"
         }
       ],
       "faq": [
         {
           "question": "Come viene calcolato il prezzo?",
-          "answer": "Il prezzo è basato su una tariffa per chilometro per la tua classe di veicolo, più una tariffa base. Il sistema calcola il percorso ottimale e ti dà un prezzo fisso al momento della prenotazione. Quel prezzo è garantito — non cambierà anche se il traffico aggiunge tempo al viaggio."
+          "answer": "Il prezzo dipende dal fatto che la tua corsa sia locale o di lunga distanza. Per le corse locali (stessa città) fatturiamo una tariffa oraria con un minimo di 1 ora. Per le lunghe distanze (tra città) fatturiamo al chilometro. Il sistema rileva automaticamente il tipo di corsa in base al ritiro e alla destinazione. Il prezzo che vedi al momento della prenotazione è garantito — non cambierà anche se il traffico aggiunge tempo al viaggio."
+        },
+        {
+          "question": "Cosa conta come corsa 'locale'?",
+          "answer": "Una corsa locale è qualsiasi viaggio in cui il ritiro e la destinazione sono nella stessa città. Ad esempio, l'aeroporto di Monaco a un indirizzo di Monaco è una corsa locale. Queste vengono fatturate a una tariffa oraria con un minimo di 1 ora."
         },
         {
           "question": "Ci sono costi nascosti?",
-          "answer": "Nessuno. Tutte le tasse, i pedagli e le commissioni sono inclusi nel prezzo quotato. Le uniche aggiunte sono chiaramente indicate: una soprattassa notturna del +25% (22:00-06:00) e una tariffa di ritiro in aeroporto di +€8. Tutto è mostrato trasparentemente prima che tu confermi la tua prenotazione."
+          "answer": "Nessuno. Tutte le tasse, i pedaggi e le commissioni sono inclusi nel prezzo quotato. Le uniche aggiunte sono chiaramente indicate: una soprattassa notturna del +25% (22:00-06:00) e una tariffa di ritiro in aeroporto di +8€. Tutto è mostrato trasparentemente prima che tu confermi la tua prenotazione."
         },
         {
-          "question": "Addebitate di più durante le ore di punta?",
-          "answer": "No. Non utilizziamo prezzi dinamici. La tariffa per chilometro è la stessa all'ora di punta, nei giorni festivi e durante i grandi eventi. Non pagherai mai di più perché la domanda è alta."
+          "question": "Fatturate di più nelle ore di punta?",
+          "answer": "No. Non utilizziamo prezzi dinamici. La tariffa oraria e la tariffa al chilometro sono le stesse alle ore di punta, nei giorni festivi e durante i grandi eventi. Non pagherai mai di più perché la domanda è alta."
         },
         {
           "question": "Qual è la politica di cancellazione?",
-          "answer": "Cancellazione gratuita fino a 24 ore prima dell'orario di ritiro programmato. Le cancellazioni entro le 24 ore vengono addebitate al 50% del prezzo della prenotazione. I no-show vengono addebitati al 100%. I rimborsi vengono elaborati entro 5-7 giorni lavorativi."
+          "answer": "Cancellazione gratuita fino a 24 ore prima dell'orario di ritiro programmato. Le cancellazioni entro 24 ore vengono addebitate al 50% del prezzo di prenotazione. I no-show vengono addebitati al 100%. I rimborsi vengono elaborati entro 5-7 giorni lavorativi."
         },
         {
           "question": "Come pago?",
-          "answer": "Puoi pagare con carta di credito, bonifico bancario SEPA o fattura aziendale (per conti business con un accordo di credito). Il pagamento viene elaborato dopo il completamento della corsa. Per i clienti aziendali, offriamo fatturazione mensile."
+          "answer": "Puoi pagare con carta di credito, bonifico bancario SEPA o fattura aziendale (per conti aziendali con accordo di credito). Il pagamento viene elaborato dopo il completamento della corsa. Per i clienti aziendali, offriamo fatturazione mensile."
         },
         {
           "question": "Posso ottenere un preventivo personalizzato per un viaggio complesso?",
-          "answer": "Assolutamente. Per viaggi multi-tappa, prenotazioni giornaliere o requisiti speciali, contattaci direttamente e forniremo un preventivo personalizzato dettagliato. Il nostro team risponde entro 1 ora durante l'orario di lavoro e entro 4 ore fuori dall'orario di lavoro."
+          "answer": "Assolutamente. Per viaggi con più tappe, prenotazioni intere giornate o requisiti speciali, contattaci direttamente e ti forniremo un preventivo dettagliato su misura per le tue esigenze."
         }
       ]
     }

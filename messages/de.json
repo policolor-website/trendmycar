@@ -60,7 +60,14 @@
     "successDesc": "Ihre Buchung wurde bestätigt. Sie erhalten in Kürze eine Bestätigungs-E-Mail. Buchungsdetails finden Sie in Ihrem Dashboard.",
     "cancelTitle": "Zahlung abgebrochen",
     "cancelDesc": "Ihre Zahlung wurde abgebrochen und es wurde keine Gebühr erhoben. Sie können es erneut versuchen oder uns kontaktieren, wenn Sie Hilfe benötigen.",
-    "tryAgain": "Erneut versuchen"
+    "tryAgain": "Erneut versuchen",
+    "rideTypeLocal": "Lokale Fahrt",
+    "rideTypeExternal": "Fernfahrt",
+    "billableHours": "Abrechenbare Stunden",
+    "pickupDisabledPlaceholder": "Zuerst Ziel auswählen",
+    "pickupRadiusLong": "innerhalb von {km}km von München",
+    "pickupRadiusShort": "innerhalb von {km}km von München",
+    "errorPickupOutsideRadius": "Die Abholung liegt außerhalb des erlaubten Bereichs. Bitte wählen Sie eine Abholung innerhalb des oben angezeigten Radius."
   },
   "Fleet": {
     "badge": "Unsere Fahrzeuge",
@@ -233,7 +240,9 @@
     "phoneLabel": "Telefon",
     "phonePlaceholder": "+49 170 1234567",
     "passwordLabel": "Passwort",
-    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "rideTypeLocal": "Lokale Fahrt",
+    "rideTypeExternal": "Fernfahrt"
   },
   "Dashboard": {
     "title": "Dashboard",
@@ -912,31 +921,44 @@
       "badge": "Preise & Tarife",
       "title": "Preise &",
       "highlight": "Tarife",
-      "description": "Transparente, feste Preise — kein Zähler, keine Überraschungen. Wir berechnen pro Kilometer mit einem klaren Grundtarif, und jedes Angebot inkludiert alle Steuern, Mauten und Gebühren. Was Sie bei der Buchung sehen, ist genau das, was Sie zahlen. Keine Preisspitzen zu Stoßzeiten, keine versteckten Zielzuschläge, keine \"die Route war länger\"-Überraschungen. Ob Sie eine Business-Class-Limousine für den Flughafen oder eine First-Class-Limousine für einen ganztägigen Einsatz brauchen — Sie kennen den Preis, bevor Sie buchen.",
+      "description": "Transparente Festpreise — kein Taxameter, keine Überraschungen. Lokale Fahrten (gleiche Stadt) werden stündlich mit 1 Stunde Minimum berechnet. Fernfahrten (zwischen Städten) werden pro Kilometer berechnet. Jedes Angebot enthält alle Steuern, Maut und Gebühren. Was Sie bei der Buchung sehen, ist genau das, was Sie zahlen. Keine Spitzenpreise, keine versteckten Kosten, keine Überraschungen.",
       "features": [
-        "Festpreis pro Kilometer — bei Buchung garantiert, ändert sich nie",
-        "Keine Preisspitzen — derselbe Tarif zu Stoßzeiten, um Mitternacht oder in der Ferienzeit",
-        "All-inklusive Preisgestaltung — Steuern, Mauten und Gebühren in jedem Angebot inklusive",
-        "Nachtzuschlag (22:00-06:00): +25% — klar ausgewiesen, nie versteckt",
-        "Flughafenabholgebühr: +€8 (deckt Terminalzugang und Parkgebühren)",
-        "Kostenlose Stornierung bis zu 24 Stunden vor Abholung — ohne Rückfragen"
+        "Lokale Fahrten (gleiche Stadt): Stundensatz mit 1 Stunde Minimum",
+        "Fernfahrten (stadtübergreifend): Festpreis pro Kilometer",
+        "Keine Spitzenpreise — gleicher Tarif zu Stoßzeiten, Mitternacht oder Feiertagen",
+        "All-inclusive-Preisgestaltung — Steuern, Maut und Gebühren in jedem Angebot enthalten",
+        "Nachtzuschlag (22:00-06:00): +25% — klar angegeben, nie versteckt",
+        "Flughafenabholgebühr: +8€ (deckt Terminalzugang und Parkplatz)",
+        "Kostenlose Stornierung bis zu 24 Stunden vor Abholung — ohne Fragen"
       ],
       "includes": [
         {
-          "label": "E-Class",
-          "value": "€3.0/km"
+          "label": "E-Klasse (lokal)",
+          "value": "120€/Stunde"
         },
         {
-          "label": "S-Class",
-          "value": "€4.5/km"
+          "label": "V-Klasse (lokal)",
+          "value": "135€/Stunde"
         },
         {
-          "label": "V-Class",
-          "value": "€3.5/km"
+          "label": "S-Klasse (lokal)",
+          "value": "145€/Stunde"
         },
         {
-          "label": "Grundtarif",
-          "value": "€10-15"
+          "label": "E-Klasse (Fernfahrt)",
+          "value": "2,3€/km"
+        },
+        {
+          "label": "V-Klasse (Fernfahrt)",
+          "value": "2,6€/km"
+        },
+        {
+          "label": "S-Klasse (Fernfahrt)",
+          "value": "2,5€/km"
+        },
+        {
+          "label": "Minimum (lokal)",
+          "value": "1 Stunde"
         },
         {
           "label": "Nacht",
@@ -944,33 +966,37 @@
         },
         {
           "label": "Flughafen",
-          "value": "+€8"
+          "value": "+8€"
         }
       ],
       "faq": [
         {
           "question": "Wie wird der Preis berechnet?",
-          "answer": "Der Preis basiert auf einem Kilometersatz für Ihre Fahrzeugklasse plus einem Grundtarif. Das System berechnet die optimale Route und gibt Ihnen einen Festpreis bei der Buchung. Dieser Preis ist garantiert — er ändert sich nicht, auch wenn Verkehr zusätzliche Zeit kostet."
+          "answer": "Der Preis hängt davon ab, ob Ihre Fahrt lokal oder eine Fernfahrt ist. Für lokale Fahrten (gleiche Stadt) berechnen wir einen Stundensatz mit 1 Stunde Minimum. Für Fernfahrten (zwischen Städten) berechnen wir pro Kilometer. Das System erkennt automatisch die Fahrart anhand von Abholung und Zielort. Der Preis bei der Buchung ist garantiert — er ändert sich nicht, auch wenn Verkehr Zeit zur Fahrt hinzufügt."
+        },
+        {
+          "question": "Was gilt als 'lokale' Fahrt?",
+          "answer": "Eine lokale Fahrt ist jede Fahrt, bei der Abholung und Zielort in derselben Stadt liegen. Zum Beispiel München Flughafen zu einer Münchner Adresse ist eine lokale Fahrt. Diese werden zu einem Stundensatz mit 1 Stunde Minimum berechnet."
         },
         {
           "question": "Gibt es versteckte Gebühren?",
-          "answer": "Keine. Alle Steuern, Mauten und Gebühren sind im angegebenen Preis inklusive. Die einzigen Zusätze sind klar ausgewiesen: ein Nachtzuschlag von +25% (22:00-06:00) und eine Flughafenabholgebühr von +€8. Alles wird transparent angezeigt, bevor Sie Ihre Buchung bestätigen."
+          "answer": "Keine. Alle Steuern, Maut und Gebühren sind im angegebenen Preis enthalten. Die einzigen Zusätze sind klar angegeben: ein +25% Nachtzuschlag (22:00-06:00) und eine +8€ Flughafenabholgebühr. Alles wird transparent gezeigt, bevor Sie Ihre Buchung bestätigen."
         },
         {
           "question": "Berechnen Sie mehr zu Stoßzeiten?",
-          "answer": "Nein. Wir verwenden keine Preisspitzen. Der Kilometersatz ist zu Stoßzeiten, an Feiertagen und bei großen Events derselbe. Sie zahlen nie mehr, weil die Nachfrage hoch ist."
+          "answer": "Nein. Wir verwenden keine Spitzenpreise. Der Stundensatz und der Kilometersatz sind zu Stoßzeiten, an Feiertagen und bei großen Veranstaltungen gleich. Sie zahlen nie mehr, weil die Nachfrage hoch ist."
         },
         {
           "question": "Wie lautet die Stornierungsrichtlinie?",
-          "answer": "Kostenlose Stornierung bis zu 24 Stunden vor Ihrer geplanten Abholzeit. Stornierungen innerhalb von 24 Stunden werden mit 50% des Buchungspreises berechnet. Nichterscheinen wird mit 100% berechnet. Rückerstattungen werden innerhalb von 5-7 Werktagen abgewickelt."
+          "answer": "Kostenlose Stornierung bis zu 24 Stunden vor der geplanten Abholung. Stornierungen innerhalb von 24 Stunden werden mit 50% des Buchungspreises berechnet. Nichterscheinen wird mit 100% berechnet. Rückerstattungen werden innerhalb von 5-7 Werktagen bearbeitet."
         },
         {
           "question": "Wie bezahle ich?",
-          "answer": "Sie können per Kreditkarte, SEPA-Banküberweisung oder auf Unternehmensrechnung (für Geschäftskonten mit Kreditvereinbarung) bezahlen. Die Zahlung wird nach Abschluss der Fahrt abgewickelt. Für Unternehmenskunden bieten wir monatliche Abrechnung."
+          "answer": "Sie können per Kreditkarte, SEPA-Banküberweisung oder Unternehmensrechnung (für Geschäftskonten mit Kreditvereinbarung) bezahlen. Die Zahlung wird nach Abschluss der Fahrt verarbeitet. Für Unternehmenskunden bieten wir monatliche Abrechnung."
         },
         {
           "question": "Kann ich ein individuelles Angebot für eine komplexe Reise erhalten?",
-          "answer": "Absolut. Für Mehrstopp-Fahrten, ganztägige Buchungen oder besondere Anforderungen kontaktieren Sie uns direkt und wir erstellen ein detailliertes individuelles Angebot. Unser Team antwortet innerhalb von 1 Stunde während der Geschäftszeiten und innerhalb von 4 Stunden außerhalb der Geschäftszeiten."
+          "answer": "Absolut. Für Mehrstopp-Fahrten, Ganztagesbuchungen oder besondere Anforderungen kontaktieren Sie uns direkt und wir erstellen Ihnen ein detailliertes, maßgeschneidertes Angebot."
         }
       ]
     }

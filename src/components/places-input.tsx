@@ -7,15 +7,27 @@ interface Prediction {
   description: string;
 }
 
+interface PlacesInputProps {
+  value: string;
+  onChange: (val: string) => void;
+  placeholder: string;
+  // Optional: center + radius (in meters) to filter autocomplete results
+  center?: { lat: number; lng: number } | null;
+  radiusM?: number | null;
+  // Optional: callback when a prediction is selected with its coordinates
+  onPlaceSelect?: (place: { description: string; lat?: number; lng?: number }) => void;
+  disabled?: boolean;
+}
+
 export default function PlacesInput({
   value,
   onChange,
   placeholder,
-}: {
-  value: string;
-  onChange: (val: string) => void;
-  placeholder: string;
-}) {
+  center,
+  radiusM,
+  onPlaceSelect,
+  disabled,
+}: PlacesInputProps) {
   const [input, setInput] = useState(value);
   const [predictions, setPredictions] = useState<Prediction[]>([]);
   const [open, setOpen] = useState(false);
@@ -44,7 +56,11 @@ export default function PlacesInput({
     }
     setLoading(true);
     try {
-      const res = await fetch(`/api/places-autocomplete?input=${encodeURIComponent(text)}`);
+      let url = `/api/places-autocomplete?input=${encodeURIComponent(text)}`;
+      if (center && radiusM) {
+        url += `&lat=${center.lat}&lng=${center.lng}&radius=${radiusM}`;
+      }
+      const res = await fetch(url);
       const data = await res.json();
       if (data.predictions) {
         setPredictions(data.predictions);
@@ -67,6 +83,13 @@ export default function PlacesInput({
   const handleSelect = (pred: Prediction) => {
     setInput(pred.description);
     onChange(pred.description);
+    if (onPlaceSelect) {
+      onPlaceSelect({
+        description: pred.description,
+        lat: (pred as any).lat,
+        lng: (pred as any).lng,
+      });
+    }
     setPredictions([]);
     setOpen(false);
   };
@@ -79,7 +102,8 @@ export default function PlacesInput({
         value={input}
         onChange={(e) => handleChange(e.target.value)}
         onFocus={() => predictions.length > 0 && setOpen(true)}
-        className="w-full bg-ink/50 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-stone focus:border-electric/50 focus:outline-none transition-colors"
+        disabled={disabled}
+        className="w-full bg-ink/50 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-stone focus:border-electric/50 focus:outline-none transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
         autoComplete="off"
       />
       {loading && (
@@ -100,6 +124,13 @@ export default function PlacesInput({
               </button>
             </li>
           ))}
+        </ul>
+      )}
+      {open && predictions.length === 0 && !loading && input.length >= 2 && (
+        <ul className="absolute z-50 w-full mt-1 glass rounded-lg overflow-hidden">
+          <li className="px-4 py-3 text-sm text-stone">
+            {disabled ? "Select destination first" : "No results in allowed area"}
+          </li>
         </ul>
       )}
     </div>

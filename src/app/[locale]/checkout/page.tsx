@@ -247,6 +247,15 @@ export default function CheckoutPage() {
                 </div>
               </div>
 
+              {/* Ride type badge */}
+              {booking.priceResult?.rideType && (
+                <div className="mb-4">
+                  <span className={`text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wide ${booking.priceResult.rideType === "local" ? "bg-electric/20 text-electric" : "bg-neon/20 text-neon"}`}>
+                    {booking.priceResult.rideType === "local" ? t("rideTypeLocal") : t("rideTypeExternal")}
+                  </span>
+                </div>
+              )}
+
               {/* Route stats */}
               {route && (
                 <div className="grid grid-cols-3 gap-4 mb-6 py-4 border-t border-white/10">
@@ -260,7 +269,13 @@ export default function CheckoutPage() {
                   </div>
                   <div>
                     <p className="text-xs text-white/50 uppercase tracking-wide mb-1">{t("rate")}</p>
-                    <p className="text-sm text-white">€{price?.perKm}/km</p>
+                    <p className="text-sm text-white">
+                      {booking.priceResult?.rideType === "local" && price?.breakdown?.hourlyRate
+                        ? `€${price.breakdown.hourlyRate}/h`
+                        : price?.breakdown?.perKm
+                        ? `€${price.breakdown.perKm}/km`
+                        : "—"}
+                    </p>
                   </div>
                 </div>
               )}

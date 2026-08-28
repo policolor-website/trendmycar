@@ -168,6 +168,35 @@ export default function HomePage() {
   const [priceLoading, setPriceLoading] = useState(false);
   const [priceError, setPriceError] = useState<string | null>(null);
 
+  // Pickup radius state — determined by destination distance from München
+  const [pickupCenter, setPickupCenter] = useState<{ lat: number; lng: number } | null>(null);
+  const [pickupRadiusM, setPickupRadiusM] = useState<number | null>(null);
+  const [destInfo, setDestInfo] = useState<{ distanceFromMunich: number; rule: string } | null>(null);
+  const [destLoading, setDestLoading] = useState(false);
+
+  const handleDestinationSelect = async (place: { description: string; lat?: number; lng?: number }) => {
+    setBookingForm({ ...bookingForm, destination: place.description, origin: "" });
+    setPickupCenter(null);
+    setPickupRadiusM(null);
+    setDestInfo(null);
+    if (place.lat && place.lng) {
+      setDestLoading(true);
+      try {
+        const res = await fetch(`/api/geocode?address=${encodeURIComponent(place.description)}`);
+        const data = await res.json();
+        if (data.pickupRadiusM) {
+          setPickupCenter({ lat: 48.1371, lng: 11.5754 });
+          setPickupRadiusM(data.pickupRadiusM);
+          setDestInfo({ distanceFromMunich: data.distanceFromMunich, rule: data.rule });
+        }
+      } catch {
+        // ignore
+      } finally {
+        setDestLoading(false);
+      }
+    }
+  };
+
   useEffect(() => {
     const onScroll = () => {
       const scrollY = window.scrollY;
@@ -204,7 +233,7 @@ export default function HomePage() {
       });
       const data = await res.json();
       if (!res.ok) {
-        const errorKey = data.error === "outside_germany" ? "errorOutsideGermany" : "errorGeneric";
+        const errorKey = data.error === "pickup_outside_radius" ? "errorPickupOutsideRadius" : "errorGeneric";
         setPriceError(tBooking(errorKey as any));
       } else {
         setPriceResult(data);
@@ -324,20 +353,44 @@ export default function HomePage() {
             className="glass rounded-2xl p-6 shadow-2xl"
           >
             <form onSubmit={handleGetPrice} className="grid grid-cols-1 md:grid-cols-12 gap-3 items-end">
+              {/* Destination FIRST — determines pickup radius */}
               <div className="md:col-span-3">
-                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{tBooking("pickup")}</label>
+                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">
+                  {tBooking("destination")} {destLoading && <span className="text-electric">•</span>}
+                </label>
+                <PlacesInput
+                  value={bookingForm.destination}
+                  onChange={(val) => {
+                    setBookingForm({ ...bookingForm, destination: val });
+                    if (!val) {
+                      setPickupCenter(null);
+                      setPickupRadiusM(null);
+                      setDestInfo(null);
+                    }
+                  }}
+                  onPlaceSelect={handleDestinationSelect}
+                  placeholder={tBooking("destinationPlaceholder")}
+                />
+              </div>
+              {/* Pickup SECOND — filtered by destination-based radius */}
+              <div className="md:col-span-3">
+                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">
+                  {tBooking("pickup")}
+                  {destInfo && (
+                    <span className="ml-2 text-[10px] text-electric normal-case tracking-normal">
+                      {destInfo.rule === "long-distance"
+                        ? tBooking("pickupRadiusLong", { km: 100 })
+                        : tBooking("pickupRadiusShort", { km: 1500 })}
+                    </span>
+                  )}
+                </label>
                 <PlacesInput
                   value={bookingForm.origin}
                   onChange={(val) => setBookingForm({ ...bookingForm, origin: val })}
-                  placeholder={tBooking("pickupPlaceholder")}
-                />
-              </div>
-              <div className="md:col-span-2">
-                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{tBooking("destination")}</label>
-                <PlacesInput
-                  value={bookingForm.destination}
-                  onChange={(val) => setBookingForm({ ...bookingForm, destination: val })}
-                  placeholder={tBooking("destinationPlaceholder")}
+                  placeholder={bookingForm.destination ? tBooking("pickupPlaceholder") : tBooking("pickupDisabledPlaceholder")}
+                  center={pickupCenter}
+                  radiusM={pickupRadiusM}
+                  disabled={!bookingForm.destination}
                 />
               </div>
               <div className="md:col-span-2">
@@ -358,12 +411,12 @@ export default function HomePage() {
                   className="w-full bg-ink/50 border border-white/10 rounded-lg px-2 py-3 text-white text-sm focus:border-electric/50 focus:outline-none transition-colors [color-scheme:dark]"
                 />
               </div>
-              <div className="md:col-span-2">
+              <div className="md:col-span-1">
                 <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{tBooking("vehicle")}</label>
                 <select
                   value={bookingForm.vehicle}
                   onChange={(e) => setBookingForm({ ...bookingForm, vehicle: e.target.value })}
-                  className="w-full bg-ink/50 border border-white/10 rounded-lg px-3 py-3 text-white text-sm focus:border-electric/50 focus:outline-none transition-colors [color-scheme:dark]"
+                  className="w-full bg-ink/50 border border-white/10 rounded-lg px-2 py-3 text-white text-sm focus:border-electric/50 focus:outline-none transition-colors [color-scheme:dark]"
                 >
                   <option>E-Class</option>
                   <option>S-Class</option>
@@ -398,7 +451,12 @@ export default function HomePage() {
                 {/* Price details */}
                 <div className="glass rounded-xl p-5 space-y-3">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs text-white/60 uppercase tracking-wide">{tBooking("fixedPrice")}</span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs text-white/60 uppercase tracking-wide">{tBooking("fixedPrice")}</span>
+                      <span className={`text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wide ${priceResult.rideType === "local" ? "bg-electric/20 text-electric" : "bg-neon/20 text-neon"}`}>
+                        {priceResult.rideType === "local" ? tBooking("rideTypeLocal") : tBooking("rideTypeExternal")}
+                      </span>
+                    </div>
                     <span className="font-display text-3xl font-bold text-white">
                       €{priceResult.price.total}
                     </span>
@@ -416,10 +474,20 @@ export default function HomePage() {
                       <span>{tBooking("vehicle")}</span>
                       <span className="text-white">{priceResult.price.vehicle}</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span>{tBooking("rate")}</span>
-                      <span className="text-white">€{priceResult.price.perKm}/km</span>
-                    </div>
+                    {/* Local ride: show hourly rate */}
+                    {priceResult.rideType === "local" && priceResult.price.breakdown.hours && (
+                      <div className="flex justify-between">
+                        <span>{tBooking("billableHours")}</span>
+                        <span className="text-white">{priceResult.price.breakdown.hours}h × €{priceResult.price.breakdown.hourlyRate}/h</span>
+                      </div>
+                    )}
+                    {/* External ride: show per-km rate */}
+                    {priceResult.rideType === "external" && priceResult.price.breakdown.perKm && (
+                      <div className="flex justify-between">
+                        <span>{tBooking("rate")}</span>
+                        <span className="text-white">€{priceResult.price.breakdown.perKm}/km</span>
+                      </div>
+                    )}
                     {priceResult.price.breakdown.nightSurcharge && (
                       <div className="flex justify-between">
                         <span>{tBooking("nightSurcharge")}</span>

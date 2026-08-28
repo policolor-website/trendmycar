@@ -60,7 +60,14 @@
     "successDesc": "Your booking has been confirmed. You will receive a confirmation email shortly. View your booking details in your dashboard.",
     "cancelTitle": "Payment Cancelled",
     "cancelDesc": "Your payment was cancelled and no charge was made. You can try again or contact us if you need help.",
-    "tryAgain": "Try again"
+    "tryAgain": "Try again",
+    "rideTypeLocal": "Local ride",
+    "rideTypeExternal": "Long distance",
+    "billableHours": "Billable hours",
+    "pickupDisabledPlaceholder": "Select destination first",
+    "pickupRadiusLong": "within {km}km of Munich",
+    "pickupRadiusShort": "within {km}km of Munich",
+    "errorPickupOutsideRadius": "Pickup is outside the allowed area. Please select a pickup within the radius shown above."
   },
   "Fleet": {
     "badge": "Our vehicles",
@@ -233,7 +240,9 @@
     "phoneLabel": "Phone",
     "phonePlaceholder": "+49 170 1234567",
     "passwordLabel": "Password",
-    "errorGeneric": "Something went wrong. Please try again."
+    "errorGeneric": "Something went wrong. Please try again.",
+    "rideTypeLocal": "Local ride",
+    "rideTypeExternal": "Long distance"
   },
   "Dashboard": {
     "title": "Dashboard",
@@ -868,9 +877,10 @@
       "badge": "Prices & Tariffs",
       "title": "Prices &",
       "highlight": "Tariffs",
-      "description": "Transparent, fixed pricing — no meter, no surprises. We charge per kilometer with a clear base fare, and every quote includes all taxes, tolls, and fees. What you see at booking is exactly what you pay. No surge pricing during peak hours, no hidden destination charges, no \"the route was longer\" surprises. Whether you need a Business Class sedan for an airport run or a First Class limousine for a full-day assignment, you'll know the price before you book.",
+      "description": "Transparent, fixed pricing — no meter, no surprises. Local rides (same city) are charged hourly with a 1-hour minimum. Long-distance rides (between cities) are charged per kilometer. Every quote includes all taxes, tolls, and fees. What you see at booking is exactly what you pay. No surge pricing, no hidden charges, no surprises.",
       "features": [
-        "Fixed price per kilometer — guaranteed at booking, never changes",
+        "Local rides (same city): hourly rate with 1-hour minimum",
+        "Long-distance rides (cross-city): fixed price per kilometer",
         "No surge pricing — same rate at rush hour, midnight, or holiday season",
         "All-inclusive pricing — taxes, tolls, and fees included in every quote",
         "Night surcharge (22:00-06:00): +25% — clearly stated, never hidden",
@@ -879,20 +889,32 @@
       ],
       "includes": [
         {
-          "label": "E-Class",
-          "value": "€3.0/km"
+          "label": "E-Class (local)",
+          "value": "€120/hour"
         },
         {
-          "label": "S-Class",
-          "value": "€4.5/km"
+          "label": "V-Class (local)",
+          "value": "€135/hour"
         },
         {
-          "label": "V-Class",
-          "value": "€3.5/km"
+          "label": "S-Class (local)",
+          "value": "€145/hour"
         },
         {
-          "label": "Base fare",
-          "value": "€10-15"
+          "label": "E-Class (long distance)",
+          "value": "€2.3/km"
+        },
+        {
+          "label": "V-Class (long distance)",
+          "value": "€2.6/km"
+        },
+        {
+          "label": "S-Class (long distance)",
+          "value": "€2.5/km"
+        },
+        {
+          "label": "Minimum (local)",
+          "value": "1 hour"
         },
         {
           "label": "Night",
@@ -906,7 +928,11 @@
       "faq": [
         {
           "question": "How is the price calculated?",
-          "answer": "The price is based on a per-kilometer rate for your vehicle class, plus a base fare. The system calculates the optimal route and gives you a fixed price at booking. That price is guaranteed — it won't change even if traffic adds time to the journey."
+          "answer": "The price depends on whether your ride is local or long-distance. For local rides (same city), we charge an hourly rate with a 1-hour minimum. For long-distance rides (between cities), we charge per kilometer. The system automatically detects the ride type based on your pickup and destination. The price you see at booking is guaranteed — it won't change even if traffic adds time to the journey."
+        },
+        {
+          "question": "What counts as a 'local' ride?",
+          "answer": "A local ride is any trip where the pickup and destination are in the same city. For example, Munich Airport to a Munich address is a local ride. These are charged at an hourly rate with a 1-hour minimum."
         },
         {
           "question": "Are there any hidden fees?",
@@ -914,7 +940,7 @@
         },
         {
           "question": "Do you charge more during peak hours?",
-          "answer": "No. We do not use surge pricing. The per-kilometer rate is the same at rush hour, on holidays, and during major events. You'll never pay more because demand is high."
+          "answer": "No. We do not use surge pricing. The hourly rate and per-kilometer rate are the same at rush hour, on holidays, and during major events. You'll never pay more because demand is high."
         },
         {
           "question": "What is the cancellation policy?",
@@ -926,7 +952,7 @@
         },
         {
           "question": "Can I get a custom quote for a complex trip?",
-          "answer": "Absolutely. For multi-stop trips, full-day bookings, or special requirements, contact us directly and we'll provide a detailed custom quote. Our team responds within 1 hour during business hours and within 4 hours outside business hours."
+          "answer": "Absolutely. For multi-stop trips, full-day bookings, or special requirements, contact us directly and we'll provide a detailed quote tailored to your needs."
         }
       ]
     }
